@@ -12,6 +12,16 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.resource-item {
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer;
+}
+
+.resource-item.item img {
+    max-width: 200px;
+    max-height: 250px ;
+}
 
 .App-header {
   background-color: #282c34;

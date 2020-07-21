@@ -1,6 +1,10 @@
 import React from 'react';
+import ResourceDetail from "./components/ResourceDetail";
+import ResourceList from "./components/ResourceList";
+import ResourceBar from "./components/ResourceBar"
+import tutorial from "./components/Tutorial"
 
-import './App.css';
+// import './App.css';
 
 // Add a Class on Function to make it more dynamic
 
@@ -9,10 +13,10 @@ class App extends React.Component {
     resources: [],
     selectedResource: null,
   };
-  handleSubmit = async (keywordFromSearchBar) => {
-    const response = await youtube.get("/search", {
+  handleSubmit = async (keywordFromResourceBar) => {
+    const response = await tutorial.get("/search", {
       params: {
-        q: keywordFromSearchBar,
+        q: keywordFromResourceBar,
       },
     });
     this.setState({
@@ -26,11 +30,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui container" style={{ marginTop: "1em" }}>
-        <SearchBar handleFormSubmit={this.handleSubmit} />
+        <ResourceBar handleFormSubmit={this.handleSubmit} />
         <div className="ui grid">
           <div className="ui row">
             <div className="eleven wide column">
-              <ResourceDetail video={this.state.selectedResource} />
+              <ResourceDetail resource={this.state.selectedResource} />
             </div>
             <div className="five wide column">
               <ResourceList
