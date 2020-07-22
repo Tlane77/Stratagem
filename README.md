@@ -1,4 +1,55 @@
+# DevOps: The Information Dashboard
+
+## Setup: Follow these steps exactly
+
+1. Clone this repository
+2. `cd` into the directory it creates
+3. Make a `database.json` file in the `api` directory
+
+
+> **Note:** Your `database.json` file is already in the `.gitignore` file for this project, so it will never be added to the repo or pushed to Github.
+
+## Instructions
+
+DevOps is a new product offering a place for developers to store all their data. It's a dashboard application for people to store their developer resources, and share with others.
+
+You will be utilizing all of the skills and concepts that you've learned up to this point in the course.
+
+1. Functions
+2. Databases
+3. Github
+4. Objects
+5. CSS/Flexbox
+6. Array methods
+7. Components
+8. Handling user events
+9. Implementing CRUD operations
+10. Relational data 
+11. ERDs DevOps https://dbdiagram.io/d/5f1861321e6ca02dc1a43ddf
+12. WIREFRAME: Login Page https://fqx7h7.axshare.com
+
+To start you off, here's an example of what the resources in your API should look like once it's populated with some data from your application.
+
+### Users
+
+```json
+{ "id": 1, "username": "Tasha", "email": "me@me.com", "password": "xxxx" }
+```
+
+### Members
+
+```json
+{ "id": 1, "userId": 1, "memberId": }
+```
+
+### Resources
+
+```json
+{ "id": 1, "userId": 3, "resource": "How to Create CRUD" }
+```
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## install `react-bootstrap`
 
 ## Available Scripts
 
