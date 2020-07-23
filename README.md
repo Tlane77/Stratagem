@@ -1,4 +1,4 @@
-# DevOps: The Information Dashboard
+# Stratagem: The Information Dashboard
 ## Mentor Rose Wisotzky
 ## Setup: Follow these steps exactly
 
@@ -117,4 +117,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# DevOps
+# Stratagem
