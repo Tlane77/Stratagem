@@ -1,5 +1,5 @@
 # DevOps: The Information Dashboard
-
+## Mentor Rose Wisotzky
 ## Setup: Follow these steps exactly
 
 1. Clone this repository
