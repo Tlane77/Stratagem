@@ -25,7 +25,7 @@ You will be utilizing all of the skills and concepts that you've learned up to t
 8. Handling user events
 9. Implementing CRUD operations
 10. Relational data 
-11. ERDs DevOps https://dbdiagram.io/d/5f1861321e6ca02dc1a43ddf
+11. ERDs Stratagem https://dbdiagram.io/d/5f1861321e6ca02dc1a43ddf
 12. WIREFRAME: Login Page https://fqx7h7.axshare.com
 
 To start you off, here's an example of what the resources in your API should look like once it's populated with some data from your application.
@@ -36,16 +36,16 @@ To start you off, here's an example of what the resources in your API should loo
 { "id": 1, "username": "Tasha", "email": "me@me.com", "password": "xxxx" }
 ```
 
-### Members
+### Notes
 
 ```json
-{ "id": 1, "userId": 1, "memberId": }
+{ "id": 1, "userId": 1, "resourceId": "note": "string" "date": "datetime"  }
 ```
 
 ### Resources
 
 ```json
-{ "id": 1, "userId": 3, "resource": "How to Create CRUD" }
+{ "id": 1, "userId": 3, "resource": "How to Create CRUD" "noteId": 1, }
 ```
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
