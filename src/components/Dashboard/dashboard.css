@@ -1,0 +1,42 @@
+.dashboardContainer {
+    background-color: #1f3d7a;  
+    color: #D3D3D3
+}
+
+
+.dashboardCol {
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.btn.btn-custom {
+    background-color: #66b3ff;
+    color: #D3D3D3;   
+}
+
+#contained-modal-title-vcenter.modal-title.h4 {
+    color: #D3D3D3; 
+   
+}
+
+
+.Stratagem {
+    width: 40px;
+    height: 40px;
+    margin-left: .5rem;
+}
+
+.userCol {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 20px;
+}
+
+.resourcesCol {
+    margin-left: 2rem;
+}
+
+.navbarCol {
+    margin-top: 1.5rem;
+}

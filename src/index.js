@@ -1,15 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import App from '../src/App';
+import "./index.css";
+import Stratagem from "../src/components/Stratagem";
 import "bootstrap/dist/css/bootstrap.css";
+
 
 
 ReactDOM.render(
   <Router>
-  <App />
+    <Stratagem />
   </Router>,
-
-  document.getElementById("#root")
+  document.getElementById("root")
 );
 

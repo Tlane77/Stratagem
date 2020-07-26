@@ -1,0 +1,33 @@
+.resourceCardContainer.container {
+    display: flex;
+    width:50%;
+}
+
+.resourceCard {
+    flex-direction: row;
+    color: #D3D3D3;
+    width: 30rem;
+    margin-bottom: 2rem;
+    border: 2px solid #1f3d7a !important;
+    border-radius: 6px !important;
+    background-color: #1f3d7a !important;
+    box-shadow: 0 4px 8px 0 #888888, 0 6px 20px 0 #888888;
+    margin-top: 1rem;
+}
+
+.resourceCardBody {
+    flex-direction: row;
+}
+
+.resourceLink:hover {
+    color: #66b3ff;
+}
+
+.resourceLink {
+    color: #D3D3D3
+}
+
+.resourceDeleteButton.btn.btn-custom {
+    background-color: #66b3ff;
+    color: #D3D3D3;  
+}

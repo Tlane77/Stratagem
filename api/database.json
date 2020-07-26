@@ -1,0 +1,135 @@
+{
+  "users": [
+    {
+      "userName": "Amanda",
+      "email": "amanda@live.com",
+      "password": "puppy",
+      "id": 1
+    },
+    {
+      "username": "Tyler",
+      "email": "tyler@live.com",
+      "password": "mario",
+      "id": 2
+    },
+    {
+      "userName": "Tasha",
+      "email": "tasha@live.com",
+      "password": "clover",
+      "id": 3
+    },
+    {
+      "userName": "Faith",
+      "email": "faith@live.com",
+      "password": "icecream",
+      "id": 4
+    },
+    {
+      "userName": "Kelly",
+      "email": "designtmg77@gmail.com",
+      "password": "dog",
+      "id": 5
+    },
+    {
+      "userName": "Patrick",
+      "email": "designtmg77@gmail.com",
+      "password": "plants",
+      "id": 6
+    },
+    {
+      "email": "Tasha@live.com",
+      "userName": "Tasha",
+      "password": "clover",
+      "id": 7
+    }
+  ],
+  "resources": [
+    {
+      "id": 1,
+      "userId": 1,
+      "url": "www.google.com",
+      "title": "React for Dummies",
+      "subjectId": "REACT",
+      "synopsis": "Thriving in Chaos",
+      "timestamp": "05/01/20"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "noteId": 2,
+      "url": "www.google.com",
+      "title": "How to Chase a Curly Bracket",
+      "subject": "Debugging",
+      "synopsis": "The Art of Chasing",
+      "timestamp": "07/02/20"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "noteId": 3,
+      "url": "www.google.com",
+      "title": "How to Build a React App",
+      "subject": "REACT",
+      "synopsis": "Where do Hooks come from?",
+      "timestamp": "03/03/20"
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "noteId": 4,
+      "url": "www.google.com",
+      "title": "JavaScript on Fire",
+      "subject": "JAVA",
+      "synopsis": "Hold on to your hats!",
+      "timestamp": "04/01/24"
+    }
+  ],
+  "notes": [
+    {
+      "notes": "Practice Recurrent Neural Networks",
+      "date": "2020-07-07",
+      "resourceId": 1,
+      "id": 1
+    },
+    {
+      "notes": "Practice FLEXBOX",
+      "date": "2020-07-07",
+      "resourceId": 2,
+      "id": 2
+    },
+    {
+      "notes": "Practice CRUD",
+      "date": "2020-07-07",
+      "resourceId": 3,
+      "id": 3
+    },
+    {
+      "notes": "Practice REACT",
+      "date": "2020-07-07",
+      "resourceId": 4,
+      "id": 4
+    }
+  ],
+  "subjects": [
+    {
+      "id": 1,
+      "subjectId": 1
+    },
+    {
+      "id": 2,
+      "subjectId": 2
+    },
+    {
+      "id": 3,
+      "subjectId": 3
+    },
+    {
+      "id": 4,
+      "subjectId": 4
+    },
+    {
+      "id": 5,
+      "subjectId": 5
+    }
+  ]
+}
