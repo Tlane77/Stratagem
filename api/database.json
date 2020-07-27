@@ -113,24 +113,28 @@
       "notes": "Practice Recurrent Neural Networks",
       "date": "2020-07-07",
       "resourceId": 1,
+      "activeUserId": 1,
       "id": 1
     },
     {
       "notes": "Practice FLEXBOX",
       "date": "2020-07-07",
       "resourceId": 2,
+      "activeUserId": 2,
       "id": 2
     },
     {
       "notes": "Practice CRUD",
       "date": "2020-07-07",
       "resourceId": 3,
+      "activeUserId": 3,
       "id": 3
     },
     {
       "notes": "Practice REACT",
       "date": "2020-07-07",
       "resourceId": 4,
+      "activeUserId": 4,
       "id": 4
     }
   ],

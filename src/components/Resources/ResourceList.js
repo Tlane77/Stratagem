@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, } from "react-bootstrap";
 import APIManager from "../Modules/APIManager";
 import ResourceCard from "../Resources/ResourceCard";
 import ResourceForm from "../Resources/ResourceForm";
 import "./ResourceList.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+// import NoteList from "../Notes/NoteList"
+
+
 
 const ResourceList = (props) => {
   const [resources, setResources] = useState([]);
@@ -13,6 +17,7 @@ const ResourceList = (props) => {
     synopsis: "",
     url: "",
     date: Date.now(),
+    note: "",
     user: sessionStorage.activeUser,
   });
   const getResources = () => {
@@ -31,7 +36,8 @@ const ResourceList = (props) => {
      document.getElementById("title").value = "";
      document.getElementById("synopsis").value = "";
      document.getElementById("subject").value = "";
-     document.getElementById("date").value = "";
+    document.getElementById("date").value = "";
+    document.getElementById("note").value = "";
      document.getElementById("url").value = "";
   };
 
@@ -49,10 +55,13 @@ const ResourceList = (props) => {
   useEffect(() => {
     getResources();
   }, []);
+
+  
+  ///
   return (
     <Container className="ResourceListContainer">
       {/* Changeable dashboard in this  Col */}
-      <Row className="resourcedashboard">
+      <Row className="resourceDashboard">
         <ResourceForm construct={ConstructNewResource} />
       </Row>
       <Row className="dashboardResourceCard">
@@ -63,9 +72,14 @@ const ResourceList = (props) => {
             deleteResource={deleteResource}
             {...props}
           />
+          
+          
         ))}
       </Row>
     </Container>
+
+    
+
   );
 };
 

@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
 import ApplicationViews from "../components/ApplicationViews";
-import APIManager from "../components/Modules/APIManager";
+// import APIManager from "../components/Modules/APIManager";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import Notes from "../components/Notes/NoteList"
+
 
 const Stratagem = (props) => {
-  useEffect(() => {
-    APIManager.GetUsersNotes("notes").then((response) => {
-      console.log(response);
-      APIManager.SortingByNote(response);
-    });
-  }, []);
+  // useEffect(() => {
+  //   APIManager.GetUsersNotes("notes").then((response) => {
+  //     console.log(response);
+  //     APIManager.SortingByNotes(response);
+  //   });
+  // }, []);
 
   // console.log("yes tacos")
   const isAuthenticated = () => {
@@ -32,9 +34,11 @@ const Stratagem = (props) => {
     console.log(user.userName);
   };
 
+  
+
   return (
     <>
-      {/* <ApplicationViews {...props} /> */}
+      {/* <ApplicationViews {...props}/> */}
       <ApplicationViews setUser={setUser} hasUser={hasUser} />
     </>
   );

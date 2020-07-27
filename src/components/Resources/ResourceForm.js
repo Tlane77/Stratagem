@@ -28,17 +28,17 @@ const ResourceForm = props => {
               className="ResourceFormCtl"
               onChange={handleFieldChange} 
               type="text" 
-              placeholder="Enter title" />
+              placeholder="Enter Title" />
   </Form.Group>
   </Col>
   <Col className="ResourceFormCol">
   <Form.Group className="ResourceFormGrp" controlId="synopsis">
-    <Form.Label className="ResourceFormLbl">Synopsis</Form.Label>
+    <Form.Label className="ResourceFormLbl">Subject</Form.Label>
     <Form.Control
             className="ResourceFormCtl"
             onChange={handleFieldChange} 
             type="text" 
-            placeholder="Enter synopsis" />
+            placeholder="Enter Subject" />
   </Form.Group>
   </Col>
   <Col className="ResourceFormCol">

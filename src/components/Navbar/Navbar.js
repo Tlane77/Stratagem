@@ -1,13 +1,15 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { Image } from "react-bootstrap";
 import "./Navbar.css";
+
 
 const NavBar = (props) => {
   const handleLogout = () => {
     props.clearUser();
-  };
+    ;
+  }
   return (
     <header>
       <nav className="navBar">
@@ -40,7 +42,7 @@ const NavBar = (props) => {
             </NavLink>
           </li>
 
-          <li>
+          {/* <li>
             <NavLink
               className="nav-link"
               to="/Notes"
@@ -63,7 +65,7 @@ const NavBar = (props) => {
             >
               Subjects
             </NavLink>
-          </li>
+          </li> */}
 
           <li>
             <NavLink className="nav-link" exact to="/" onClick={handleLogout}>

@@ -2,6 +2,7 @@ const remoteURL = "http://localhost:8088/";
 
 let noteQuery = ``;
 
+
 export default {
   GetAll(str) {
     return fetch(`${remoteURL}${str}`).then((res) => res.json());
@@ -48,32 +49,46 @@ export default {
     });
   },
 
-  SortingByNote(noteArray) {
-    console.log(noteArray);
+  // SortingByNote(noteArray) {
+  //   console.log(noteArray);
 
-    let sortString = "";
-    sortString += `?`;
+  //   let sortString = "";
+  //   sortString += `?`;
 
-    for (let note of noteArray) {
-      sortString += `userId=${note.userId}&`;
-    }
-    sortString += `userId=${sessionStorage.noteId}`;
-    console.log(sortString);
-    noteQuery = sortString;
-  },
+  //   for (let note of noteArray) {
+  //     sortString += `userId=${note.userId}&`;
+  //   }
+  //   sortString += `userId=${sessionStorage.userId}`;
+  //   console.log(sortString);
+  //   noteQuery = sortString;
+  // },
+
+  // SortingByNote(noteArray) {
+  //   console.log(noteArray);
+
+  //   let sortString = "";
+  //   sortString += `?`;
+
+  //   for (let note of noteArray) {
+  //     sortString += `userId=${note.userId}&`;
+  //   }
+  //   sortString += `userId=${sessionStorage.userId}`;
+  //   console.log(sortString);
+  //   noteQuery = sortString;
+  // },
 
   ////MeetUPs Stretch Goal
 
-//   delete(id) {
-//     return fetch(`${remoteURL}events/${id}`, {
-//       method: "DELETE",
-//     });
-//   },
-//   edit(id) {
-//     return fetch(`${remoteURL}events/${id}`, {
-//       method: "EDIT",
-//     });
-//   },
+  //   delete(id) {
+  //     return fetch(`${remoteURL}events/${id}`, {
+  //       method: "DELETE",
+  //     });
+  //   },
+  //   edit(id) {
+  //     return fetch(`${remoteURL}events/${id}`, {
+  //       method: "EDIT",
+  //     });
+  //   },
   PostNotes(obj) {
     return fetch(`http://localhost:8088/notes/`, {
       method: "POST",
