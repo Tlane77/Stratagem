@@ -30,13 +30,13 @@ const NavBar = (props) => {
           <li>
             <NavLink
               className="nav-link"
-              to="/News"
+              to="/Resources"
               disabled
               activeStyle={{
                 color: "#66b3ff",
               }}
             >
-              News
+              Resources
             </NavLink>
           </li>
 
@@ -49,19 +49,19 @@ const NavBar = (props) => {
                 color: "#66b3ff",
               }}
             >
-              Tasks
+              Notes
             </NavLink>
           </li>
           <li>
             <NavLink
               className="nav-link"
-              to="/Events"
+              to="/Subjects"
               disabled
               activeStyle={{
                 color: "#66b3ff",
               }}
             >
-              Events
+              Subjects
             </NavLink>
           </li>
 
