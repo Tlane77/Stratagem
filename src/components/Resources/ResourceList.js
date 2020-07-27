@@ -16,14 +16,14 @@ const ResourceList = (props) => {
     user: sessionStorage.activeUser,
   });
   const getResources = () => {
-    return APIManager.GetAllSort("Resources").then((resourcesFromAPI) => {
+    return APIManager.GetAllSort("resources").then((resourcesFromAPI) => {
       setResources(resourcesFromAPI);
     });
   };
 
   const deleteResource = (id) => {
-    APIManager.Delete("Resources", id).then(() =>
-      APIManager.GetAllSort("Resources").then((response) => setResources(response))
+    APIManager.Delete("resources", id).then(() =>
+      APIManager.GetAllSort("resources").then((response) => setResources(response))
     );
   };
 
@@ -39,8 +39,8 @@ const ResourceList = (props) => {
     if (resource.title === "" || resource.synopsis === "" || resource.subject === "" ||resource.date === "" || resource.url === "") {
       alert("Please complete all fields.");
     } else {
-      APIManager.Push("Resources", resource)
-        .then(() => APIManager.GetAllSort("Resources"))
+      APIManager.Push("resources", resource)
+        .then(() => APIManager.GetAllSort("resources"))
         .then(() => getResources());
       clearInputs();
     }
@@ -59,7 +59,7 @@ const ResourceList = (props) => {
         {resources.map((resource) => (
           <ResourceCard
             key={resource.id}
-            news={resource}
+            resources={resource}
             deleteResource={deleteResource}
             {...props}
           />

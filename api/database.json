@@ -41,6 +41,30 @@
       "userName": "Tasha",
       "password": "clover",
       "id": 7
+    },
+    {
+      "email": "Gavin@live.com",
+      "userName": "Gavin@live.com",
+      "password": "bieber",
+      "id": 8
+    },
+    {
+      "email": "zac@live.com",
+      "userName": "Zac",
+      "password": "tiger",
+      "id": 9
+    },
+    {
+      "email": "erik@live.com",
+      "userName": "Erik",
+      "password": "frog",
+      "id": 10
+    },
+    {
+      "email": "peter@live.com",
+      "userName": "Peter",
+      "password": "paul",
+      "id": 11
     }
   ],
   "resources": [

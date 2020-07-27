@@ -3,14 +3,19 @@ import { Route, Redirect } from "react-router-dom";
 import Dashboard from "./Dashboard/dashboard";
 import Registration from "./auth/registration";
 import Login from "../components/auth/login";
-// import ResourceList from "../components/Resources/ResourceList";
+import ResourceList from "../components/Resources/ResourceList";
 // import ResourceForm from "../components/Resources/ResourceForm";
+// import NoteList from "../components/Notes/NoteList"
+
+
 const ApplicationViews = (props) => {
   const hasUser = props.hasUser;
   const setUser = props.setUser;
 
   
   const notes = true;
+  // const resources = true;
+  // const subjects = true;
 
   return (
     <>
@@ -42,6 +47,30 @@ const ApplicationViews = (props) => {
           }
         }}
       />
+      {/* <Route
+        exact
+        path="/Notes"
+        render={(props) => {
+          if (hasUser) {
+            return <Dashboard notes={notes} {...props} />;
+          } else {
+            return <Redirect exact to="/" />;
+          }
+        }}
+      /> */}
+
+      {/* Resources */}
+      {/* <Route
+        exact
+        path="/Resources"
+        render={(props) => {
+          if (hasUser) {
+            return <Dashboard resources={resources} {...props} />;
+          } else {
+            return <Redirect exact to="/" />;
+          }
+        }}
+      /> */}
       {/* <Route
         exact
         path="/Subjects"

@@ -16,7 +16,7 @@ export default {
 
   GetUsersNotes(str) {
     return fetch(
-      `${remoteURL}${str}?activeUserId=${sessionStorage.activeUserID}&_expand=user`
+      `${remoteURL}${str}?activeUserId=${sessionStorage.noteId}&_expand=user`
     ).then((res) => res.json());
   },
   GetAllNotes(str) {
@@ -57,7 +57,7 @@ export default {
     for (let note of noteArray) {
       sortString += `userId=${note.userId}&`;
     }
-    sortString += `userId=${sessionStorage.activeUserID}`;
+    sortString += `userId=${sessionStorage.noteId}`;
     console.log(sortString);
     noteQuery = sortString;
   },
