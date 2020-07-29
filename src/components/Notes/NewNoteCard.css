@@ -1,0 +1,14 @@
+.new-note-text {
+    background-color: #1f3d7a;
+    color: #D3D3D3; 
+    font-size: 20px;
+}
+
+.add-note-btn {
+    background-color: #66b3ff;
+    color: #D3D3D3;  
+    margin-left: .5rem;
+    height: 30px;
+    font-size: 20px;
+    
+}

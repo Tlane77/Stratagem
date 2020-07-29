@@ -1,0 +1,52 @@
+small {
+    font-size: 75%;
+  }
+  
+  header {
+    background-color: #1f3d7a ;
+    
+  }
+  
+  .site-title {
+    color: #D3D3D3;
+    text-align: center;
+  }
+  
+  nav .container {
+    display: flex;
+    padding: 0;
+    margin-bottom: 5rem;
+  }
+  
+  nav .container li {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #D3D3D3;
+    box-sizing: border-box;
+    background-color: #1f3d7a ;
+    list-style-type: none;
+  }
+  
+  .nav-link {
+    color: #D3D3D3;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    color: #66b3ff;
+  }
+
+  .logoNavbar {
+    width: 60px;
+    height: auto;
+    background-color: #1f3d7a;
+    margin-right: .1rem;
+  }
+
+  .logoNavbarLeft {
+    width:60px;
+    height:auto;
+  }

@@ -1,0 +1,27 @@
+.delete-note-btn {
+    background-color: #66b3ff;
+    color: #D3D3D3; 
+    height: 30px;
+    width: 30px;
+}
+
+.noteCardContainer {
+    width: 50%;
+    border: 1px solid #1f3d7a !important;
+    background-color: #1f3d7a;
+}
+
+.noteCardText {
+    margin-right: .5rem;
+}
+
+.reactImage {
+    height:30px;
+    width: 30px;
+    margin-left: .3rem;
+    margin-right: .5rem;
+}
+
+.noteCardText {
+    font-size: 20px;
+}

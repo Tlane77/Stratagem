@@ -1,0 +1,51 @@
+* {
+    background-color: #1f3d7a;
+}
+
+.registerContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.registrationButton.btn.btn-custom {
+    background-color: #66b3ff;
+    color: #D3D3D3;   
+    width: 20%;
+    margin-left: 25rem;
+}
+
+.registerLogin.form-control {
+    background-color: #D3D3D3;
+    width: 75%;
+}
+
+.registerForm {
+  margin-left: 11rem;
+}
+
+.registrationLogo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem !important;
+}
+
+.registrationCard {
+    width: 60rem;
+    border: 2px solid #1f3d7a !important;
+    border-radius: 6px !important;
+    background-color: #1f3d7a !important;
+    box-shadow: 0 4px 8px 0 #888888, 0 6px 20px 0 #888888
+    
+} 
+.registerWelcome, .registerLabel {
+    color: #D3D3D3;
+}
+
+.registerWelcome {
+    text-align: center !important;
+    margin-bottom: 3rem !important;
+    margin-top: -2rem !important;
+}
