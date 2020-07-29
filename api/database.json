@@ -37,38 +37,38 @@
       "id": 6
     },
     {
-      "email": "Tasha@live.com",
       "userName": "Tasha",
+      "email": "Tasha@live.com",
       "password": "clover",
       "id": 7
     },
     {
+      "userName": "Gavin",
       "email": "Gavin@live.com",
-      "userName": "Gavin@live.com",
       "password": "test",
       "id": 8
     },
     {
-      "email": "zac@live.com",
       "userName": "Zac",
+      "email": "zac@live.com",
       "password": "tiger",
       "id": 9
     },
     {
-      "email": "erik@live.com",
       "userName": "Erik",
+      "email": "erik@live.com",
       "password": "frog",
       "id": 10
     },
     {
-      "email": "peter@live.com",
       "userName": "Peter",
+      "email": "peter@live.com",
       "password": "paul",
       "id": 11
     },
     {
-      "email": "happy@live.com",
       "userName": "Happy",
+      "email": "happy@live.com",
       "password": "green",
       "id": 12
     }
@@ -78,7 +78,7 @@
       "id": 4,
       "userId": 4,
       "noteId": 4,
-      "url": "www.google.com",
+      "url": "https://google.com",
       "title": "JavaScript on Fire",
       "subject": "JAVA",
       "synopsis": "Hold on to your hats!",
@@ -99,7 +99,7 @@
       "title": "RE: Portfolio Presentation",
       "subject": "What Really Matters About IT",
       "synopsis": "hello world",
-      "url": "github.com",
+      "url": "https://github.com",
       "date": "2020-08-07",
       "user": "Tasha",
       "id": 6
@@ -113,15 +113,83 @@
       "date": "2020-07-30",
       "user": "Tasha",
       "id": 7
+    },
+    {
+      "userId": 7,
+      "title": "RE: Portfolio Presentation",
+      "subject": "What Really Matters About IT",
+      "synopsis": "hello",
+      "url": "https://google.com",
+      "date": "2020-07-30",
+      "user": "Tasha",
+      "id": 8
+    },
+    {
+      "userId": 7,
+      "title": "RE: Critique Me!",
+      "subject": "What Really Matters About IT",
+      "synopsis": "hello world",
+      "url": "https://github.com",
+      "date": "2020-07-30",
+      "user": "Tasha",
+      "id": 9
+    },
+    {
+      "userId": 7,
+      "title": "RE: Portfolio Presentation",
+      "subject": "What Really Matters About IT",
+      "synopsis": "hello world",
+      "url": "https://trevecca.edu",
+      "date": "2020-07-30",
+      "user": "Tasha",
+      "id": 10
+    },
+    {
+      "userId": 7,
+      "title": "RE: Critique Me!",
+      "subject": "What Really Matters About IT",
+      "synopsis": "hi",
+      "url": "https://google.com",
+      "date": "2020-07-30",
+      "user": "Tasha",
+      "id": 11
     }
   ],
   "notes": [
     {
       "notes": "Practice REACT",
       "date": "2020-07-07",
+      "resourceId": 1,
+      "activeUserId": 1,
+      "id": 1
+    },
+     {
+      "notes": "Practice REACT",
+      "date": "2020-07-07",
+      "resourceId": 2,
+      "activeUserId": 2,
+      "id": 2
+    },
+    {
+      "notes": "Practice REACT",
+      "date": "2020-07-07",
+      "resourceId": 3,
+      "activeUserId": 3,
+      "id": 3
+    },
+    {
+      "notes": "Practice REACT",
+      "date": "2020-07-07",
       "resourceId": 4,
       "activeUserId": 4,
       "id": 4
+    },
+    {
+      "notes": "Practice REACT",
+      "date": "2020-07-07",
+      "resourceId": 5,
+      "activeUserId": 5,
+      "id": 5
     }
   ],
   "subjects": [

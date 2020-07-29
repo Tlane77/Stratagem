@@ -24,7 +24,7 @@ const ResourceCard = (props) => {
           <span className="card-resourceName">{props.resource.synopsis}</span>
         </p>
         <p>Url:{" "} </p>
-        <ExternalLink href= "google.com" />
+        <ExternalLink href={`${props.resource.url}`} />
 
         <p>
           Date: <span className="card-resourceName">{props.resource.date}</span>

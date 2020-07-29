@@ -3,7 +3,7 @@ import { Form, Button, Row, Col, } from "react-bootstrap";
 import "./ResourceForm.css";
 import ResourceManager from "../Modules/ResourceManager"
 import { withRouter } from "react-router-dom"
-import { ExternalLink } from "react-external-link";
+
 const ResourceForm = props => {
     const [resource, setResource] = useState({ userId:parseInt(sessionStorage.activeUserId), title:"", subject:"", synopsis:"", url:"", date: "", user: sessionStorage.activeUser})
   const [isLoading, setIsLoading] = useState("")
@@ -19,11 +19,19 @@ const ResourceForm = props => {
     evt.preventDefault();
     if (resource.title === "" || resource.subject === "" || resource.synopsis === "" || resource.url === "" || resource.date === "") {
       window.alert("Please Fill in Fields");
-    } else {
+    
+     
+  } else {
+      if (resource.url.substring(0, 8) !== "https://") {
+    // const stateToChange = { ...resource };
+    resource.url = `https://${resource.url}`
+    // setResource(stateToChange);
+  }
       setIsLoading(true);
       // Create the resource and redirect user to resource list
       ResourceManager.Post(resource)
         .then(() => props.history.push("/Resources"));
+  
     }
   };
 
