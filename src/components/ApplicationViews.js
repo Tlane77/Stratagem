@@ -5,8 +5,8 @@ import Registration from "./auth/registration";
 import Login from "./auth/login";
 // import Posts from "./Posts";
 // import Notes from "./Notes/NoteList"
-
-import Resources from "./Resources/Resources"
+import ResourceList from "./Resources/ResourceList"
+// import Resources from "./Resources/Resources"
 // import Notes from "./Notes"
 
 // import ResourceForm from "../components/Resources/ResourceForm";
@@ -67,10 +67,10 @@ const ApplicationViews = (props) => {
       {/* Resources */}
        <Route
         exact
-        path="/Resources"
+        path="/ResourceList"
         render={(props) => {
           if (hasUser) {
-            return <Resources {...props} />;
+            return <ResourceList {...props} />;
           } else {
             return <Redirect exact to="/" />;
           }

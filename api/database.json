@@ -21,7 +21,7 @@
     {
       "userName": "Faith",
       "email": "faith@live.com",
-      "password": "icecream",
+      "password": "hello",
       "id": 4
     },
     {
@@ -45,7 +45,7 @@
     {
       "email": "Gavin@live.com",
       "userName": "Gavin@live.com",
-      "password": "bieber",
+      "password": "test",
       "id": 8
     },
     {
@@ -65,6 +65,12 @@
       "userName": "Peter",
       "password": "paul",
       "id": 11
+    },
+    {
+      "email": "happy@live.com",
+      "userName": "Happy",
+      "password": "green",
+      "id": 12
     }
   ],
   "resources": [
@@ -73,7 +79,7 @@
       "userId": 1,
       "url": "www.google.com",
       "title": "React for Dummies",
-      "subjectId": "REACT",
+      "subject": "REACT",
       "synopsis": "Thriving in Chaos",
       "timestamp": "05/01/20"
     },
@@ -117,7 +123,7 @@
       "id": 1
     },
     {
-      "notes": "Practice FLEXBOX",
+      "notes": "Practice Flex-box",
       "date": "2020-07-07",
       "resourceId": 2,
       "activeUserId": 2,

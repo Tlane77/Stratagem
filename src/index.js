@@ -11,6 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 ReactDOM.render(
   <Router>
     <Stratagem />
+   
   </Router>,
   document.getElementById("root")
 );

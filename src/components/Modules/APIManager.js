@@ -23,6 +23,14 @@ export default {
   GetAllNotes(str) {
     return fetch(`${remoteURL}${str}?_expand=user`).then((res) => res.json());
   },
+  GetUsersResources(str) {
+    return fetch(
+      `${remoteURL}${str}?activeUserId=${sessionStorage.resourceId}&_expand=user`
+    ).then((res) => res.json());
+  },
+  GetAllResources(str) {
+    return fetch(`${remoteURL}${str}?_expand=user`).then((res) => res.json());
+  },
 
   Push(str, obj) {
     return fetch(`${remoteURL}${str}`, {
@@ -77,20 +85,20 @@ export default {
   //   noteQuery = sortString;
   // },
 
-  ////MeetUPs Stretch Goal
+  ////Resources
 
-  //   delete(id) {
-  //     return fetch(`${remoteURL}events/${id}`, {
-  //       method: "DELETE",
-  //     });
-  //   },
-  //   edit(id) {
-  //     return fetch(`${remoteURL}events/${id}`, {
-  //       method: "EDIT",
-  //     });
-  //   },
+    
   PostNotes(obj) {
     return fetch(`http://localhost:8088/notes/`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(obj),
+    });
+  },
+  PostResources(obj) {
+    return fetch(`http://localhost:8088/resources/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

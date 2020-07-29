@@ -2,18 +2,10 @@ import React, { useState, useEffect } from "react";
 import ApplicationViews from "../components/ApplicationViews";
 // import APIManager from "../components/Modules/APIManager";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import Notes from "../components/Notes/NoteList"
 
 
 const Stratagem = (props) => {
-  // useEffect(() => {
-  //   APIManager.GetUsersNotes("notes").then((response) => {
-  //     console.log(response);
-  //     APIManager.SortingByNotes(response);
-  //   });
-  // }, []);
-
-  // console.log("yes tacos")
+  
   const isAuthenticated = () => {
     if (
       sessionStorage.getItem("activeUser") !== null ||
@@ -27,7 +19,7 @@ const Stratagem = (props) => {
   // const isAuthenticated=true
   const [hasUser, setHasUser] = useState(isAuthenticated());
   const setUser = (user) => {
-    sessionStorage.setItem("activeUserID", JSON.stringify(user.userId));
+    sessionStorage.setItem("activeUserId", JSON.stringify(user.userId));
     sessionStorage.setItem("activeUser", user.userName);
     setHasUser(isAuthenticated());
     console.log(hasUser);
@@ -38,6 +30,9 @@ const Stratagem = (props) => {
 
   return (
     <>
+      <div>
+        
+      </div>
       {/* <ApplicationViews {...props}/> */}
       <ApplicationViews setUser={setUser} hasUser={hasUser} />
     </>

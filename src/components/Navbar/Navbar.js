@@ -68,7 +68,7 @@ const NavBar = (props) => {
           </li> */}
 
           <li>
-            <NavLink className="nav-link" exact to="/" onClick={handleLogout}>
+            <NavLink className="nav-link" exact to="/Login" onClick={handleLogout}>
               {" "}
               Logout{" "}
             </NavLink>

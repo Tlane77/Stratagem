@@ -1,86 +1,62 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, } from "react-bootstrap";
-import APIManager from "../Modules/APIManager";
-import ResourceCard from "../Resources/ResourceCard";
-import ResourceForm from "../Resources/ResourceForm";
+// import { Container, Row, } from "react-bootstrap";
+import ResourceManager from "../Modules/ResourceManager";
+import ResourceCard from "./ResourceCard"
+// import ResourceForm from "./ResourceForm"
+
+// import ResourceForm from "../Resources/ResourceForm";
 import "./ResourceList.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import NoteList from "../Notes/NoteList"
 
 
-
 const ResourceList = (props) => {
+  // The initial state is an empty array
   const [resources, setResources] = useState([]);
-  const [resource, setResource] = useState({
-    userId: parseInt(sessionStorage.activeUserID),
-    title: "",
-    synopsis: "",
-    url: "",
-    date: Date.now(),
-    note: "",
-    user: sessionStorage.activeUser,
-  });
+
   const getResources = () => {
-    return APIManager.GetAllSort("resources").then((resourcesFromAPI) => {
+    // After the data comes back from the API, we
+    //  use the setResources function to update state
+    return ResourceManager.GetAllResources().then(resourcesFromAPI => {
       setResources(resourcesFromAPI);
     });
   };
-
   const deleteResource = (id) => {
-    APIManager.Delete("resources", id).then(() =>
-      APIManager.GetAllSort("resources").then((response) => setResources(response))
+    ResourceManager.delete(id).then(() =>
+      ResourceManager.GetAllResources().then(setResources)
     );
   };
 
-  const clearInputs = () => {
-     document.getElementById("title").value = "";
-     document.getElementById("synopsis").value = "";
-     document.getElementById("subject").value = "";
-    document.getElementById("date").value = "";
-    document.getElementById("note").value = "";
-     document.getElementById("url").value = "";
-  };
 
-  const ConstructNewResource = (resource) => {
-    if (resource.title === "" || resource.synopsis === "" || resource.subject === "" ||resource.date === "" || resource.url === "") {
-      alert("Please complete all fields.");
-    } else {
-      APIManager.Push("resources", resource)
-        .then(() => APIManager.GetAllSort("resources"))
-        .then(() => getResources());
-      clearInputs();
-    }
-  };
-
+  // got the Resources from the API on the component's first render
   useEffect(() => {
     getResources();
   }, []);
-
   
-  ///
+  // Finally we use map() to "loop over" the Resources array to show a list of Resource cards
   return (
-    <Container className="ResourceListContainer">
-      {/* Changeable dashboard in this  Col */}
-      <Row className="resourceDashboard">
-        <ResourceForm construct={ConstructNewResource} />
-      </Row>
-      <Row className="dashboardResourceCard">
-        {resources.map((resource) => (
-          <ResourceCard
-            key={resource.id}
-            resources={resource}
-            deleteResource={deleteResource}
-            {...props}
-          />
-          
-          
-        ))}
-      </Row>
-    </Container>
-
-    
-
+    <div className="container-cards">
+      {/* //add this button above your display of Resource cards */}
+      <section className="section-content">
+        <button
+          type="button"
+          className="btn"
+          onClick={() => {
+            props.history.push("/resources/new");
+          }}
+        >
+          ADD Resource
+        </button>
+      </section>
+       {resources.map((resource) => (
+        <ResourceCard
+          key={resource.id}
+          resource={resource}
+          deleteResource={deleteResource}
+          {...props}
+        />
+      ))} 
+    </div>
   );
 };
-
 export default ResourceList;
