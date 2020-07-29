@@ -6,6 +6,7 @@ import Pagination from "../Pagination";
 import Posts from "../Posts"
 import NoteBar from "../Notes/NoteBar"
 import ResourceForm from "../Resources/ResourceForm"
+import Navbar from "../Navbar/Navbar"
 
 // import NotesList from "../Notes/NoteList"
 
@@ -55,7 +56,9 @@ const Resources = (props) => {
         </div>
             <div>
                 <NoteBar />
-                <ResourceForm />
+          <ResourceForm />
+          <Navbar />
+          <Posts />
                 
         </div>
       </>

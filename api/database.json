@@ -75,35 +75,6 @@
   ],
   "resources": [
     {
-      "id": 1,
-      "userId": 1,
-      "url": "www.google.com",
-      "title": "React for Dummies",
-      "subject": "REACT",
-      "synopsis": "Thriving in Chaos",
-      "timestamp": "05/01/20"
-    },
-    {
-      "id": 2,
-      "userId": 2,
-      "noteId": 2,
-      "url": "www.google.com",
-      "title": "How to Chase a Curly Bracket",
-      "subject": "Debugging",
-      "synopsis": "The Art of Chasing",
-      "timestamp": "07/02/20"
-    },
-    {
-      "id": 3,
-      "userId": 3,
-      "noteId": 3,
-      "url": "www.google.com",
-      "title": "How to Build a React App",
-      "subject": "REACT",
-      "synopsis": "Where do Hooks come from?",
-      "timestamp": "03/03/20"
-    },
-    {
       "id": 4,
       "userId": 4,
       "noteId": 4,
@@ -112,30 +83,39 @@
       "subject": "JAVA",
       "synopsis": "Hold on to your hats!",
       "timestamp": "04/01/24"
+    },
+    {
+      "userId": 7,
+      "title": "RE: Portfolio Presentation",
+      "subject": "What Really Matters About IT",
+      "synopsis": "hello",
+      "url": "https://ng.cengage.com/static/nbreader/ui/apps/nbreader/nbreader.html#!&tocId=5911c9bbe4b03a662e5bb89d?activity.id=589383185&timestamp=1567883406598",
+      "date": "2020-07-30",
+      "user": "Tasha",
+      "id": 5
+    },
+    {
+      "userId": 7,
+      "title": "RE: Portfolio Presentation",
+      "subject": "What Really Matters About IT",
+      "synopsis": "hello world",
+      "url": "github.com",
+      "date": "2020-08-07",
+      "user": "Tasha",
+      "id": 6
+    },
+    {
+      "userId": 7,
+      "title": "RE: Portfolio Presentation",
+      "subject": "What Really Matters About IT",
+      "synopsis": "Hello World I Run Google!!",
+      "url": "https://ng.cengage.com/static/nbreader/ui/apps/nbreader/nbreader.html#!&tocId=5911c9bbe4b03a662e5bb89d?activity.id=589383185&timestamp=1567883406598",
+      "date": "2020-07-30",
+      "user": "Tasha",
+      "id": 7
     }
   ],
   "notes": [
-    {
-      "notes": "Practice Recurrent Neural Networks",
-      "date": "2020-07-07",
-      "resourceId": 1,
-      "activeUserId": 1,
-      "id": 1
-    },
-    {
-      "notes": "Practice Flex-box",
-      "date": "2020-07-07",
-      "resourceId": 2,
-      "activeUserId": 2,
-      "id": 2
-    },
-    {
-      "notes": "Practice CRUD",
-      "date": "2020-07-07",
-      "resourceId": 3,
-      "activeUserId": 3,
-      "id": 3
-    },
     {
       "notes": "Practice REACT",
       "date": "2020-07-07",

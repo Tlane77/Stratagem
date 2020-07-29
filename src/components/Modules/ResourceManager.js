@@ -1,4 +1,4 @@
-const remoteURL = "http://localhost:8088/";
+const remoteURL = "http://localhost:8088/"
 
 let resourceQuery = ``;
 
@@ -67,13 +67,14 @@ export default {
     });
   },
 
-  PostResources(obj) {
-    return fetch(`http://localhost:8088/resources/`, {
+  Post(newResource) {
+    return fetch(`${remoteURL}resources`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(obj),
-    });
-  },
+        body: JSON.stringify(newResource)
+      
+    }).then(data => data.json())
+  }
 };

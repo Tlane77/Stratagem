@@ -1,7 +1,9 @@
 import React from "react";
-// import { Container, Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "./ResourceCard.css";
 import { Link } from "react-router-dom";
+import { CardLink } from "reactstrap";
+import { ExternalLink } from "react-external-link";
 
 
 
@@ -21,9 +23,11 @@ const ResourceCard = (props) => {
           Notes:{" "}
           <span className="card-resourceName">{props.resource.synopsis}</span>
         </p>
+        <p>Url:{" "} </p>
+        <ExternalLink href= "google.com" />
+
         <p>
-          Date:{" "}
-          <span className="card-resourceName">{props.resource.timestamp}</span>
+          Date: <span className="card-resourceName">{props.resource.date}</span>
         </p>
         <button
           type="button"
@@ -40,9 +44,9 @@ const ResourceCard = (props) => {
         >
           Discharge
         </button>
-        <Link to={`/resources/${props.resource.id}`}>
+        {/* <Link to={`/resources/${props.resource.id}`}>
           <button>Notes</button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
