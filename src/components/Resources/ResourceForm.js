@@ -1,21 +1,41 @@
 import React, { useState } from 'react';
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Button, Row, Col, } from "react-bootstrap";
 import "./ResourceForm.css";
+import ResourceManager from "../Modules/ResourceManager"
+import { withRouter } from "react-router-dom"
 
 const ResourceForm = props => {
-    const [Resource, setResource] = useState({ userId:parseInt(sessionStorage.activeUserID), title:"", subject:"", synopsis:"", url:"", date: Date.now(), user: sessionStorage.activeUser})
-    let money=props.construct;
+    const [resource, setResource] = useState({ userId:parseInt(sessionStorage.activeUserId), title:"", subject:"", synopsis:"", url:"", date: "", user: sessionStorage.activeUser})
+  const [isLoading, setIsLoading] = useState("")
 
     const handleFieldChange = evt => {
-        const stateToChange = { ...Resource };
+        const stateToChange = { ...resource };
         stateToChange[evt.target.id] = evt.target.value;
         setResource(stateToChange)
     }
-
-    const ConstructNewsResource = () => {
-        money(Resource)
+  /*  Local method for validation, set loadingStatus, create resource      object, invoke the ResourceManager post method, and redirect to the full resource list
+  */
+  const constructNewResource = evt => {
+    evt.preventDefault();
+    if (resource.title === "" || resource.subject === "" || resource.synopsis === "" || resource.url === "" || resource.date === "") {
+      window.alert("Please Fill in Fields");
+    
+     
+  } else {
+      if (resource.url.substring(0, 8) !== "https://") {
+    // const stateToChange = { ...resource };
+    resource.url = `https://${resource.url}`
+    // setResource(stateToChange);
+  }
+      setIsLoading(true);
+      // Create the resource and redirect user to resource list
+      ResourceManager.Post(resource)
+        .then(() => props.history.push("/Resources"));
+  
     }
-       
+  };
+
+    
     
 
     return (
@@ -26,10 +46,11 @@ const ResourceForm = props => {
               <Form.Label className="ResourceFormLbl">Title</Form.Label>
               <Form.Control
                 className="ResourceFormCtl"
-                onChange={handleFieldChange}
                 type="text"
+                onChange={handleFieldChange}
                 placeholder="Enter Title"
               />
+              <label htmlFor="title">Title</label>
             </Form.Group>
           </Col>
           <Col className="ResourceFormCol">
@@ -80,8 +101,9 @@ const ResourceForm = props => {
         <Button
           className="ResourceFormButton"
           variant="custom"
-          onClick={ConstructNewsResource}
-          type="submit"
+          type="button"
+          disabled={isLoading}
+          onClick={constructNewResource}
         >
           Submit
         </Button>
@@ -89,4 +111,4 @@ const ResourceForm = props => {
     );
 }
 
-export default ResourceForm;
+export default withRouter(ResourceForm);

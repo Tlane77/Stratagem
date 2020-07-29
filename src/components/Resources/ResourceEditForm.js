@@ -27,7 +27,7 @@ const ResourceEditForm = (props) => {
 
     // This is an edit, so we need the id
     const editedResource = {
-      id: props.match.params.animalId,
+      id: props.match.params.resourceId,
       title: resource.title,
       subject: resource.subject,
       synopsis: resource.synopsis,

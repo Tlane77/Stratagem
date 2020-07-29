@@ -26,7 +26,7 @@ const NavBar = (props) => {
                 color: "#66b3ff",
               }}
             >
-              Dashboard
+              Stratagem
             </NavLink>
           </li>
           <li>

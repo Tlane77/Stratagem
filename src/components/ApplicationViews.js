@@ -6,10 +6,10 @@ import Login from "./auth/login";
 // import Posts from "./Posts";
 // import Notes from "./Notes/NoteList"
 import ResourceList from "./Resources/ResourceList"
-// import Resources from "./Resources/Resources"
+import Resources from "./Resources/Resources"
 // import Notes from "./Notes"
 
-// import ResourceForm from "../components/Resources/ResourceForm";
+import ResourceForm from "../components/Resources/ResourceForm";
 // import NoteList from "../components/Notes/NoteList"
 
 
@@ -46,13 +46,13 @@ const ApplicationViews = (props) => {
         path="/Dashboard"
         render={(props) => {
           if (hasUser) {
-            return <Dashboard  {...props} />;
+            return <Dashboard {...props} />;
           } else {
             return <Redirect exact to="/" />;
           }
         }}
       />
-       {/* <Route
+      {/* <Route
         exact
         path="/Notes"
         render={(props) => {
@@ -65,9 +65,9 @@ const ApplicationViews = (props) => {
       />   */}
 
       {/* Resources */}
-       <Route
+      <Route
         exact
-        path="/ResourceList"
+        path="/Resources"
         render={(props) => {
           if (hasUser) {
             return <ResourceList {...props} />;
@@ -75,7 +75,28 @@ const ApplicationViews = (props) => {
             return <Redirect exact to="/" />;
           }
         }}
-      /> 
+      />
+      {/* Resources */}
+      <Route exact
+        path="/resources/new"
+        render={(props) => {
+          
+            return <ResourceForm {...props} />;
+          
+        }}
+      />
+      {/* Resources */}
+      {/* <Route
+        exact
+        path="/Resources"
+        render={(props) => {
+          if (hasUser) {
+            return <Resources {...props} />;
+          } else {
+            return <Redirect exact to="/Resources" />;
+          }
+        }}
+      /> */}
       {/* <Route
         exact
         path="/Subjects"

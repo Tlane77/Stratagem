@@ -37,100 +37,141 @@
       "id": 6
     },
     {
-      "email": "Tasha@live.com",
       "userName": "Tasha",
+      "email": "Tasha@live.com",
       "password": "clover",
       "id": 7
     },
     {
+      "userName": "Gavin",
       "email": "Gavin@live.com",
-      "userName": "Gavin@live.com",
       "password": "test",
       "id": 8
     },
     {
-      "email": "zac@live.com",
       "userName": "Zac",
+      "email": "zac@live.com",
       "password": "tiger",
       "id": 9
     },
     {
-      "email": "erik@live.com",
       "userName": "Erik",
+      "email": "erik@live.com",
       "password": "frog",
       "id": 10
     },
     {
-      "email": "peter@live.com",
       "userName": "Peter",
+      "email": "peter@live.com",
       "password": "paul",
       "id": 11
     },
     {
-      "email": "happy@live.com",
       "userName": "Happy",
+      "email": "happy@live.com",
       "password": "green",
       "id": 12
     }
   ],
   "resources": [
     {
-      "id": 1,
-      "userId": 1,
-      "url": "www.google.com",
-      "title": "React for Dummies",
-      "subject": "REACT",
-      "synopsis": "Thriving in Chaos",
-      "timestamp": "05/01/20"
-    },
-    {
-      "id": 2,
-      "userId": 2,
-      "noteId": 2,
-      "url": "www.google.com",
-      "title": "How to Chase a Curly Bracket",
-      "subject": "Debugging",
-      "synopsis": "The Art of Chasing",
-      "timestamp": "07/02/20"
-    },
-    {
-      "id": 3,
-      "userId": 3,
-      "noteId": 3,
-      "url": "www.google.com",
-      "title": "How to Build a React App",
-      "subject": "REACT",
-      "synopsis": "Where do Hooks come from?",
-      "timestamp": "03/03/20"
-    },
-    {
       "id": 4,
       "userId": 4,
       "noteId": 4,
-      "url": "www.google.com",
+      "url": "https://google.com",
       "title": "JavaScript on Fire",
       "subject": "JAVA",
       "synopsis": "Hold on to your hats!",
       "timestamp": "04/01/24"
+    },
+    {
+      "userId": 7,
+      "title": "RE: Portfolio Presentation",
+      "subject": "What Really Matters About IT",
+      "synopsis": "hello",
+      "url": "https://ng.cengage.com/static/nbreader/ui/apps/nbreader/nbreader.html#!&tocId=5911c9bbe4b03a662e5bb89d?activity.id=589383185&timestamp=1567883406598",
+      "date": "2020-07-30",
+      "user": "Tasha",
+      "id": 5
+    },
+    {
+      "userId": 7,
+      "title": "RE: Portfolio Presentation",
+      "subject": "What Really Matters About IT",
+      "synopsis": "hello world",
+      "url": "https://github.com",
+      "date": "2020-08-07",
+      "user": "Tasha",
+      "id": 6
+    },
+    {
+      "userId": 7,
+      "title": "RE: Portfolio Presentation",
+      "subject": "What Really Matters About IT",
+      "synopsis": "Hello World I Run Google!!",
+      "url": "https://ng.cengage.com/static/nbreader/ui/apps/nbreader/nbreader.html#!&tocId=5911c9bbe4b03a662e5bb89d?activity.id=589383185&timestamp=1567883406598",
+      "date": "2020-07-30",
+      "user": "Tasha",
+      "id": 7
+    },
+    {
+      "userId": 7,
+      "title": "RE: Portfolio Presentation",
+      "subject": "What Really Matters About IT",
+      "synopsis": "hello",
+      "url": "https://google.com",
+      "date": "2020-07-30",
+      "user": "Tasha",
+      "id": 8
+    },
+    {
+      "userId": 7,
+      "title": "RE: Critique Me!",
+      "subject": "What Really Matters About IT",
+      "synopsis": "hello world",
+      "url": "https://github.com",
+      "date": "2020-07-30",
+      "user": "Tasha",
+      "id": 9
+    },
+    {
+      "userId": 7,
+      "title": "RE: Portfolio Presentation",
+      "subject": "What Really Matters About IT",
+      "synopsis": "hello world",
+      "url": "https://trevecca.edu",
+      "date": "2020-07-30",
+      "user": "Tasha",
+      "id": 10
+    },
+    {
+      "userId": 7,
+      "title": "RE: Critique Me!",
+      "subject": "What Really Matters About IT",
+      "synopsis": "hi",
+      "url": "https://google.com",
+      "date": "2020-07-30",
+      "user": "Tasha",
+      "id": 11
     }
   ],
   "notes": [
     {
-      "notes": "Practice Recurrent Neural Networks",
+      "notes": "Practice REACT",
       "date": "2020-07-07",
       "resourceId": 1,
       "activeUserId": 1,
       "id": 1
     },
-    {
-      "notes": "Practice Flex-box",
+     {
+      "notes": "Practice REACT",
       "date": "2020-07-07",
       "resourceId": 2,
       "activeUserId": 2,
       "id": 2
     },
     {
-      "notes": "Practice CRUD",
+      "notes": "Practice REACT",
       "date": "2020-07-07",
       "resourceId": 3,
       "activeUserId": 3,
@@ -142,6 +183,13 @@
       "resourceId": 4,
       "activeUserId": 4,
       "id": 4
+    },
+    {
+      "notes": "Practice REACT",
+      "date": "2020-07-07",
+      "resourceId": 5,
+      "activeUserId": 5,
+      "id": 5
     }
   ],
   "subjects": [
