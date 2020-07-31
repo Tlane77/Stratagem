@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import NoteManager from "../../modules/NoteManager";
+import NoteManager from "../Modules/NoteManager";
 import ResourceCard from "./ResourceCard";
 
 const ResourceWithNote = (props) => {

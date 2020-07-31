@@ -23,8 +23,19 @@ const ResourceList = (props) => {
   };
 ///Adding a Search Funtion to Resource Card
   
-   const [subjects, setSubjects] = useState([]);
-  const [loading, setLoading] = useState(false);
+   
+
+const [search, setSearch] = useState({field: "" });
+
+const handleFieldChange = (evt) => {
+  const stateToChange = { ...search };
+
+  stateToChange[evt.target.id] = evt.target.value;
+  setSearch(stateToChange);
+};
+
+
+
 
   //   useEffect(() => {
   //   setLoading(true);
@@ -64,7 +75,7 @@ const ResourceList = (props) => {
         </button>
       </section>
       <div class="searchSub">
-        <input type="text" placeholder="Search.."></input>
+        <input type="text" placeholder="Search.." value={search.field} id="field" onChange={handleFieldChange}></input>
       </div>
       
 

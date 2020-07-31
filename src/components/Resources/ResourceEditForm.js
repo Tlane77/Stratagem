@@ -69,14 +69,20 @@ const ResourceEditForm = (props) => {
               value={resource.title}
             />
             <label htmlFor="subject">Subject</label>
-            <input
-              type="text"
+            <select
               required
               className="form-control"
               onChange={handleFieldChange}
-              id="subject"
-              value={resource.subject}
-            />
+              id="subjectId"
+              value={resource.subjectId}
+            >
+              <option value="1">Java</option>
+              <option value="2">Javascript</option>
+              <option value="3">PHP</option>
+              <option value="4">C#</option>
+              <option value="5">Ruby</option>
+            </select>
+
             <label htmlFor="synopsis">Synopsis</label>
             <input
               type="text"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState }from "react";
 import "../Dashboard/dashboard.css";
 import Navbar from "../Navbar/Navbar";
 
@@ -8,8 +8,15 @@ const Dashboard = (props) => {
     localStorage.clear();
     props.history.push("/Login");
   };
+  // const [search, setSearch] = useState({field:""})
 
- 
+  // const handleFieldChange = evt => {
+  //   const stateToChange = { ...search };
+
+  //   stateToChange[evt.target.id] = evt.target.value;
+  //   setSearch(stateToChange);
+
+  // };
 
   return (
 
