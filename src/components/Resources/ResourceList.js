@@ -74,7 +74,7 @@ const handleFieldChange = (evt) => {
           ADD Resource
         </button>
       </section>
-      <div class="searchSub">
+      <div className="searchSub">
         <input type="text" placeholder="Search.." value={search.field} id="field" onChange={handleFieldChange}></input>
       </div>
       

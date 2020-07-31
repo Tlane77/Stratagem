@@ -65,13 +65,20 @@ const ResourceForm = (props) => {
         </Col>
         <Col className="ResourceFormCol">
           <Form.Group className="ResourceFormGrp" controlId="subjectId">
-            <Form.Label className="ResourceFormLbl">Subject</Form.Label>
-            <Form.Control
-              className="ResourceFormCtl"
+            <label htmlFor="subject">Subject</label>
+            <select
+              required
+              className="form-control"
               onChange={handleFieldChange}
-              type="text"
-              placeholder="Enter Subject"
-            />
+              id="subjectId"
+              value={resource.subjectId}
+            >
+              <option value="1">Java</option>
+              <option value="2">Javascript</option>
+              <option value="3">PHP</option>
+              <option value="4">C#</option>
+              <option value="5">Ruby</option>
+            </select>
           </Form.Group>
         </Col>
         <Col className="ResourceFormCol">
