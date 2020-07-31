@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from "react";
-import ResourceManager from "../../Modules/ResourceManager";
+import React, { useState } from "react";
+import ResourceManager from "../Modules/ResourceManager";
 import "./ResourceForm.css";
-import NoteManager from "../../Modules/NoteManager";
+
 
 
 const ResourceEditForm = (props) => {
   const [resource, setResource] = useState({
     title: "",
-    subject: "",
+    subjectId: "",
     synopsis: "",
+    url:"",
     date: "",
-    noteId: "",
+   
   });
-  const [notes, setNote] = useState([]);
+//   const [notes, setNote] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFieldChange = (evt) => {
@@ -29,10 +30,11 @@ const ResourceEditForm = (props) => {
     const editedResource = {
       id: props.match.params.resourceId,
       title: resource.title,
-      subject: resource.subject,
+      subjectId: resource.subject,
       synopsis: resource.synopsis,
+      url: resource.url,
       date: resource.date,
-      noteId: resource.noteId,
+      
     };
 
     ResourceManager.update(editedResource).then(() =>
@@ -40,41 +42,42 @@ const ResourceEditForm = (props) => {
     );
   };
 
-  useEffect(() => {
-    ResourceManager.get(props.match.params.resourceId).then((resource) => {
-      NoteManager.getAll().then((notes) => {
-        console.log("note response", notes);
-        setNote(notes);
-        setResource(resource);
-        setIsLoading(false);
-      });
-    });
-  }, [props.match.params.resourceId]);
+//   useEffect(() => {
+//     ResourceManager.get("resources", props.match.params.useResourceId).then((resource) => {
+//       NoteManager.getAll().then((notes) => {
+//         console.log("note response", notes);
+//         setNote(note);
+//         setResource(resource);
+//         setIsLoading(false);
+//       });
+//     });
+//   }, [props.match.params.useResourceId]);
+    
 
   return (
     <>
       <form>
         <fieldset>
           <div className="form-grid">
+            <label htmlFor="title">Title</label>
             <input
               type="text"
               required
               className="form-control"
               onChange={handleFieldChange}
               id="title"
-              value={resource.name}
+              value={resource.title}
             />
-            <label htmlFor="title">Resource Title</label>
-
+            <label htmlFor="subject">Subject</label>
             <input
               type="text"
               required
               className="form-control"
               onChange={handleFieldChange}
-              id="synopsis"
-              value={resource.title}
+              id="subject"
+              value={resource.subject}
             />
-            <label htmlFor="Synopsis">Details</label>
+            <label htmlFor="synopsis">Synopsis</label>
             <input
               type="text"
               required
@@ -83,10 +86,36 @@ const ResourceEditForm = (props) => {
               id="synopsis"
               value={resource.synopsis}
             />
-            <label htmlFor="Subject">Subject</label>
+            <label htmlFor="Url">url</label>
+            <input
+              type="text"
+              required
+              className="form-control"
+              onChange={handleFieldChange}
+              id="url"
+              value={resource.url}
+            />
+            <label htmlFor="date">Date</label>
+            <input
+              type="date"
+              required
+              className="form-control"
+              onChange={handleFieldChange}
+              id="date"
+              value={resource.date}
+            />
+            {/* <label htmlFor="note"> ADD Note</label>
+            <input
+              type="text"
+              required
+              className="form-control"
+              onChange={handleFieldChange}
+              id="note"
+              value={note.resourceId}
+            /> */}
           </div>
 
-          <select
+          {/* <select
             className="form-control"
             id="noteId"
             value={notes.noteId}
@@ -98,7 +127,7 @@ const ResourceEditForm = (props) => {
               </option>
             ))}
           </select>
-          <label htmlFor="noteId">Note</label>
+          <label htmlFor="noteId">Note</label> */}
           <div className="alignRight">
             <button
               type="button"

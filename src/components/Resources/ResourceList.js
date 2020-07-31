@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from "react";
-// import { Container, Row, } from "react-bootstrap";
 import ResourceManager from "../Modules/ResourceManager";
-import ResourceCard from "./ResourceCard"
+import ResourceCard from "./ResourceCard";
 import "./ResourceList.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { withRouter } from "react-router-dom";
-import ResourceForm from "../Resources/ResourceForm";
-// import NoteList from "../Notes/NoteList"
-
 
 const ResourceList = (props) => {
   // The initial state is an empty array
@@ -16,27 +12,25 @@ const ResourceList = (props) => {
   const getResources = () => {
     // After the data comes back from the API, we
     //  use the setResources function to update state
-    return ResourceManager.GetAllResources().then(resourcesFromAPI => {
+    return ResourceManager.getAllResources().then((resourcesFromAPI) => {
       setResources(resourcesFromAPI);
     });
   };
   const deleteResource = (id) => {
     ResourceManager.delete(id).then(() =>
-      ResourceManager.GetAllResources().then(setResources)
+      ResourceManager.getAllResources().then(setResources)
     );
   };
-
 
   // got the Resources from the API on the component's first render
   useEffect(() => {
     console.log("history", props.history);
     getResources();
-  }, []);
-  
+  }, [props.history]);
+
   // Finally we use map() to "loop over" the Resources array to show a list of Resource cards
   return (
     <>
-  
       {/* //add this button above your display of Resource cards */}
       <section className="section-content">
         <button
@@ -51,14 +45,14 @@ const ResourceList = (props) => {
       </section>
 
       <div className="container-cards">
-        {resources.map(resource => 
+        {resources.map((resource) => (
           <ResourceCard
             key={resource.id}
             resource={resource}
             deleteResource={deleteResource}
             {...props}
           />
-        )}
+        ))}
       </div>
     </>
   );

@@ -21,6 +21,20 @@ const NoteList = (props) => {
   }, []);
 
   return (
+  <>
+     {/* //add this button above your display of Note cards */}
+      <section className="section-content">
+        <button
+          type="button"
+          className="btn"
+          onClick={() => {
+            props.history.push("/notes/new");
+          }}
+        >
+          ADD Resource
+        </button>
+      </section>
+
     <div className="note-container">
       <h2>Note List</h2>
       <NewNote NoteUpdate={noteUpdate} newNotes={props.newNotes} />
@@ -30,7 +44,9 @@ const NoteList = (props) => {
           <NoteCard Note={Note} setNotes={noteUpdate} {...props} />
         ))}
       </div>
-    </div>
+      </div>
+      </>
   );
+    
 };
 export default NoteList;

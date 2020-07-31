@@ -1,10 +1,12 @@
 .resourceFormContainer {
     background-color: #1f3d7a;  
     color: #D3D3D3;
+    font-size: larger;
     margin-bottom: 2rem;;
 }
 
 .ResourceFormButton.btn.btn-custom {
     background-color: #66b3ff;
-    color: #D3D3D3;  
+    color: #D3D3D3; 
+    font-size: larger; 
 }

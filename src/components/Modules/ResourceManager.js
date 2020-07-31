@@ -3,25 +3,25 @@ const remoteURL = "http://localhost:8088/"
 let resourceQuery = ``;
 
 export default {
-  GetAll(str) {
+  getAll(str) {
     return fetch(`${remoteURL}${str}`).then((res) => res.json());
   },
-  GetAllSort(str) {
+  getAllSort(str) {
     console.log(resourceQuery);
     return fetch(`${remoteURL}${str}${resourceQuery}`).then((res) =>
       res.json()
     );
   },
-  Get(str, id) {
+  get(str, id) {
     return fetch(`${remoteURL}${str}/${id}`).then((res) => res.json());
   },
 
-  GetUsersResources(str) {
+  getUsersResources(str) {
     return fetch(
       `${remoteURL}${str}?activeUserId=${sessionStorage.resourceId}&_expand=user`
     ).then((res) => res.json());
   },
-  GetAllResources() {
+  getAllResources() {
     return fetch(`${remoteURL}resources?_expand=user`).then((res) =>
       res.json()
     );
@@ -67,14 +67,14 @@ export default {
     });
   },
 
-  Post(newResource) {
+  post(newResource) {
     return fetch(`${remoteURL}resources`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-        body: JSON.stringify(newResource)
-      
-    }).then(data => data.json())
+      body: JSON.stringify(newResource),
+    }).then((data) => data.json());
   }
+  
 };

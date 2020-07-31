@@ -45,7 +45,7 @@
     {
       "userName": "Gavin",
       "email": "Gavin@live.com",
-      "password": "test",
+      "password": "bieber",
       "id": 8
     },
     {
@@ -75,143 +75,88 @@
   ],
   "resources": [
     {
-      "id": 4,
+      "id": 1,
       "userId": 4,
-      "noteId": 4,
       "url": "https://google.com",
       "title": "JavaScript on Fire",
-      "subject": "JAVA",
+      "subjectId": 1,
       "synopsis": "Hold on to your hats!",
-      "timestamp": "04/01/24"
+      "date": "04/01/24"
     },
     {
-      "userId": 7,
-      "title": "RE: Portfolio Presentation",
-      "subject": "What Really Matters About IT",
-      "synopsis": "hello",
-      "url": "https://ng.cengage.com/static/nbreader/ui/apps/nbreader/nbreader.html#!&tocId=5911c9bbe4b03a662e5bb89d?activity.id=589383185&timestamp=1567883406598",
-      "date": "2020-07-30",
-      "user": "Tasha",
-      "id": 5
-    },
-    {
-      "userId": 7,
-      "title": "RE: Portfolio Presentation",
-      "subject": "What Really Matters About IT",
-      "synopsis": "hello world",
-      "url": "https://github.com",
-      "date": "2020-08-07",
-      "user": "Tasha",
-      "id": 6
-    },
-    {
-      "userId": 7,
-      "title": "RE: Portfolio Presentation",
-      "subject": "What Really Matters About IT",
-      "synopsis": "Hello World I Run Google!!",
-      "url": "https://ng.cengage.com/static/nbreader/ui/apps/nbreader/nbreader.html#!&tocId=5911c9bbe4b03a662e5bb89d?activity.id=589383185&timestamp=1567883406598",
-      "date": "2020-07-30",
-      "user": "Tasha",
-      "id": 7
-    },
-    {
-      "userId": 7,
-      "title": "RE: Portfolio Presentation",
-      "subject": "What Really Matters About IT",
-      "synopsis": "hello",
+      "id": 3,
+      "userId": 4,
       "url": "https://google.com",
-      "date": "2020-07-30",
-      "user": "Tasha",
-      "id": 8
+      "title": "JavaScript on Fire",
+      "subjectId": 1,
+      "synopsis": "Hold on to your hats!",
+      "date": "04/01/24"
     },
     {
-      "userId": 7,
-      "title": "RE: Critique Me!",
-      "subject": "What Really Matters About IT",
-      "synopsis": "hello world",
-      "url": "https://github.com",
-      "date": "2020-07-30",
-      "user": "Tasha",
-      "id": 9
-    },
-    {
-      "userId": 7,
-      "title": "RE: Portfolio Presentation",
-      "subject": "What Really Matters About IT",
-      "synopsis": "hello world",
-      "url": "https://trevecca.edu",
-      "date": "2020-07-30",
-      "user": "Tasha",
-      "id": 10
-    },
-    {
-      "userId": 7,
-      "title": "RE: Critique Me!",
-      "subject": "What Really Matters About IT",
-      "synopsis": "hi",
+      "id": 4,
+      "userId": 4,
       "url": "https://google.com",
-      "date": "2020-07-30",
-      "user": "Tasha",
-      "id": 11
+      "title": "JavaScript on Fire",
+      "subjectId": 1,
+      "synopsis": "Hold on to your hats!",
+      "date": "04/01/24"
+    },
+    {
+      "id": 6,
+      "userId": 4,
+      "url": "https://google.com",
+      "title": "JavaScript on Fire",
+      "subjectId": 1,
+      "synopsis": "Hold on to your hats!",
+      "date": "04/01/24"
     }
   ],
   "notes": [
     {
-      "notes": "Practice REACT",
+      "note": "Practice REACT",
       "date": "2020-07-07",
       "resourceId": 1,
-      "activeUserId": 1,
-      "id": 1
-    },
-     {
-      "notes": "Practice REACT",
-      "date": "2020-07-07",
-      "resourceId": 2,
-      "activeUserId": 2,
-      "id": 2
-    },
-    {
-      "notes": "Practice REACT",
-      "date": "2020-07-07",
-      "resourceId": 3,
-      "activeUserId": 3,
-      "id": 3
-    },
-    {
-      "notes": "Practice REACT",
-      "date": "2020-07-07",
-      "resourceId": 4,
-      "activeUserId": 4,
       "id": 4
     },
     {
-      "notes": "Practice REACT",
+      "note": "Practice REACT",
       "date": "2020-07-07",
-      "resourceId": 5,
-      "activeUserId": 5,
+      "resourceId": 1,
       "id": 5
+    },
+    {
+      "note": "Practice REACT",
+      "date": "2020-07-07",
+      "resourceId": 4,
+      "id": 6
+    },
+    {
+      "note": "Practice REACT",
+      "date": "2020-07-07",
+      "resourceId": 6,
+      "id": 7
     }
   ],
   "subjects": [
     {
       "id": 1,
-      "subjectId": 1
+      "subjectName": "Java"
     },
     {
       "id": 2,
-      "subjectId": 2
+      "subjectName": "Javascript"
     },
     {
       "id": 3,
-      "subjectId": 3
+      "subjectName": "PHP"
     },
     {
       "id": 4,
-      "subjectId": 4
+      "subjectName": "C#"
     },
     {
       "id": 5,
-      "subjectId": 5
+      "subjectName": "Ruby"
     }
   ]
 }

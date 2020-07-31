@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ApplicationViews from "../components/ApplicationViews";
-// import APIManager from "../components/Modules/APIManager";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 const Stratagem = (props) => {
-  
   const isAuthenticated = () => {
     if (
       sessionStorage.getItem("activeUser") !== null ||
@@ -16,7 +13,7 @@ const Stratagem = (props) => {
       return false;
     }
   };
-  // const isAuthenticated=true
+  
   const [hasUser, setHasUser] = useState(isAuthenticated());
   const setUser = (user) => {
     sessionStorage.setItem("activeUserId", JSON.stringify(user.userId));
@@ -26,14 +23,11 @@ const Stratagem = (props) => {
     console.log(user.userName);
   };
 
-  
-
   return (
     <>
-      <div>
-        
-      </div>
-      {/* <ApplicationViews {...props}/> */}
+      {/* <div></div> */}
+      
+
       <ApplicationViews setUser={setUser} hasUser={hasUser} />
     </>
   );

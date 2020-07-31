@@ -1,4 +1,5 @@
 .ResourceListContainer {
     display: flex;
     flex-direction: column;
+    color: #D3D3D3;
 }

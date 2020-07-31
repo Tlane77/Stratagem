@@ -1,11 +1,8 @@
 import React from "react";
-import { Card } from "react-bootstrap";
 import "./ResourceCard.css";
 import { Link } from "react-router-dom";
-import { CardLink } from "reactstrap";
+
 import { ExternalLink } from "react-external-link";
-
-
 
 const ResourceCard = (props) => {
   return (
@@ -20,15 +17,32 @@ const ResourceCard = (props) => {
           <span className="card-resourceName">{props.resource.subject}</span>
         </p>
         <p>
-          Notes:{" "}
+          Synopsis:{" "}
           <span className="card-resourceName">{props.resource.synopsis}</span>
         </p>
-        <p>Url:{" "} </p>
-        <ExternalLink href={`${props.resource.url}`} />
-
+        <p>
+          Url:
+          <ExternalLink href={`${props.resource.url}`} />
+        </p>
         <p>
           Date: <span className="card-resourceName">{props.resource.date}</span>
         </p>
+        {/* <p>
+          Note:{" "}
+          <span className="card-resourceName">{props.resource.resourceId}</span>
+        </p> */}
+        {/* //add this button above your display of Resource cards */}
+        <section className="section-content">
+          <button
+            type="button"
+            className="btn"
+            onClick={() => {
+              props.history.push("/notes/new");
+            }}
+          >
+            ADD NOTE
+          </button>
+        </section>
         <button
           type="button"
           onClick={() =>
@@ -42,7 +56,7 @@ const ResourceCard = (props) => {
           type="button"
           onClick={() => props.deleteResource(props.resource.id)}
         >
-          Discharge
+          Delete
         </button>
         {/* <Link to={`/resources/${props.resource.id}`}>
           <button>Notes</button>

@@ -15,7 +15,9 @@ const NavBar = (props) => {
       <nav className="navBar">
         <ul className="container">
           <Image
-            className="logoNavbarLeft"src={require("../Images/logo3.png")}/>
+            className="logoNavbarLeft"
+            src={require("../Images/logo3.png")}
+          />
           <li>
             <NavLink
               className="nav-link"
@@ -41,11 +43,16 @@ const NavBar = (props) => {
               Resources
             </NavLink>
           </li>
-
           {/* <li>
+            <NavLink className="nav-link" to="/notes">
+              Notes
+            </NavLink>
+          </li> */}
+
+           <li>
             <NavLink
               className="nav-link"
-              to="/Notes"
+              to="/notes"
               disabled
               activeStyle={{
                 color: "#66b3ff",
@@ -54,7 +61,7 @@ const NavBar = (props) => {
               Notes
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               className="nav-link"
               to="/Subjects"
@@ -65,15 +72,21 @@ const NavBar = (props) => {
             >
               Subjects
             </NavLink>
-          </li> */}
+          </li> */} 
 
           <li>
-            <NavLink className="nav-link" exact to="/Login" onClick={handleLogout}>
+            <NavLink
+              className="nav-link"
+              exact
+              to="/Login"
+              onClick={handleLogout}
+            >
               {" "}
               Logout{" "}
             </NavLink>
           </li>
           <Image className="logoNavbar" src={require("../Images/logo1.png")} />
+
         </ul>
       </nav>
     </header>
