@@ -22,10 +22,11 @@ export default {
     ).then((res) => res.json());
   },
   getAllResources() {
-    return fetch(`${remoteURL}resources?_expand=user`).then((res) =>
+    return fetch(`${remoteURL}resources?_expand=user&_expand=subject`).then((res) =>
       res.json()
     );
-  },
+    },
+  
 
   Push(str, obj) {
     return fetch(`${remoteURL}${str}`, {

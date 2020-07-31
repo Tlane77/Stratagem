@@ -5,6 +5,7 @@ import Registration from "./auth/registration";
 import Login from "./auth/login";
 import ResourceList from "./Resources/ResourceList"
 import NoteDetail from "./Notes/NoteDetail";
+import ResourceWithNote from "./Resources/ResourceWithNote"
 
 import ResourceEditForm from "./Resources/ResourceEditForm"
 import ResourceForm from "./Resources/ResourceForm";
@@ -86,6 +87,13 @@ const ApplicationViews = (props) => {
           return <ResourceForm {...props} />;
         }}
       />
+      {/* <Route
+        exact
+        path="/resources/note"
+        render={(props) => {
+          return <ResourceWithNote {...props} />;
+        }}
+      /> */}
       <Route
         exact
         path="/resources/:useResourceId(\d+)/edit"

@@ -21,6 +21,26 @@ const ResourceList = (props) => {
       ResourceManager.getAllResources().then(setResources)
     );
   };
+///Adding a Search Funtion to Resource Card
+  
+   const [subjects, setSubjects] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  //   useEffect(() => {
+  //   setLoading(true);
+  //   .get("(`/resources/${props.resource.subjectId}/add`)")
+  //     .then(res => {
+  //       setSubjects(res.data);
+  //       setLoading(false);
+
+  //     })
+  //     .catch(err => {
+  //       console.log(err);
+  // })
+
+  // }, [])
+  
+
 
   // got the Resources from the API on the component's first render
   useEffect(() => {
@@ -43,7 +63,12 @@ const ResourceList = (props) => {
           ADD Resource
         </button>
       </section>
+      <div class="searchSub">
+        <input type="text" placeholder="Search.."></input>
+      </div>
+      
 
+     
       <div className="container-cards">
         {resources.map((resource) => (
           <ResourceCard

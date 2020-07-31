@@ -1,6 +1,7 @@
 import React from "react";
 import "./ResourceCard.css";
 import { Link } from "react-router-dom";
+import ResourceWithNote from "./ResourceWithNote"
 
 import { ExternalLink } from "react-external-link";
 
@@ -14,7 +15,7 @@ const ResourceCard = (props) => {
         </h3>
         <p>
           Subject:{" "}
-          <span className="card-resourceName">{props.resource.subject}</span>
+          <span className="card-resourceName">{props.resource.subject.subjectName}</span>
         </p>
         <p>
           Synopsis:{" "}

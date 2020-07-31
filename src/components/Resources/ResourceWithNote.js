@@ -7,7 +7,7 @@ const ResourceWithNote = (props) => {
   const [resources, setResources] = useState([]);
 
   useEffect(() => {
-    //got here now make call to get employee with animal
+    //got here now make call to get resource with note
     NoteManager.getWithResources(props.match.params.resourceId).then(
       (APIResult) => {
         setNote(APIResult);
