@@ -2,7 +2,7 @@ import React from "react";
 import "./ResourceCard.css";
 import { Link } from "react-router-dom";
 import NoteList from "../Notes/NoteList";
-import { Button} from "react-bootstrap";
+import { Button,Card} from "react-bootstrap";
 
 
 import { ExternalLink } from "react-external-link";
@@ -20,7 +20,7 @@ const handleOnClickEdit = event => {
 };
 
   return (
-    <div className="card">
+    <div className="Card">
       <div className="card-content">
         <h3>
           Title:{" "}
@@ -53,7 +53,7 @@ const handleOnClickEdit = event => {
         </Button>
 
         <Button
-          type="button"
+          type="Button"
           onClick={() => props.deleteResource(props.resource.id)}
         >
           Delete
@@ -69,7 +69,7 @@ const handleOnClickEdit = event => {
         <section className="section-content">
           <Link to={`notes/new`}>
             <Button
-              type="button"
+              type="Button"
               className="btn"
               id={props.resource.id}
               onClick={handleOnClick}

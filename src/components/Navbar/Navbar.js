@@ -7,7 +7,8 @@ import "./Navbar.css";
 
 const NavBar = (props) => {
   const handleLogout = () => {
-    props.clearUser();
+    window.sessionStorage.clear()
+      props.history.push("/Login")
     ;
   }
   return (

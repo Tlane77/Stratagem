@@ -9,7 +9,7 @@ import NavBar from "../Navbar/Navbar";
 
 const ResourceList = (props) => {
 
-  let clearUser=props.clearUser
+  // let clearUser = props.clearUser;
   // The initial state is an empty array
   const [resources, setResources] = useState([]);
 
@@ -26,7 +26,11 @@ const [filteredResources, setFilteredResources] = useState([]);
   };
   const deleteResource = (id) => {
     ResourceManager.delete(id).then(() =>
-      ResourceManager.getAllResources().then(setResources)
+      ResourceManager.getUsersResources("resources").then((response) => {
+        console.log(response)
+        setResources(response)
+      })
+   
     );
   };
 
@@ -44,12 +48,12 @@ const [filteredResources, setFilteredResources] = useState([]);
           .includes(search.toLowerCase())
       )
     );
-  }, [search, resources]);
+  }, [search,resources]);
 
   // Finally we use map() to "loop over" the Resources array to show a list of Resource cards
   return (
     <>
-      <NavBar {...props} clearUser={clearUser} />
+      <NavBar {...props} clearUser={props.clearUser} />
       {/* //add this button above your display of Resource cards */}
       <section className="section-content">
         <Button
@@ -67,11 +71,11 @@ const [filteredResources, setFilteredResources] = useState([]);
       </div> */}
       <Form className="dashForm resourceListSearch">
         <FormControl
-          className="dashcontrol"
+          className="dashControl"
           type="text"
           placeholder="Search Resources by Subject"
           onChange={(event) => setSearch(event.target.value)}
-          className="mr-sm-2"
+          // className="mr-sm-2"
         />
       </Form>
 

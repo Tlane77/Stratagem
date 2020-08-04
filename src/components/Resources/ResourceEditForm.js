@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ResourceManager from "../Modules/ResourceManager";
 import "./ResourceForm.css";
-import { Button } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 
 
 
