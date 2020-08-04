@@ -20,12 +20,14 @@ const Dashboard = (props) => {
   // };
 
   return (
-
     <div>
       <NavBar {...props} clearUser={clearUser} />
-
+      <h1 className="dashboard-title">Stratagem Developer Resources</h1><br>
+      </br>
+      <img className="registrationLogo" src={require("../Images/logo.png")}
+      alt="imgLogo"></img>
     </div>
-  )
+  );
 };
 
 export default Dashboard;

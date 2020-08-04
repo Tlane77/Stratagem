@@ -13,3 +13,16 @@
 .ResourceFormButton{
     color: #2196F3
   }
+.ResourceFormCol{
+    display: flex;
+    justify-content: center;
+}
+.resourceSubmitButton{
+    display: flex;
+    justify-content: center;
+}
+.ResourceFormLbl{
+    color: #D3D3D3; 
+    display: flex;
+    justify-content: center;
+}

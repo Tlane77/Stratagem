@@ -50,7 +50,7 @@ const ResourceForm = (props) => {
 
   return (
     <Form className="ResourceFormContainer">
-      <Row className="ResourceFormRow">
+      {/* <Row className="ResourceFormRow"> */}
         <Col className="ResourceFormCol">
           <Form.Group className="ResourceFormGrp" controlId="title">
             <Form.Label className="ResourceFormLbl">Title</Form.Label>
@@ -125,7 +125,8 @@ const ResourceForm = (props) => {
             />
           </Form.Group>
         </Col> */}
-      </Row>
+      {/* </Row> */}
+      <div className="resourceSubmitButton">
       <Button
         className="ResourceFormButton"
         variant="custom"
@@ -135,6 +136,7 @@ const ResourceForm = (props) => {
       >
         Submit
       </Button>
+    </div>
     </Form>
   );
 };

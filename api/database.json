@@ -113,26 +113,6 @@
       "id": 18
     },
     {
-      "id": 20,
-      "title": "RE: Portfolio Presentation",
-      "subjectId": 3,
-      "synopsis": "RE: Critique Me!",
-      "url": "https://github.com",
-      "date": "2020-08-05",
-      "user": "Tasha",
-      "userId": 3
-    },
-    {
-      "id": 21,
-      "title": "RE: Portfolio Presentation",
-      "subjectId": 4,
-      "synopsis": "hello world its Tuesday",
-      "url": "https://github.com",
-      "date": "2020-08-04",
-      "user": "Tasha",
-      "userId": 3
-    },
-    {
       "userId": 3,
       "title": "RE: Portfolio Presentation",
       "subjectId": "2",
@@ -141,29 +121,25 @@
       "date": "2020-08-04",
       "user": "Tasha",
       "id": 22
+    },
+    {
+      "userId": 3,
+      "title": "RE: Portfolio Presentation",
+      "subjectId": "2",
+      "synopsis": "RE: Critique Me!",
+      "url": "https://github.com",
+      "date": "2020-08-04",
+      "user": "Tasha",
+      "id": 23
     }
   ],
   "notes": [
     {
       "userId": 3,
-      "resourceId": 20,
-      "note": "hello world",
-      "date": "2020-08-04",
+      "resourceId": 22,
+      "note": "Today is my Birthday",
+      "date": "2020-08-06",
       "id": 1
-    },
-    {
-      "userId": 3,
-      "resourceId": 20,
-      "note": "Today",
-      "date": "2020-08-04",
-      "id": 2
-    },
-    {
-      "userId": 3,
-      "resourceId": 21,
-      "note": "Hey Baby",
-      "date": "2020-08-04",
-      "id": 3
     }
   ],
   "subjects": [
