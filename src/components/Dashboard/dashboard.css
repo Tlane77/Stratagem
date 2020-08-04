@@ -1,6 +1,7 @@
 .dashboardContainer {
-    background-color: #1f3d7a;  
-    color: #D3D3D3
+    background-color: #888888;  
+    color: #D3D3D3;
+    display:flex;
 }
 
 
@@ -15,7 +16,7 @@
     color: #D3D3D3;   
 }
 
-#contained-modal-title-vcenter.modal-title.h4 {
+.contained-modal-title-vcenter.modal-title.h4 {
     color: #D3D3D3; 
    
 }
@@ -39,4 +40,14 @@
 
 .navbarCol {
     margin-top: 1.5rem;
+}
+.dashboard-title{
+    display:flex;
+    color: #D3D3D3; 
+    justify-content: center;  
+
+}
+.registrationLogo{
+    justify-content: space-around;
+
 }

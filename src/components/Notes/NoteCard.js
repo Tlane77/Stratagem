@@ -1,34 +1,27 @@
 import React from "react";
 import { Card, Button } from "reactstrap";
-import APIManager from "../Modules/APIManager";
+import NoteManager from "../Modules/NoteManager";
+
 
 const NoteCard = (props) => {
-  const handleNoteDelete = (evt) => {
-    APIManager.Delete("Notes", evt.target.id)
-      .then(() => {
-        APIManager.GetUsersNotes("Notes", sessionStorage.activeUserID);
-      })
-      .then((response) => {
-        props.setNotes(response);
-      });
-  };
+  
+  const handleDelete = () => {
+    NoteManager.delete(props.note.id).then((response) => {props.refresh(response)})
+  }
 
   return (
     <>
       <Card>
-        <h3>{props.Note.user.userName}</h3>
-        <Button
-          className="delete-Note-btn"
-          variant="custom"
-          id={props.Note.id}
-          onClick={handleNoteDelete}
-          type="submit"
-        >
-          X
+        <h3>{props.note.note}</h3>
+        <p>
+          {props.note.date}
+        </p>
+        <Button className="note-delete-button"variant="custom"onClick={handleDelete}>
+          Delete This Note
         </Button>
       </Card>
     </>
   );
 };
 
-export { NoteCard };
+export default NoteCard;

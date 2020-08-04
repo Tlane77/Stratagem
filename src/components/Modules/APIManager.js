@@ -2,33 +2,32 @@ const remoteURL = "http://localhost:8088/";
 
 let noteQuery = ``;
 
-
 export default {
-  GetAll(str) {
+  getAll(str) {
     return fetch(`${remoteURL}${str}`).then((res) => res.json());
   },
-  GetAllSort(str) {
+  getAllSort(str) {
     console.log(noteQuery);
     return fetch(`${remoteURL}${str}${noteQuery}`).then((res) => res.json());
   },
-  Get(str, id) {
+  get(str, id) {
     return fetch(`${remoteURL}${str}/${id}`).then((res) => res.json());
   },
 
-  GetUsersNotes(str) {
+  getUsersNotes(str) {
     return fetch(
       `${remoteURL}${str}?activeUserId=${sessionStorage.noteId}&_expand=user`
     ).then((res) => res.json());
   },
-  GetAllNotes(str) {
+  getAllNotes(str) {
     return fetch(`${remoteURL}${str}?_expand=user`).then((res) => res.json());
   },
-  GetUsersResources(str) {
+  getUsersResources(str) {
     return fetch(
       `${remoteURL}${str}?activeUserId=${sessionStorage.resourceId}&_expand=user`
     ).then((res) => res.json());
   },
-  GetAllResources(str) {
+  getAllResources(str) {
     return fetch(`${remoteURL}${str}?_expand=user`).then((res) => res.json());
   },
 
@@ -87,8 +86,7 @@ export default {
 
   ////Resources
 
-    
-  PostNotes(obj) {
+  postNotes(obj) {
     return fetch(`http://localhost:8088/notes/`, {
       method: "POST",
       headers: {
@@ -97,7 +95,7 @@ export default {
       body: JSON.stringify(obj),
     });
   },
-  PostResources(obj) {
+  postResources(obj) {
     return fetch(`http://localhost:8088/resources/`, {
       method: "POST",
       headers: {

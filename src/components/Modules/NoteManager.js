@@ -1,4 +1,4 @@
-const remoteURL = "http://localhost:8088/";
+const remoteURL = "http://localhost:8088";
 
 export default {
   get(id) {
@@ -6,8 +6,8 @@ export default {
       result.json()
     );
   },
-  getAll() {
-    return fetch(`${remoteURL}/notes`).then((result) => result.json());
+  getAll(id) {
+    return fetch(`${remoteURL}/notes/${id}`).then((result) => result.json());
   },
   delete(id) {
     return fetch(`${remoteURL}/notes/${id}`, {
@@ -32,7 +32,7 @@ export default {
       body: JSON.stringify(editedNote),
     }).then((data) => data.json());
   },
-  // Add this method to the AnimalManager object
+  // Add this method to the NoteManager object
   getRandomId() {
     return fetch(`${remoteURL}/notes`)
       .then((result) => result.json())
@@ -42,9 +42,9 @@ export default {
         return randomNote.id;
       });
   },
-  getWithResources(id) {
-    return fetch(`${remoteURL}/notes/${id}?_embed=resources`).then((result) =>
-      result.json()
-    );
+  getWithResources(noteTaco) {
+    return fetch(
+      `${remoteURL}/notes?resourceId=${noteTaco}`
+    ).then((result) => result.json());
   },
 };

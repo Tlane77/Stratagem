@@ -1,38 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React, { useState }from "react";
 import "../Dashboard/dashboard.css";
-import Navbar from "../Navbar/Navbar";
-// import Resources from "../Resources/Resources"
-// import ResourceCard from "../Resources/ResourceCard"
-// import ResourceForm from "../Resources/ResourceForm"
-
-import ResourceList from "../Resources/ResourceList";
-// import Stratagem from "../Stratagem";
+import NavBar from "../Navbar/Navbar"
 
 
 const Dashboard = (props) => {
-  
-
-  
-
   const clearUser = () => {
     sessionStorage.clear();
     localStorage.clear();
-    props.history.push("/Login")
+   
   };
+  // const [search, setSearch] = useState({field:""})
+
+  // const handleFieldChange = evt => {
+  //   const stateToChange = { ...search };
+
+  //   stateToChange[evt.target.id] = evt.target.value;
+  //   setSearch(stateToChange);
+
+  // };
 
   return (
     <div>
- 
-      <Navbar clearUser={clearUser} />
-      {/* <Resources /> */}
-      
-     
-        
-      
-      
-  
-      </div>
-  )
+      <NavBar {...props} clearUser={clearUser} />
+      <h1 className="dashboard-title">Stratagem Developer Resources</h1><br>
+      </br>
+      <img className="registrationLogo" src={require("../Images/logo.png")}
+      alt="imgLogo"></img>
+    </div>
+  );
 };
 
 export default Dashboard;

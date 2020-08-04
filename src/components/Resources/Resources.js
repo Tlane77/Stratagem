@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import APIManager from "../Modules/APIManager";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import Pagination from "../Pagination";
@@ -8,16 +7,11 @@ import NoteBar from "../Notes/NoteBar"
 import ResourceForm from "../Resources/ResourceForm"
 import Navbar from "../Navbar/Navbar"
 
-// import NotesList from "../Notes/NoteList"
+
 
 
 const Resources = (props) => {
-    // useEffect(() => {
-    //     APIManager.GetUsersPosts("posts").then((response) => {
-    //         console.log(response);
-    //         APIManager.SortingByPost(response);
-    //     });
-    // }, []);
+
 
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(false);

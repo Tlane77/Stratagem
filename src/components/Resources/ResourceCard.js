@@ -1,15 +1,26 @@
 import React from "react";
-import { Card } from "react-bootstrap";
 import "./ResourceCard.css";
 import { Link } from "react-router-dom";
-import { CardLink } from "reactstrap";
+import NoteList from "../Notes/NoteList";
+import { Button,Card} from "react-bootstrap";
+
+
 import { ExternalLink } from "react-external-link";
 
 
 
 const ResourceCard = (props) => {
+const handleOnClick = (event) => {
+  sessionStorage.setItem("noteResourceId", event.target.id);
+};
+
+const handleOnClickEdit = event => {
+  sessionStorage.setItem("resourceId", props.resource.subject.id);
+  props.history.push(`resources/${props.resource.id}/edit`);
+};
+
   return (
-    <div className="card">
+    <div className="Card">
       <div className="card-content">
         <h3>
           Title:{" "}
@@ -17,36 +28,56 @@ const ResourceCard = (props) => {
         </h3>
         <p>
           Subject:{" "}
-          <span className="card-resourceName">{props.resource.subject}</span>
+          <span className="card-resourceName">
+            {props.resource.subject.subjectName}
+          </span>
         </p>
         <p>
-          Notes:{" "}
+          Synopsis:{" "}
           <span className="card-resourceName">{props.resource.synopsis}</span>
         </p>
-        <p>Url:{" "} </p>
-        <ExternalLink href={`${props.resource.url}`} />
-
+        <p>
+          Url:
+          <ExternalLink href={`${props.resource.url}`} />
+        </p>
         <p>
           Date: <span className="card-resourceName">{props.resource.date}</span>
         </p>
-        <button
+        <Button
           type="button"
-          onClick={() =>
-            props.history.push(`/resources/${props.resource.id}/edit`)
+          onClick={
+            handleOnClickEdit
           }
         >
           Edit
-        </button>
+        </Button>
 
-        <button
-          type="button"
+        <Button
+          type="Button"
           onClick={() => props.deleteResource(props.resource.id)}
         >
-          Discharge
-        </button>
-        {/* <Link to={`/resources/${props.resource.id}`}>
-          <button>Notes</button>
-        </Link> */}
+          Delete
+        </Button>
+
+        <NoteList
+          update={props.update}
+          resource={props.resource}
+          refresh={props.refresh}
+          {...props}
+        />
+
+        <section className="section-content">
+          <Link to={`notes/new`}>
+            <Button
+              type="Button"
+              className="btn"
+              id={props.resource.id}
+              onClick={handleOnClick}
+            >
+              ADD NOTE
+            </Button>
+          </Link>
+        </section>
       </div>
     </div>
   );

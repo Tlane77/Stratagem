@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import APIManager from "../Modules/APIManager";
-
+import "./NewNoteCard.css";
 
 const NewNoteCard = (props) => {
   const [newNote, setNewNote] = useState({
@@ -15,8 +15,8 @@ const NewNoteCard = (props) => {
       APIManager.GetAll("users")
         .then((response) => props.setNotes(response))
         .then(() => {
-          APIManager.GetUsersNotes("Notes")
-            .then((response) => props.setNewNotes(response))
+          APIManager.getUsersNotes("Notes")
+            .then((response) => props.setNewNote(response))
             .then(() => props.setFilterNotes([]))
             .then(() => update())
             .then(() => props.clear)

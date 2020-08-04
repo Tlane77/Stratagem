@@ -37,15 +37,9 @@
       "id": 6
     },
     {
-      "userName": "Tasha",
-      "email": "Tasha@live.com",
-      "password": "clover",
-      "id": 7
-    },
-    {
       "userName": "Gavin",
       "email": "Gavin@live.com",
-      "password": "test",
+      "password": "bieber",
       "id": 8
     },
     {
@@ -71,147 +65,103 @@
       "email": "happy@live.com",
       "password": "green",
       "id": 12
+    },
+    {
+      "email": "katie@live.com",
+      "userName": "katie",
+      "password": "1234",
+      "id": 13
+    },
+    {
+      "email": "baby@baby.live.com",
+      "userName": "Baby",
+      "password": "1234",
+      "id": 14
+    },
+    {
+      "email": "liam@live.com",
+      "userName": "Liam",
+      "password": "1234",
+      "id": 15
+    },
+    {
+      "email": "brenda@live",
+      "userName": "Brenda",
+      "password": "1234",
+      "id": 16
     }
   ],
   "resources": [
     {
-      "id": 4,
-      "userId": 4,
-      "noteId": 4,
-      "url": "https://google.com",
-      "title": "JavaScript on Fire",
-      "subject": "JAVA",
-      "synopsis": "Hold on to your hats!",
-      "timestamp": "04/01/24"
-    },
-    {
-      "userId": 7,
-      "title": "RE: Portfolio Presentation",
-      "subject": "What Really Matters About IT",
-      "synopsis": "hello",
-      "url": "https://ng.cengage.com/static/nbreader/ui/apps/nbreader/nbreader.html#!&tocId=5911c9bbe4b03a662e5bb89d?activity.id=589383185&timestamp=1567883406598",
-      "date": "2020-07-30",
-      "user": "Tasha",
-      "id": 5
-    },
-    {
-      "userId": 7,
-      "title": "RE: Portfolio Presentation",
-      "subject": "What Really Matters About IT",
-      "synopsis": "hello world",
+      "userId": 14,
+      "title": "RE: Good Reads",
+      "subjectId": "4",
+      "synopsis": "RE: Critique Me!",
       "url": "https://github.com",
-      "date": "2020-08-07",
-      "user": "Tasha",
-      "id": 6
+      "date": "2020-08-04",
+      "user": "Baby",
+      "id": 15
     },
     {
-      "userId": 7,
+      "userId": 15,
       "title": "RE: Portfolio Presentation",
-      "subject": "What Really Matters About IT",
-      "synopsis": "Hello World I Run Google!!",
-      "url": "https://ng.cengage.com/static/nbreader/ui/apps/nbreader/nbreader.html#!&tocId=5911c9bbe4b03a662e5bb89d?activity.id=589383185&timestamp=1567883406598",
-      "date": "2020-07-30",
-      "user": "Tasha",
-      "id": 7
+      "subjectId": "3",
+      "synopsis": "RE: Critique Me!",
+      "url": "https://github.com",
+      "date": "2020-08-03",
+      "user": "Liam",
+      "id": 18
     },
     {
-      "userId": 7,
+      "userId": 3,
       "title": "RE: Portfolio Presentation",
-      "subject": "What Really Matters About IT",
+      "subjectId": "2",
       "synopsis": "hello",
       "url": "https://google.com",
-      "date": "2020-07-30",
+      "date": "2020-08-04",
       "user": "Tasha",
-      "id": 8
+      "id": 22
     },
     {
-      "userId": 7,
-      "title": "RE: Critique Me!",
-      "subject": "What Really Matters About IT",
-      "synopsis": "hello world",
-      "url": "https://github.com",
-      "date": "2020-07-30",
-      "user": "Tasha",
-      "id": 9
-    },
-    {
-      "userId": 7,
+      "userId": 3,
       "title": "RE: Portfolio Presentation",
-      "subject": "What Really Matters About IT",
-      "synopsis": "hello world",
-      "url": "https://trevecca.edu",
-      "date": "2020-07-30",
+      "subjectId": "2",
+      "synopsis": "RE: Critique Me!",
+      "url": "https://github.com",
+      "date": "2020-08-04",
       "user": "Tasha",
-      "id": 10
-    },
-    {
-      "userId": 7,
-      "title": "RE: Critique Me!",
-      "subject": "What Really Matters About IT",
-      "synopsis": "hi",
-      "url": "https://google.com",
-      "date": "2020-07-30",
-      "user": "Tasha",
-      "id": 11
+      "id": 23
     }
   ],
   "notes": [
     {
-      "notes": "Practice REACT",
-      "date": "2020-07-07",
-      "resourceId": 1,
-      "activeUserId": 1,
+      "userId": 3,
+      "resourceId": 22,
+      "note": "Today is my Birthday",
+      "date": "2020-08-06",
       "id": 1
-    },
-     {
-      "notes": "Practice REACT",
-      "date": "2020-07-07",
-      "resourceId": 2,
-      "activeUserId": 2,
-      "id": 2
-    },
-    {
-      "notes": "Practice REACT",
-      "date": "2020-07-07",
-      "resourceId": 3,
-      "activeUserId": 3,
-      "id": 3
-    },
-    {
-      "notes": "Practice REACT",
-      "date": "2020-07-07",
-      "resourceId": 4,
-      "activeUserId": 4,
-      "id": 4
-    },
-    {
-      "notes": "Practice REACT",
-      "date": "2020-07-07",
-      "resourceId": 5,
-      "activeUserId": 5,
-      "id": 5
     }
   ],
   "subjects": [
     {
       "id": 1,
-      "subjectId": 1
+      "subjectName": "Java"
     },
     {
       "id": 2,
-      "subjectId": 2
+      "subjectName": "Javascript"
     },
     {
       "id": 3,
-      "subjectId": 3
+      "subjectName": "PHP"
     },
     {
       "id": 4,
-      "subjectId": 4
+      "subjectName": "C#"
     },
     {
       "id": 5,
-      "subjectId": 5
+      "subjectName": "Ruby"
     }
   ]
 }

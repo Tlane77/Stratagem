@@ -3,29 +3,30 @@ const remoteURL = "http://localhost:8088/"
 let resourceQuery = ``;
 
 export default {
-  GetAll(str) {
+  getAll(str) {
     return fetch(`${remoteURL}${str}`).then((res) => res.json());
   },
-  GetAllSort(str) {
+  getAllSort(str) {
     console.log(resourceQuery);
     return fetch(`${remoteURL}${str}${resourceQuery}`).then((res) =>
       res.json()
     );
   },
-  Get(str, id) {
+  get(str, id) {
     return fetch(`${remoteURL}${str}/${id}`).then((res) => res.json());
   },
 
-  GetUsersResources(str) {
+  getUsersResources(str) {
     return fetch(
-      `${remoteURL}${str}?activeUserId=${sessionStorage.resourceId}&_expand=user`
+      `${remoteURL}${str}?userId=${sessionStorage.activeUserId}&_expand=user&_expand=subject`
     ).then((res) => res.json());
   },
-  GetAllResources() {
-    return fetch(`${remoteURL}resources?_expand=user`).then((res) =>
+  getAllResources() {
+    return fetch(`${remoteURL}resources?_expand=user&_expand=subject`).then((res) =>
       res.json()
     );
-  },
+    },
+  
 
   Push(str, obj) {
     return fetch(`${remoteURL}${str}`, {
@@ -37,14 +38,14 @@ export default {
     });
   },
 
-  Update(str, id, data) {
-    return fetch(`${remoteURL}${str}/${id}`, {
+  Update(str, editedObj) {
+    return fetch(`${remoteURL}${str}/${editedObj.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(data),
-    });
+      body: JSON.stringify(editedObj),
+    }).then(data => data.json())
   },
   update(editedResource) {
     return fetch(`${remoteURL}/notes/${editedResource.id}`, {
@@ -67,14 +68,14 @@ export default {
     });
   },
 
-  Post(newResource) {
+  post(newResource) {
     return fetch(`${remoteURL}resources`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-        body: JSON.stringify(newResource)
-      
-    }).then(data => data.json())
+      body: JSON.stringify(newResource),
+    }).then((data) => data.json());
   }
+  
 };

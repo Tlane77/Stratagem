@@ -3,14 +3,12 @@ import { Route, Redirect } from "react-router-dom";
 import Dashboard from "./Dashboard/dashboard";
 import Registration from "./auth/registration";
 import Login from "./auth/login";
-// import Posts from "./Posts";
-// import Notes from "./Notes/NoteList"
 import ResourceList from "./Resources/ResourceList"
-import Resources from "./Resources/Resources"
-// import Notes from "./Notes"
 
-import ResourceForm from "../components/Resources/ResourceForm";
-// import NoteList from "../components/Notes/NoteList"
+import NoteForm from "./Notes/NoteForm"
+
+import ResourceEditForm from "./Resources/ResourceEditForm"
+import ResourceForm from "./Resources/ResourceForm";
 
 
 const ApplicationViews = (props) => {
@@ -19,8 +17,7 @@ const ApplicationViews = (props) => {
 
   
   // const notes = true;
-  // const resources = true;
-  // const subjects = true;
+ 
 
   return (
     <>
@@ -48,21 +45,11 @@ const ApplicationViews = (props) => {
           if (hasUser) {
             return <Dashboard {...props} />;
           } else {
-            return <Redirect exact to="/" />;
+            return <Redirect exact to="/Login" />;
           }
         }}
       />
-      {/* <Route
-        exact
-        path="/Notes"
-        render={(props) => {
-          if (hasUser) {
-            return <Notes notes={notes} {...props} />;
-          } else {
-            return <Redirect exact to="/" />;
-          }
-        }}
-      />   */}
+      
 
       {/* Resources */}
       <Route
@@ -70,55 +57,39 @@ const ApplicationViews = (props) => {
         path="/Resources"
         render={(props) => {
           if (hasUser) {
-            return <ResourceList {...props} />;
+            return (
+              <ResourceList
+                {...props}
+                noteId={props.match.params.noteId}
+              />
+            );
           } else {
-            return <Redirect exact to="/" />;
+            return <Redirect exact to="/Login" />;
           }
         }}
       />
       {/* Resources */}
-      <Route exact
+      <Route
+        exact
         path="/resources/new"
         render={(props) => {
-          
-            return <ResourceForm {...props} />;
-          
+          return <ResourceForm {...props} />;
         }}
       />
-      {/* Resources */}
-      {/* <Route
+      <Route
         exact
-        path="/Resources"
+        path="/notes/new"
         render={(props) => {
-          if (hasUser) {
-            return <Resources {...props} />;
-          } else {
-            return <Redirect exact to="/Resources" />;
-          }
+          return <NoteForm {...props} />;
         }}
-      /> */}
-      {/* <Route
-        exact
-        path="/Subjects"
+      />
+      <Route
+       
+        path="/resources/:resourceId(\d+)/edit"
         render={(props) => {
-          if (hasUser) {
-            return <Dashboard events={subjects} {...props} />;
-          } else {
-            return <Redirect exact to="/" />;
-          }
+          return <ResourceEditForm {...props} />;
         }}
-      /> */}
-      {/* <Route   //Stretch Goal
-        exact
-        path="/MeetUps"
-        render={(props) => {
-          if (hasUser) {
-            return <Dashboard events={meetups} {...props} />;
-          } else {
-            return <Redirect exact to="/" />;
-          }
-        }}
-      /> */}
+      />
     </>
   );
 };

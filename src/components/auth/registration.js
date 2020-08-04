@@ -10,7 +10,7 @@ const Register = (props) => {
   });
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    APIManager.GetAll("users").then((response) => {
+    APIManager.getAll("users").then((response) => {
       setUsers(response);
     });
   }, []);
@@ -39,7 +39,7 @@ const Register = (props) => {
           userPasswordValue !== ""
         ) {
           APIManager.Push("users", credentials).then(() => {
-            APIManager.GetAll("users").then((response) => {
+            APIManager.getAll("users").then((response) => {
               response.forEach((user) => {
                 if (user.userName === userNameInputValue) {
                   credentials.userId = user.id;
