@@ -43,36 +43,7 @@ const NavBar = (props) => {
               Resources
             </NavLink>
           </li>
-          {/* <li>
-            <NavLink className="nav-link" to="/notes">
-              Notes
-            </NavLink>
-          </li> */}
-
-           <li>
-            <NavLink
-              className="nav-link"
-              to="/notes"
-              disabled
-              activeStyle={{
-                color: "#66b3ff",
-              }}
-            >
-              Notes
-            </NavLink>
-          </li>
-          {/* <li>
-            <NavLink
-              className="nav-link"
-              to="/Subjects"
-              disabled
-              activeStyle={{
-                color: "#66b3ff",
-              }}
-            >
-              Subjects
-            </NavLink>
-          </li> */} 
+         
 
           <li>
             <NavLink

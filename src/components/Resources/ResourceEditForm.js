@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ResourceManager from "../Modules/ResourceManager";
 import "./ResourceForm.css";
+import { Button } from "react-bootstrap";
 
 
 
 const ResourceEditForm = (props) => {
   const [resource, setResource] = useState({
     title: "",
-    subjectId: "",
+    subjectId: parseInt(sessionStorage.resourceSubjectId),
     synopsis: "",
     url:"",
     date: "",
+    user: sessionStorage.activeUser,
+    userId: parseInt(sessionStorage.activeUserId)
+
    
   });
 //   const [notes, setNote] = useState([]);
@@ -30,28 +34,29 @@ const ResourceEditForm = (props) => {
     const editedResource = {
       id: props.match.params.resourceId,
       title: resource.title,
-      subjectId: resource.subject,
+      subjectId: parseInt(resource.subjectId),
       synopsis: resource.synopsis,
       url: resource.url,
       date: resource.date,
+      user: sessionStorage.activeUser,
+      userId: parseInt(sessionStorage.activeUserId)
       
     };
+    
 
-    ResourceManager.update(editedResource).then(() =>
+    ResourceManager.Update("resources", editedResource).then(() =>
       props.history.push("/resources")
     );
   };
 
-//   useEffect(() => {
-//     ResourceManager.get("resources", props.match.params.useResourceId).then((resource) => {
-//       NoteManager.getAll().then((notes) => {
-//         console.log("note response", notes);
-//         setNote(note);
-//         setResource(resource);
-//         setIsLoading(false);
-//       });
-//     });
-//   }, [props.match.params.useResourceId]);
+  useEffect(() => {
+    ResourceManager.get("resources", props.match.params.resourceId)
+      .then(resource => {
+        setResource(resource)
+        setIsLoading(false)
+    })
+  }, [])
+
     
 
   return (
@@ -74,7 +79,8 @@ const ResourceEditForm = (props) => {
               className="form-control"
               onChange={handleFieldChange}
               id="subjectId"
-              value={resource.subjectId}
+              value={parseInt(resource.subjectId)}
+             
             >
               <option value="1">Java</option>
               <option value="2">Javascript</option>
@@ -135,14 +141,14 @@ const ResourceEditForm = (props) => {
           </select>
           <label htmlFor="noteId">Note</label> */}
           <div className="alignRight">
-            <button
+            <Button
               type="button"
               disabled={isLoading}
               onClick={updateExistingResource}
               className="btn btn-primary"
             >
               Submit
-            </button>
+            </Button>
           </div>
         </fieldset>
       </form>

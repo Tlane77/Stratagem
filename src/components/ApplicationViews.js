@@ -4,8 +4,8 @@ import Dashboard from "./Dashboard/dashboard";
 import Registration from "./auth/registration";
 import Login from "./auth/login";
 import ResourceList from "./Resources/ResourceList"
-import NoteDetail from "./Notes/NoteDetail";
-import ResourceWithNote from "./Resources/ResourceWithNote"
+
+import NoteForm from "./Notes/NoteForm"
 
 import ResourceEditForm from "./Resources/ResourceEditForm"
 import ResourceForm from "./Resources/ResourceForm";
@@ -45,27 +45,11 @@ const ApplicationViews = (props) => {
           if (hasUser) {
             return <Dashboard {...props} />;
           } else {
-            return <Redirect exact to="/" />;
+            return <Redirect exact to="/Login" />;
           }
         }}
       />
-      {/* Make sure you add the `exact` attribute here */}
-      <Route
-        exact
-        path="/notes"
-        render={(props) => {
-          return <NoteDetail />;
-        }}
-      />
-      <Route
-        path="/notes/:resourceId(\d+)"
-        render={(props) => {
-          // Pass the noteId to the NoteDetailComponent
-          return (
-            <NoteDetail resourceId={parseInt(props.match.params.resourceId)} />
-          );
-        }}
-      />
+      
 
       {/* Resources */}
       <Route
@@ -73,9 +57,14 @@ const ApplicationViews = (props) => {
         path="/Resources"
         render={(props) => {
           if (hasUser) {
-            return <ResourceList {...props} />;
+            return (
+              <ResourceList
+                {...props}
+                noteId={props.match.params.noteId}
+              />
+            );
           } else {
-            return <Redirect exact to="/" />;
+            return <Redirect exact to="/Login" />;
           }
         }}
       />
@@ -87,16 +76,16 @@ const ApplicationViews = (props) => {
           return <ResourceForm {...props} />;
         }}
       />
-      {/* <Route
-        exact
-        path="/resources/note"
-        render={(props) => {
-          return <ResourceWithNote {...props} />;
-        }}
-      /> */}
       <Route
         exact
-        path="/resources/:useResourceId(\d+)/edit"
+        path="/notes/new"
+        render={(props) => {
+          return <NoteForm {...props} />;
+        }}
+      />
+      <Route
+       
+        path="/resources/:resourceId(\d+)/edit"
         render={(props) => {
           return <ResourceEditForm {...props} />;
         }}

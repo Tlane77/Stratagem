@@ -18,7 +18,7 @@ export default {
 
   getUsersResources(str) {
     return fetch(
-      `${remoteURL}${str}?activeUserId=${sessionStorage.resourceId}&_expand=user`
+      `${remoteURL}${str}?userId=${sessionStorage.activeUserId}&_expand=user&_expand=subject`
     ).then((res) => res.json());
   },
   getAllResources() {
@@ -38,14 +38,14 @@ export default {
     });
   },
 
-  Update(str, id, data) {
-    return fetch(`${remoteURL}${str}/${id}`, {
+  Update(str, editedObj) {
+    return fetch(`${remoteURL}${str}/${editedObj.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(data),
-    });
+      body: JSON.stringify(editedObj),
+    }).then(data => data.json())
   },
   update(editedResource) {
     return fetch(`${remoteURL}/notes/${editedResource.id}`, {

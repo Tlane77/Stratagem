@@ -8,7 +8,7 @@ const Login = (props) => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    APIManager.GetAll("users").then((response) => {
+    APIManager.getAll("users").then((response) => {
       setUsers(response);
     });
   }, []);

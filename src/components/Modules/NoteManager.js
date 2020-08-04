@@ -1,4 +1,4 @@
-const remoteURL = "http://localhost:8088/";
+const remoteURL = "http://localhost:8088";
 
 export default {
   get(id) {
@@ -42,9 +42,9 @@ export default {
         return randomNote.id;
       });
   },
-  getWithResources(id) {
-    return fetch(`${remoteURL}/notes/${id}?_embed=resources`).then((result =>
-      result.json())
-    );
+  getWithResources(noteTaco) {
+    return fetch(
+      `${remoteURL}/notes?resourceId=${noteTaco}`
+    ).then((result) => result.json());
   },
 };

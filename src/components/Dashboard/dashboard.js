@@ -1,12 +1,13 @@
 import React, { useState }from "react";
 import "../Dashboard/dashboard.css";
-import Navbar from "../Navbar/Navbar";
+import NavBar from "../Navbar/Navbar"
+
 
 const Dashboard = (props) => {
   const clearUser = () => {
     sessionStorage.clear();
     localStorage.clear();
-    props.history.push("/Login");
+   
   };
   // const [search, setSearch] = useState({field:""})
 
@@ -20,11 +21,11 @@ const Dashboard = (props) => {
 
   return (
 
-    
     <div>
-      <Navbar clearUser={clearUser} />
+      <NavBar {...props} clearUser={clearUser} />
+
     </div>
-  );
+  )
 };
 
 export default Dashboard;

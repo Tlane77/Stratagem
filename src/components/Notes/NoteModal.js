@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import APIManager from "../Modules/APIManager";
+import NoteManager from "../Modules/NoteManager";
 import { Button, Modal, Form, FormControl } from "react-bootstrap";
 
 import { NewNoteCard } from "./NewNoteCard";
@@ -33,12 +33,12 @@ const HandleNoteModal = (props) => {
     document.querySelector(".mr-sm-2").value = "";
   };
   const userNotes = () => {
-    APIManager.GetUserNotes("notes")
+    NoteManager.getUserNotes("notes")
       .then((response) => setNewNote(response))
       .then(() => {});
   };
   useEffect(() => {
-    APIManager.GetAll("users").then((response) => setNotes(response));
+    NoteManager.getAll("users").then((response) => setNotes(response));
     userNotes();
   }, []);
 

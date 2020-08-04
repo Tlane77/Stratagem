@@ -56,4 +56,15 @@
   .searchSub input[type=text] {
     border: 1px solid #ccc;
   }
+
+  .ResourceFormButton{
+    background-color: #2196F3
+  }
+  #section-content.button{
+    background-color: #2196F3
+  }
+  .button{
+    background-color: #2196F3
+  }
+  
 }

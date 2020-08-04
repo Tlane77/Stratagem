@@ -71,54 +71,36 @@
       "email": "happy@live.com",
       "password": "green",
       "id": 12
+    },
+    {
+      "email": "katie@live.com",
+      "userName": "katie",
+      "password": "1234",
+      "id": 13
+    },
+    {
+      "email": "baby@baby.live.com",
+      "userName": "Baby",
+      "password": "1234",
+      "id": 14
+    },
+    {
+      "email": "liam@live.com",
+      "userName": "Liam",
+      "password": "1234",
+      "id": 15
     }
   ],
   "resources": [
     {
-      "id": 1,
-      "userId": 4,
-      "url": "https://google.com",
-      "title": "JavaScript on Fire",
-      "subjectId": 1,
-      "synopsis": "Hold on to your hats!",
-      "date": "04/01/24"
-    },
-    {
-      "id": 3,
-      "userId": 4,
-      "url": "https://google.com",
-      "title": "JavaScript on Fire",
-      "subjectId": 1,
-      "synopsis": "Hold on to your hats!",
-      "date": "04/01/24"
-    },
-    {
-      "id": 4,
-      "userId": 4,
-      "url": "https://google.com",
-      "title": "JavaScript on Fire",
-      "subjectId": 1,
-      "synopsis": "Hold on to your hats!",
-      "date": "04/01/24"
-    },
-    {
-      "id": 6,
-      "userId": 4,
-      "url": "https://google.com",
-      "title": "JavaScript on Fire",
-      "subjectId": 1,
-      "synopsis": "Hold on to your hats!",
-      "date": "04/01/24"
-    },
-    {
-      "userId": 7,
+      "id": 7,
       "title": "Checking the search",
-      "subjectId": 2,
+      "subjectId": 5,
       "synopsis": "It is Friday",
       "url": "https://rubyonrails.org",
-      "date": "2020-07-31",
+      "date": "2020-08-03",
       "user": "Tasha",
-      "id": 7
+      "userId": 7
     },
     {
       "userId": 7,
@@ -139,32 +121,148 @@
       "date": "2020-07-31",
       "user": "Tasha",
       "id": 9
+    },
+    {
+      "id": 11,
+      "title": "RE: Portfolio Presentation",
+      "subjectId": 5,
+      "synopsis": "RE: Critique Me!",
+      "url": "github.com",
+      "date": "2020-08-03",
+      "user": "Baby",
+      "userId": 14
+    },
+    {
+      "id": 12,
+      "title": "RE: Portfolio Presentation",
+      "synopsis": "RE: Critique Me!",
+      "url": "trevecca.edu",
+      "date": "2020-08-03"
+    },
+    {
+      "userId": 14,
+      "title": "RE: Portfolio Presentation",
+      "subjectId": "2",
+      "synopsis": "RE: Critique Me!",
+      "url": "https://github.com",
+      "date": "2020-08-03",
+      "user": "Baby",
+      "id": 13
+    },
+    {
+      "userId": 14,
+      "title": "RE: Portfolio Presentation",
+      "subjectId": "2",
+      "synopsis": "RE: Critique Me!",
+      "url": "https://github.com",
+      "date": "2020-08-03",
+      "user": "Baby",
+      "id": 14
+    },
+    {
+      "userId": 14,
+      "title": "RE: Good Reads",
+      "subjectId": "4",
+      "synopsis": "RE: Critique Me!",
+      "url": "https://github.com",
+      "date": "2020-08-04",
+      "user": "Baby",
+      "id": 15
+    },
+    {
+      "userId": 7,
+      "title": "RE: Portfolio Presentation",
+      "subjectId": "3",
+      "synopsis": "RE: Critique Me!",
+      "url": "https://github.com",
+      "date": "2020-08-03",
+      "user": "Tasha",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "title": "Liam,it's my Birthday Week!!",
+      "subjectId": 5,
+      "synopsis": "You are the best!",
+      "url": "https://support.google.com/youtube/answer/1646861?hl=en",
+      "date": "2020-08-03",
+      "user": "Liam",
+      "userId": 15
+    },
+    {
+      "userId": 15,
+      "title": "RE: Portfolio Presentation",
+      "subjectId": "3",
+      "synopsis": "RE: Critique Me!",
+      "url": "https://github.com",
+      "date": "2020-08-03",
+      "user": "Liam",
+      "id": 18
     }
   ],
   "notes": [
     {
-      "note": "Practice REACT",
-      "date": "2020-07-07",
-      "resourceId": 1,
-      "id": 4
+      "userId": 13,
+      "resourceId": 9,
+      "note": "Today is my Birthday",
+      "date": "2020-08-03",
+      "id": 3
     },
     {
-      "note": "Practice REACT",
-      "date": "2020-07-07",
-      "resourceId": 1,
-      "id": 5
-    },
-    {
-      "note": "Practice REACT",
-      "date": "2020-07-07",
-      "resourceId": 4,
+      "userId": 14,
+      "resourceId": 8,
+      "note": "Today is my Birthday",
+      "date": "2020-08-03",
       "id": 6
     },
     {
-      "note": "Practice REACT",
-      "date": "2020-07-07",
-      "resourceId": 6,
-      "id": 7
+      "userId": 14,
+      "resourceId": 11,
+      "note": "Today",
+      "date": "2020-08-03",
+      "id": 8
+    },
+    {
+      "userId": 14,
+      "resourceId": 12,
+      "note": "Baby?????",
+      "date": "2020-08-03",
+      "id": 9
+    },
+    {
+      "userId": 14,
+      "resourceId": 11,
+      "note": "hello world",
+      "date": "2020-08-03",
+      "id": 10
+    },
+    {
+      "userId": 14,
+      "resourceId": 11,
+      "note": "Today is my Birthday",
+      "date": "2020-08-03",
+      "id": 11
+    },
+    {
+      "userId": 15,
+      "resourceId": 18,
+      "note": "hello Liam",
+      "date": "2020-08-04",
+      "id": 12
+    },
+    {
+      "userId": 15,
+      "resourceId": 17,
+      "note": "Today is my Birthday",
+      "date": "2020-08-03",
+      "id": 13
+    },
+    {
+      "userId": 15,
+      "resourceId": 17,
+      "note": "Liam you are the best son in the world here is a tutorial just for you",
+      "date": "2020-08-03",
+      "id": 14
     }
   ],
   "subjects": [

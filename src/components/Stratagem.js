@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ApplicationViews from "../components/ApplicationViews";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 const Stratagem = (props) => {
   const isAuthenticated = () => {
     if (
@@ -23,12 +24,19 @@ const Stratagem = (props) => {
     console.log(user.userName);
   };
 
+  const clearUser = () => {
+    sessionStorage.clear();
+    localStorage.clear();
+    
+  };
+
   return (
     <>
       {/* <div></div> */}
-      
+      {/* <NavBar {...props} clearUser={clearUser} /> */}
 
       <ApplicationViews setUser={setUser} hasUser={hasUser} />
+
     </>
   );
 };
