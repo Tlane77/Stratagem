@@ -1,0 +1,24 @@
+.newNoteGroup{
+    display: flex;
+    justify-content: center;
+}
+
+.noteSubmitButton{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.newNoteForm{
+    display: flexbox;
+    justify-content: center;
+    padding: 80px;
+    
+}
+.note-title{
+    display:flex;
+    padding: 40px;
+    color: #D3D3D3;
+    align-content: center;
+    justify-content: center;
+    
+}

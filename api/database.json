@@ -73,7 +73,7 @@
       "id": 13
     },
     {
-      "email": "baby@baby.live.com",
+      "email": "baby@live.com",
       "userName": "Baby",
       "password": "1234",
       "id": 14
@@ -113,14 +113,14 @@
       "id": 18
     },
     {
-      "userId": 3,
+      "id": 22,
       "title": "RE: Portfolio Presentation",
-      "subjectId": "2",
-      "synopsis": "hello",
+      "subjectId": 6,
+      "synopsis": "today is the turning point",
       "url": "https://google.com",
       "date": "2020-08-04",
       "user": "Tasha",
-      "id": 22
+      "userId": 3
     },
     {
       "userId": 3,
@@ -131,6 +131,26 @@
       "date": "2020-08-04",
       "user": "Tasha",
       "id": 23
+    },
+    {
+      "userId": 3,
+      "title": "RE: Portfolio Presentation",
+      "subjectId": "3",
+      "synopsis": "RE: Critique Me!",
+      "url": "https://github.com",
+      "date": "2020-08-04",
+      "user": "Tasha",
+      "id": 24
+    },
+    {
+      "userId": 3,
+      "title": "RE: Portfolio Presentation",
+      "subjectId": "3",
+      "synopsis": "RE: Critique Me!",
+      "url": "https://github.com",
+      "date": "2020-08-26",
+      "user": "Tasha",
+      "id": 25
     }
   ],
   "notes": [
@@ -140,6 +160,27 @@
       "note": "Today is my Birthday",
       "date": "2020-08-06",
       "id": 1
+    },
+    {
+      "userId": 3,
+      "resourceId": 23,
+      "note": "The world is my canvas",
+      "date": "2020-08-05",
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "resourceId": 24,
+      "note": "Master Those To-do Apps with React",
+      "date": "2020-08-04",
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "resourceId": 22,
+      "note": "Liam is my favorite Son",
+      "date": "2020-08-04",
+      "id": 4
     }
   ],
   "subjects": [
@@ -162,6 +203,14 @@
     {
       "id": 5,
       "subjectName": "Ruby"
+    },
+    {
+      "id": 6,
+      "subjectName": "REACT"
+    },
+    {
+      "id": 7,
+      "subjectName": "CRUD"
     }
   ]
 }

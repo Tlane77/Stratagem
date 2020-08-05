@@ -80,13 +80,14 @@ const ResourceEditForm = (props) => {
               onChange={handleFieldChange}
               id="subjectId"
               value={parseInt(resource.subjectId)}
-             
             >
               <option value="1">Java</option>
               <option value="2">Javascript</option>
               <option value="3">PHP</option>
               <option value="4">C#</option>
               <option value="5">Ruby</option>
+              <option value="6">REACT</option>
+              <option value="7">CRUD</option>
             </select>
 
             <label htmlFor="synopsis">Synopsis</label>
