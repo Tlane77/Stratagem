@@ -13,7 +13,7 @@
     background-color: #66b3ff;
     color: #D3D3D3;   
     width: 20%;
-    margin-left: 25rem;
+    margin-right: 100px;
 }
 
 .registerLogin.form-control {
@@ -46,6 +46,12 @@
 
 .registerWelcome {
     text-align: center !important;
+    margin-bottom: 3rem !important;
+    margin-top: -2rem !important;
+}
+.registerLabel{
+    text-align: right !important;
+    padding-right: 150px;
     margin-bottom: 3rem !important;
     margin-top: -2rem !important;
 }

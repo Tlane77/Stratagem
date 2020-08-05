@@ -75,6 +75,16 @@ const ResourceEditForm = (props) => {
 
   return (
     <>
+      <div>
+        
+        <h1 className="dashboard-title">Stratagem Developer Resources</h1>
+        <br></br>
+        <img
+          className="registrationLogo"
+          src={require("../Images/stratagembanner.jpg")}
+          alt="imgLogo"
+        ></img>
+      </div>
       <Form className="ResourceEditFormContainer">
         <Col className="ResourceEditFormCol">
           <Form.Group className="ResourceEditFormGrp" controlId="title">
@@ -120,6 +130,7 @@ const ResourceEditForm = (props) => {
               id="synopsis"
               value={resource.synopsis}
             />
+             <Form.Group className="ResourceEditFormGrp" controlId="url"></Form.Group>
             <Form.Label className="ResourceEditFormLbl">URL</Form.Label>
             {/* <label htmlFor="Url">url</label> */}
             <input
@@ -130,6 +141,7 @@ const ResourceEditForm = (props) => {
               id="url"
               value={resource.url}
             />
+             <Form.Group className="ResourceEditFormGrp" controlId="date"></Form.Group>
             <Form.Label className="ResourceEditFormLbl">Date</Form.Label>
             <input
               type="date"
@@ -152,6 +164,7 @@ const ResourceEditForm = (props) => {
               Submit
             </Button>
           </div> */}
+          
 
           <div className="resourceEditSubmitButton">
             <Button

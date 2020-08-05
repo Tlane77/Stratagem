@@ -2,8 +2,11 @@
     background-color: #1f3d7a;  
     color: #D3D3D3;
     font-size: larger;
-    margin-bottom: 2rem;;
-    box-shadow: 30px;
+    
+   
+   
+    
+   
     
 }
 
@@ -12,26 +15,33 @@
     color: #D3D3D3; 
     font-size: larger; 
     font-weight: bolder;
+     
 }
 .ResourceEditFormButton{
     color: #2196F3;
     justify-content: center;
     align-content: center;
+  
   }
 .ResourceEditFormCol{
     display: flex;
     justify-content: center;
     font-weight: bolder;
-    padding: 20px;
+    padding: 40px;
+    padding-left: 115px;
+    
     
     
    
 }
 .resourceEditSubmitButton{
-   align-content: center;
-    justify-content: center;
-    padding-left: 100px;
-    padding-top: 100px;
+  padding-top: 482px;
+  justify-content: space-evenly;
+  
+  
+  ;
+  
+    
 
     
 }
@@ -39,16 +49,17 @@
     color: #D3D3D3; 
     display: flex;
     justify-content: center;
-   
     text-align: center;
     font-weight: 800;
     font-size: 30px;
     font-weight: bolder;
+    
 }
 .ResourceEditFormGrp{
-    padding: 40px;
+    
+    /* padding: 40px; */
     align-content: flex-end;
-    justify-content: end;
+    
     font-weight: bolder;
     
 }
