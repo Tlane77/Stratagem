@@ -1,6 +1,8 @@
 .resourceCardContainer.container {
     display: flex;
     width:50%;
+    
+    
 }
 
 .resourceCard {
@@ -11,15 +13,16 @@
     border: 2px solid #1f3d7a !important;
     border-radius: 6px !important;
     background-color: #888888 !important;
-    
-    
     box-shadow: 0 4px 8px 0 #888888, 0 6px 20px 0 #888888;
     margin-top: 1rem;
 }
 
 .resourceCardBody {
     flex-direction: row;
-    color:#D3D3D3
+    color:#D3D3D3;
+   
+   
+    
     
 }
 
@@ -36,12 +39,23 @@
     color: #D3D3D3;  
 }
 .card{
-    background-color: #888888
-    
+    display:flex;
+    background-color: #888888;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: flex;
+    padding: 80px;
+    border-radius: 20px;
+    border-style: double;
+    border-width: medium;
+   
 }
 
 .card-content{
-    color: #D3D3D3
+    color: #D3D3D3;
+    
+    
     
 }
 
@@ -49,3 +63,5 @@
   .card-content.button{
       background-color: #2196F3
   }
+
+  

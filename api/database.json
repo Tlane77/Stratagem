@@ -89,6 +89,18 @@
       "userName": "Brenda",
       "password": "1234",
       "id": 16
+    },
+    {
+      "email": "mads@live.com",
+      "userName": "Madison",
+      "password": "1234",
+      "id": 17
+    },
+    {
+      "email": "friend@live.com",
+      "userName": "Friend",
+      "password": "1234",
+      "id": 18
     }
   ],
   "resources": [
@@ -103,21 +115,11 @@
       "id": 15
     },
     {
-      "userId": 15,
-      "title": "RE: Portfolio Presentation",
-      "subjectId": "3",
-      "synopsis": "RE: Critique Me!",
-      "url": "https://github.com",
-      "date": "2020-08-03",
-      "user": "Liam",
-      "id": 18
-    },
-    {
       "id": 22,
-      "title": "RE: Portfolio Presentation",
+      "title": "React Hooks Image Slider",
       "subjectId": 6,
-      "synopsis": "today is the turning point",
-      "url": "https://google.com",
+      "synopsis": "Today is the turning point",
+      "url": "https://medium.com/better-programming/react-hooks-slider-how-to-build-an-image-slider-with-autoplay-part-2-c94deaf763c4",
       "date": "2020-08-04",
       "user": "Tasha",
       "userId": 3
@@ -138,29 +140,42 @@
       "subjectId": "3",
       "synopsis": "RE: Critique Me!",
       "url": "https://github.com",
-      "date": "2020-08-04",
-      "user": "Tasha",
-      "id": 24
-    },
-    {
-      "userId": 3,
-      "title": "RE: Portfolio Presentation",
-      "subjectId": "3",
-      "synopsis": "RE: Critique Me!",
-      "url": "https://github.com",
       "date": "2020-08-26",
       "user": "Tasha",
       "id": 25
+    },
+    {
+      "userId": 3,
+      "title": "React TOOLS",
+      "subjectId": "6",
+      "synopsis": "How to use ReactStrap",
+      "url": "https://react.edu",
+      "date": "2020-08-02",
+      "user": "Tasha",
+      "id": 26
+    },
+    {
+      "userId": 17,
+      "title": "Good Reads",
+      "subjectId": "2",
+      "synopsis": "WebDesign for the pros",
+      "url": "https://javascript.edu",
+      "date": "2020-08-06",
+      "user": "Madison",
+      "id": 27
+    },
+    {
+      "id": 28,
+      "title": "RE: Portfolio Presentation",
+      "subjectId": 7,
+      "synopsis": "hello world its Tuesday",
+      "url": "https://medium.com/better-programming/react-hooks-slider-how-to-build-an-image-slider-with-autoplay-part-2-c94deaf763c4",
+      "date": "2020-08-06",
+      "user": "Friend",
+      "userId": 18
     }
   ],
   "notes": [
-    {
-      "userId": 3,
-      "resourceId": 22,
-      "note": "Today is my Birthday",
-      "date": "2020-08-06",
-      "id": 1
-    },
     {
       "userId": 3,
       "resourceId": 23,
@@ -178,9 +193,16 @@
     {
       "userId": 3,
       "resourceId": 22,
-      "note": "Liam is my favorite Son",
+      "note": "Searching for React Hooks is the best way to avoid running into class outdated components that are a waste of time.",
       "date": "2020-08-04",
-      "id": 4
+      "id": 5
+    },
+    {
+      "userId": 17,
+      "resourceId": 27,
+      "note": "I love designing",
+      "date": "2020-08-06",
+      "id": 6
     }
   ],
   "subjects": [

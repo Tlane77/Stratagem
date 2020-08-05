@@ -2,7 +2,7 @@ import React from "react";
 import "./ResourceCard.css";
 import { Link } from "react-router-dom";
 import NoteList from "../Notes/NoteList";
-import { Button,Card} from "react-bootstrap";
+import { Button,Card,Form} from "react-bootstrap";
 
 
 import { ExternalLink } from "react-external-link";
@@ -20,8 +20,8 @@ const handleOnClickEdit = event => {
 };
 
   return (
-    <div className="Card">
-      <div className="card-content">
+    <Card className="Card">
+      <Form className="card-content">
         <h3>
           Title:{" "}
           <span className="card-resourceName">{props.resource.title}</span>
@@ -33,7 +33,7 @@ const handleOnClickEdit = event => {
           </span>
         </p>
         <p>
-          Synopsis:{" "}
+          Memo:{" "}
           <span className="card-resourceName">{props.resource.synopsis}</span>
         </p>
         <p>
@@ -78,8 +78,8 @@ const handleOnClickEdit = event => {
             </Button>
           </Link>
         </section>
-      </div>
-    </div>
+      </Form>
+    </Card>
   );
 };
 

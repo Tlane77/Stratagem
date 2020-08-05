@@ -2,19 +2,21 @@
     display: flex;
     flex-direction: column;
     color: #D3D3D3;
+    box-shadow: lightslategrey;
 }
 
 /* Add a black background color to the top navigation bar */
 .searchSub {
   overflow: hidden;
   background-color: #e9e9e9;
+  display:flex;
 }
 
 /* Style the links inside the navigation bar */
 .searchSub a {
   float: left;
   display: block;
-  color: black;
+  color: midnightblue;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -60,5 +62,11 @@
   .button{
     background-color: #2196F3
   }
+
+  img.registrationLogo{
+   display:flex;
+   
+  }
+  
   
 }

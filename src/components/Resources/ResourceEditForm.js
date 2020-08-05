@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ResourceManager from "../Modules/ResourceManager";
-import "./ResourceForm.css";
-import { Form, Button } from "react-bootstrap";
+import "./ResourceEditForm.css";
+import { Form, Button ,Col} from "react-bootstrap";
 
 
 
@@ -57,14 +57,28 @@ const ResourceEditForm = (props) => {
     })
   }, [])
 
+  // Reference Code Below
+
+  //  <Form className="ResourceFormContainer">
+  //     {/* <Row className="ResourceFormRow"> */}
+  //     <Col className="ResourceFormCol">
+  //       <Form.Group className="ResourceFormGrp" controlId="title">
+  //         <Form.Label className="ResourceFormLbl">Title</Form.Label>
+  //         <Form.Control
+  //           className="ResourceFormCtl"
+  //           type="text"
+  //           onChange={handleFieldChange}
+  //           placeholder="Enter Title"
+  //         />
+
     
 
   return (
     <>
-      <form>
-        <fieldset>
-          <div className="form-grid">
-            <label htmlFor="title">Title</label>
+      <Form className="ResourceEditFormContainer">
+        <Col className="ResourceEditFormCol">
+          <Form.Group className="ResourceEditFormGrp" controlId="title">
+            <Form.Label className="ResourceEditFormLbl">Title</Form.Label>
             <input
               type="text"
               required
@@ -73,7 +87,11 @@ const ResourceEditForm = (props) => {
               id="title"
               value={resource.title}
             />
-            <label htmlFor="subject">Subject</label>
+            <Form.Group
+              className="ResourceEditFormGrp"
+              controlId="subject"
+            ></Form.Group>
+            <Form.Label className="ResourceEditFormLbl">Subject</Form.Label>
             <select
               required
               className="form-control"
@@ -89,8 +107,11 @@ const ResourceEditForm = (props) => {
               <option value="6">REACT</option>
               <option value="7">CRUD</option>
             </select>
-
-            <label htmlFor="synopsis">Synopsis</label>
+            <Form.Group
+              className="ResourceEditFormGrp"
+              controlId="memo"
+            ></Form.Group>
+            <Form.Label className="ResourceEditFormLbl">Memo</Form.Label>
             <input
               type="text"
               required
@@ -99,7 +120,8 @@ const ResourceEditForm = (props) => {
               id="synopsis"
               value={resource.synopsis}
             />
-            <label htmlFor="Url">url</label>
+            <Form.Label className="ResourceEditFormLbl">URL</Form.Label>
+            {/* <label htmlFor="Url">url</label> */}
             <input
               type="text"
               required
@@ -108,7 +130,7 @@ const ResourceEditForm = (props) => {
               id="url"
               value={resource.url}
             />
-            <label htmlFor="date">Date</label>
+            <Form.Label className="ResourceEditFormLbl">Date</Form.Label>
             <input
               type="date"
               required
@@ -117,32 +139,23 @@ const ResourceEditForm = (props) => {
               id="date"
               value={resource.date}
             />
-            {/* <label htmlFor="note"> ADD Note</label>
-            <input
-              type="text"
-              required
-              className="form-control"
-              onChange={handleFieldChange}
-              id="note"
-              value={note.resourceId}
-            /> */}
-          </div>
+          </Form.Group>
 
-          {/* <select
-            className="form-control"
-            id="noteId"
-            value={notes.noteId}
-            onChange={handleFieldChange}
-          >
-            {notes.map((note) => (
-              <option key={note.id} value={note.id}>
-                {notes.id}
-              </option>
-            ))}
-          </select>
-          <label htmlFor="noteId">Note</label> */}
-          <div className="alignRight">
+          {/* <div className="resourceSubmitButton">
             <Button
+              className="ResourceFormButton"
+              variant="custom"
+              type="button"
+              disabled={isLoading}
+              onClick={constructNewResource}
+            >
+              Submit
+            </Button>
+          </div> */}
+
+          <div className="resourceEditSubmitButton">
+            <Button
+              className="ResourceEditFormButton"
               type="button"
               disabled={isLoading}
               onClick={updateExistingResource}
@@ -151,8 +164,8 @@ const ResourceEditForm = (props) => {
               Submit
             </Button>
           </div>
-        </fieldset>
-      </form>
+        </Col>
+      </Form>
     </>
   );
 };

@@ -1,4 +1,4 @@
-.resourceFormContainer {
+.resourceEditFormContainer {
     background-color: #1f3d7a;  
     color: #D3D3D3;
     font-size: larger;
@@ -7,41 +7,48 @@
     
 }
 
-.ResourceFormButton.btn.btn-custom {
+.ResourceEditFormButton.btn.btn-custom {
     background-color: #66b3ff;
     color: #D3D3D3; 
     font-size: larger; 
     font-weight: bolder;
 }
-.ResourceFormButton{
-    color: #2196F3
+.ResourceEditFormButton{
+    color: #2196F3;
+    justify-content: center;
+    align-content: center;
   }
-.ResourceFormCol{
+.ResourceEditFormCol{
     display: flex;
     justify-content: center;
     font-weight: bolder;
+    padding: 20px;
     
     
    
 }
-.resourceSubmitButton{
-    display: flex;
+.resourceEditSubmitButton{
+   align-content: center;
     justify-content: center;
+    padding-left: 100px;
+    padding-top: 100px;
+
     
 }
-.ResourceFormLbl{
+.ResourceEditFormLbl{
     color: #D3D3D3; 
     display: flex;
     justify-content: center;
-    align-content: center;
+   
     text-align: center;
     font-weight: 800;
     font-size: 30px;
     font-weight: bolder;
 }
-.ResourceFormGrp{
+.ResourceEditFormGrp{
     padding: 40px;
-    justify-content: center;
+    align-content: flex-end;
+    justify-content: end;
     font-weight: bolder;
     
 }

@@ -26,7 +26,7 @@ const NoteList = (props) => {
      
 
         <div className="note-container">
-          <h2>Notes</h2>
+         
       
           <div className="Note-card-container">
             {notes.map((note) => (

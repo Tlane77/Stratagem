@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Button, Col } from "react-bootstrap";
 import "./ResourceForm.css";
 import ResourceManager from "../Modules/ResourceManager";
 import { withRouter } from "react-router-dom";
@@ -51,92 +51,84 @@ const ResourceForm = (props) => {
   return (
     <Form className="ResourceFormContainer">
       {/* <Row className="ResourceFormRow"> */}
-        <Col className="ResourceFormCol">
-          <Form.Group className="ResourceFormGrp" controlId="title">
-            <Form.Label className="ResourceFormLbl">Title</Form.Label>
-            <Form.Control
-              className="ResourceFormCtl"
-              type="text"
-              onChange={handleFieldChange}
-              placeholder="Enter Title"
-            />
-            <label htmlFor="title">Title</label>
-          </Form.Group>
-        </Col>
-        <Col className="ResourceFormCol">
-          <Form.Group className="ResourceFormGrp" controlId="subjectId">
-            <label htmlFor="subject">Subject</label>
-            <select
-              required
-              className="form-control"
-              onChange={handleFieldChange}
-              id="subjectId"
-              value={resource.subjectId}
-            >
-              <option value="1">Java</option>
-              <option value="2">Javascript</option>
-              <option value="3">PHP</option>
-              <option value="4">C#</option>
-              <option value="5">Ruby</option>
-            </select>
-          </Form.Group>
-        </Col>
-        <Col className="ResourceFormCol">
-          <Form.Group className="ResourceFormGrp" controlId="synopsis">
-            <Form.Label className="ResourceFormLbl">Synopsis</Form.Label>
-            <Form.Control
-              className="ResourceFormCtl"
-              onChange={handleFieldChange}
-              type="text"
-              placeholder="Enter Thoughts"
-            />
-          </Form.Group>
-        </Col>
-        <Col className="ResourceFormCol">
-          <Form.Group className="ResourceFormGrp" controlId="url">
-            <Form.Label className="ResourceFormLbl">Resource Link</Form.Label>
-            <Form.Control
-              className="ResourceFormCtl"
-              onChange={handleFieldChange}
-              type="url"
-              placeholder="Enter Resource link"
-            />
-          </Form.Group>
-        </Col>
-        <Col className="ResourceFormCol">
-          <Form.Group className="ResourceFormGrp" controlId="date">
-            <Form.Label className="ResourceFormLbl">Date</Form.Label>
-            <Form.Control
-              className="ResourceFormCtl"
-              onChange={handleFieldChange}
-              type="date"
-              placeholder="Enter Date"
-            />
-          </Form.Group>
-        </Col>
-        {/* <Col className="ResourceFormCol">
-          <Form.Group className="ResourceFormGrp" controlId="noteId">
-            <Form.Label className="ResourceFormLbl">Notes</Form.Label>
-            <Form.Control
-              className="ResourceFormCtl"
-              onChange={handleFieldChange}
-              type="text"
-              placeholder="Notes"
-            />
-          </Form.Group>
-        </Col> */}
-      {/* </Row> */}
+      <Col className="ResourceFormCol">
+        <Form.Group className="ResourceFormGrp" controlId="title">
+          <Form.Label className="ResourceFormLbl">Title</Form.Label>
+          <Form.Control
+            className="ResourceFormCtl"
+            type="text"
+            onChange={handleFieldChange}
+            placeholder="Enter Title"
+          />
+          {/* <label htmlFor="title">Title</label> */}
+        </Form.Group>
+      </Col>
+      <Col className="ResourceFormCol">
+        <Form.Group className="ResourceFormGrp" controlId="subjectId">
+          <Form.Label className="ResourceFormLbl">Subject</Form.Label>
+          {/* <label htmlFor="subject">Subject</label> */}
+          <select
+            required
+            className="form-control"
+            onChange={handleFieldChange}
+            id="subjectId"
+            value={resource.subjectId}
+          >
+            <option value="1">Java</option>
+            <option value="2">Javascript</option>
+            <option value="3">PHP</option>
+            <option value="4">C#</option>
+            <option value="5">Ruby</option>
+            <option value="6">REACT</option>
+            <option value="7">CRUD</option>
+          </select>
+        </Form.Group>
+      </Col>
+      <Col className="ResourceFormCol">
+        <Form.Group className="ResourceFormGrp" controlId="synopsis">
+          <Form.Label className="ResourceFormLbl">Memo</Form.Label>
+          <Form.Control
+            className="ResourceFormCtl"
+            onChange={handleFieldChange}
+            type="text"
+            placeholder="Enter Thoughts"
+          />
+        </Form.Group>
+      </Col>
+      <Col className="ResourceFormCol">
+        <Form.Group className="ResourceFormGrp" controlId="url">
+          <Form.Label className="ResourceFormLbl">Resource Link</Form.Label>
+          <Form.Control
+            className="ResourceFormCtl"
+            onChange={handleFieldChange}
+            type="url"
+            placeholder="Enter Resource link"
+          />
+        </Form.Group>
+      </Col>
+      <Col className="ResourceFormCol">
+        <Form.Group className="ResourceFormGrp" controlId="date">
+          <Form.Label className="ResourceFormLbl">Date</Form.Label>
+          <Form.Control
+            className="ResourceFormCtl"
+            onChange={handleFieldChange}
+            type="date"
+            placeholder="Enter Date"
+          />
+        </Form.Group>
+      </Col>
+      
       <div className="resourceSubmitButton">
-      <Button
-        className="ResourceFormButton"
-        variant="custom"
-        type="button"
-        disabled={isLoading}
-        onClick={constructNewResource}
-      >
-        Submit
-      </Button>
-    </div>
+        <Button
+          className="ResourceFormButton"
+          variant="custom"
+          type="button"
+          disabled={isLoading}
+          onClick={constructNewResource}
+        >
+          Submit
+        </Button>
+      </div>
     </Form>
   );
 };
