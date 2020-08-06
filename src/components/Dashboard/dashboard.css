@@ -47,7 +47,11 @@
     justify-content: center;  
 
 }
-.registrationLogo{
-    justify-content: space-around;
-
+.registrationLogo7{
+    width: 100%;
+    /* max-width: 100%;
+    object-fit: cover;
+    height: 300px; */
+    
+   
 }

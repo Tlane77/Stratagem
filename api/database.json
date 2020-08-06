@@ -125,24 +125,24 @@
       "userId": 3
     },
     {
-      "userId": 3,
-      "title": "RE: Portfolio Presentation",
-      "subjectId": "2",
-      "synopsis": "RE: Critique Me!",
-      "url": "https://github.com",
+      "id": 23,
+      "title": "Capstone Details",
+      "subjectId": 7,
+      "synopsis": "Brenda's how to on Capstones",
+      "url": "https://github.com/nss-day-cohort-41/capstone-details",
       "date": "2020-08-04",
       "user": "Tasha",
-      "id": 23
+      "userId": 3
     },
     {
-      "userId": 3,
-      "title": "React TOOLS",
-      "subjectId": "6",
-      "synopsis": "How to use ReactStrap",
-      "url": "https://react.edu",
+      "id": 26,
+      "title": "React How to Route",
+      "subjectId": 6,
+      "synopsis": "React-router",
+      "url": "https://www.freecodecamp.org/news/react-router-in-5-minutes/",
       "date": "2020-08-02",
       "user": "Tasha",
-      "id": 26
+      "userId": 3
     },
     {
       "userId": 17,
@@ -163,6 +163,26 @@
       "date": "2020-08-06",
       "user": "Friend",
       "userId": 18
+    },
+    {
+      "userId": 3,
+      "title": "Read Me Generator",
+      "subjectId": "2",
+      "synopsis": "Generate a Great Readme",
+      "url": "https://: https://www.npmjs.com/package/readme-md-generator",
+      "date": "2020-08-06",
+      "user": "Tasha",
+      "id": 29
+    },
+    {
+      "id": 30,
+      "title": "Quantum Circuits",
+      "subjectId": 9,
+      "synopsis": "What are Qubits? How to build gates",
+      "url": "https://quantum-computing.ibm.com/docs/iqx/",
+      "date": "2020-08-05",
+      "user": "Tasha",
+      "userId": 3
     }
   ],
   "notes": [
@@ -193,12 +213,40 @@
       "note": "This is a Great Day!!",
       "date": "2020-08-05",
       "id": 7
+    },
+    {
+      "userId": 3,
+      "resourceId": 22,
+      "note": "How to develop a react app with hooks",
+      "date": "2020-08-04",
+      "id": 8
+    },
+    {
+      "userId": 3,
+      "resourceId": 22,
+      "note": "This image slider was an easy tutorial",
+      "date": "2020-08-06",
+      "id": 9
+    },
+    {
+      "userId": 3,
+      "resourceId": 23,
+      "note": "This includes the google slides information",
+      "date": "2020-08-05",
+      "id": 10
+    },
+    {
+      "userId": 3,
+      "resourceId": 26,
+      "note": "This teaches you about the react router in 5 min. Great Tutorial",
+      "date": "2020-08-06",
+      "id": 11
     }
   ],
   "subjects": [
     {
       "id": 1,
-      "subjectName": "Java"
+      "subjectName": "Choose"
     },
     {
       "id": 2,
@@ -223,6 +271,18 @@
     {
       "id": 7,
       "subjectName": "CRUD"
+    },
+    {
+      "id": 8,
+      "subjectName": "Python"
+    },
+    {
+      "id": 9,
+      "subjectName": "Quantum"
+    },
+    {
+      "id": 10,
+      "subjectName": "Quantum"
     }
   ]
 }

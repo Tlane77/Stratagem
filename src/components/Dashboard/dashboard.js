@@ -3,6 +3,7 @@ import "../Dashboard/dashboard.css";
 import NavBar from "../Navbar/Navbar"
 
 
+
 const Dashboard = (props) => {
   const clearUser = () => {
     sessionStorage.clear();
@@ -16,7 +17,7 @@ const Dashboard = (props) => {
       <NavBar {...props} clearUser={clearUser} />
       <h1 className="dashboard-title">Stratagem Developer Resources</h1><br>
       </br>
-      <img className="registrationLogo" src={require("../Images/logo.png")}
+      <img className="registrationLogo7" src={require("../Images/multilogo7.png")}
       alt="imgLogo"></img>
     </div>
   );

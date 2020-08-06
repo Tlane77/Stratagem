@@ -15,10 +15,10 @@ const NavBar = (props) => {
     <header>
       <nav className="navBar">
         <ul className="container">
-          <Image
+          {/* <Image
             className="logoNavbarLeft"
-            src={require("../Images/logo3.png")}
-          />
+            src={require("../Images/logo6.png")}
+          /> */}
           <li>
             <NavLink
               className="nav-link"
@@ -57,7 +57,7 @@ const NavBar = (props) => {
               Logout{" "}
             </NavLink>
           </li>
-          <Image className="logoNavbar" src={require("../Images/logo1.png")} />
+          {/* <Image className="logoNavbar" src={require("../Images/logo3.png")} /> */}
 
         </ul>
       </nav>

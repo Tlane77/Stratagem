@@ -59,8 +59,8 @@ const [filteredResources, setFilteredResources] = useState([]);
         <h1 className="dashboard-title">Stratagem Developer Resources</h1>
         <br></br>
          <img
-          className="registrationLogo"
-          src={require("../Images/stratagembanner.jpg")}
+          className="resourceListLogo"
+          src={require("../Images/resourceListBanner.png")}
           alt="imgbanner"
         ></img>
          

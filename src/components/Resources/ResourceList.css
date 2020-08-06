@@ -1,8 +1,9 @@
 .ResourceListContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: #D3D3D3;
     box-shadow: lightslategrey;
+   
 }
 
 /* Add a black background color to the top navigation bar */
@@ -21,12 +22,14 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+   box-shadow: lightslategrey;
 }
 
 /* Change the color of links on hover */
 .searchSub a:hover {
   background-color: #ddd;
   color: midnightblue;
+   box-shadow: lightslategrey;
 }
 
 /* Style the "active" element to highlight the current page */
@@ -60,11 +63,15 @@
   }
   
   .button{
-    background-color: #2196F3
+    background-color: #2196F3;
+     box-shadow: lightslategrey;
   }
 
-  img.registrationLogo{
-   display:flex;
+  img.resourceListLogo{
+  width: 100%;
+  height: 0em;
+   box-shadow: lightslategrey;
+ 
    
   }
   

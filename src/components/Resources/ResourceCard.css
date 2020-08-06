@@ -1,20 +1,26 @@
 .resourceCardContainer.container {
     display: flex;
     width:50%;
+    justify-content: center;
+   
+    
     
     
 }
 
-.resourceCard {
+.resourceCard2 {
     flex-direction: row;
     color: #D3D3D3;
     width: 30rem;
     margin-bottom: 2rem;
     border: 2px solid #1f3d7a !important;
-    border-radius: 6px !important;
+    border-radius: 10px !important;
     background-color: #888888 !important;
     box-shadow: 0 4px 8px 0 #888888, 0 6px 20px 0 #888888;
     margin-top: 1rem;
+    flex-wrap: wrap;
+    
+
 }
 
 .resourceCardBody {
@@ -38,10 +44,10 @@
     background-color: #66b3ff;
     color: #D3D3D3;  
 }
-.card{
+/* .Card2-resourceContainer{
     display:flex;
     background-color: #888888;
-    width: 100%;
+    width: 40%;
     justify-content: center;
     text-align: center;
     align-items: flex;
@@ -49,19 +55,29 @@
     border-radius: 20px;
     border-style: double;
     border-width: medium;
-   
-}
+    margin: 40px;
+} */
 
-.card-content{
+.card2-content{
     color: #D3D3D3;
+     margin: 40px;
     
     
     
 }
 
   
-  .card-content.button{
-      background-color: #2196F3
+  /* .card-content.button{
+      background-color: #2196F3;
+      padding: 20%;
+      display: flex;
   }
+
+  .button.btn.btn-primary{
+      padding: 10%;
+  }
+  .Button{
+      padding: 10%;
+  } */
 
   

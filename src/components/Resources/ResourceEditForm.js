@@ -76,11 +76,10 @@ const ResourceEditForm = (props) => {
   return (
     <>
       <div>
-        
         <h1 className="dashboard-title">Stratagem Developer Resources</h1>
         <br></br>
         <img
-          className="registrationLogo"
+          className="resourceEditFormLogo"
           src={require("../Images/stratagembanner.jpg")}
           alt="imgLogo"
         ></img>
@@ -109,13 +108,16 @@ const ResourceEditForm = (props) => {
               id="subjectId"
               value={parseInt(resource.subjectId)}
             >
-              <option value="1">Java</option>
+              <option value="1">Choose</option>
               <option value="2">Javascript</option>
               <option value="3">PHP</option>
               <option value="4">C#</option>
               <option value="5">Ruby</option>
               <option value="6">REACT</option>
               <option value="7">CRUD</option>
+              <option value="8">Python</option>
+              <option value="9">Quantum</option>
+              <option value="10">Java</option>
             </select>
             <Form.Group
               className="ResourceEditFormGrp"
@@ -130,7 +132,10 @@ const ResourceEditForm = (props) => {
               id="synopsis"
               value={resource.synopsis}
             />
-             <Form.Group className="ResourceEditFormGrp" controlId="url"></Form.Group>
+            <Form.Group
+              className="ResourceEditFormGrp"
+              controlId="url"
+            ></Form.Group>
             <Form.Label className="ResourceEditFormLbl">URL</Form.Label>
             {/* <label htmlFor="Url">url</label> */}
             <input
@@ -141,7 +146,10 @@ const ResourceEditForm = (props) => {
               id="url"
               value={resource.url}
             />
-             <Form.Group className="ResourceEditFormGrp" controlId="date"></Form.Group>
+            <Form.Group
+              className="ResourceEditFormGrp"
+              controlId="date"
+            ></Form.Group>
             <Form.Label className="ResourceEditFormLbl">Date</Form.Label>
             <input
               type="date"
@@ -164,7 +172,6 @@ const ResourceEditForm = (props) => {
               Submit
             </Button>
           </div> */}
-          
 
           <div className="resourceEditSubmitButton">
             <Button

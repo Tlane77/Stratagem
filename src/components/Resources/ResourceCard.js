@@ -20,8 +20,10 @@ const handleOnClickEdit = event => {
 };
 
   return (
-    <Card className="Card">
-      <Form className="card-content">
+    <div className="resourceCard2">
+    <Card className="card2-resourceContainer">
+
+      <Form className="card2-content">
         <h3>
           Title:{" "}
           <span className="card-resourceName">{props.resource.title}</span>
@@ -80,6 +82,7 @@ const handleOnClickEdit = event => {
         </section>
       </Form>
     </Card>
+    </div>
   );
 };
 
