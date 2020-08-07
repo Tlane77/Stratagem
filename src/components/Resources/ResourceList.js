@@ -80,7 +80,7 @@ const [filteredResources, setFilteredResources] = useState([]);
       {/* <div className="searchSub">
         <input type="text" placeholder="Search.." value={search.field} id="field" onChange={handleFieldChange}></input>
       </div> */}
-      <Form className="dashForm resourceListSearch">
+      <Form className="dashForm.resourceListSearch">
         <FormControl
           className="dashControl"
           type="text"

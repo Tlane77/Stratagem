@@ -13,7 +13,7 @@
 .resourceCard2 {
     flex-direction: row;
     color: #D3D3D3;
-    width: 30rem;
+    width: 40rem;
     margin-bottom: 2rem;
     border: 2px solid #1f3d7a !important;
     border-radius: 10px !important;
@@ -21,6 +21,7 @@
     box-shadow: 0 4px 8px 0 #888888, 0 6px 20px 0 #888888;
     margin-top: 1rem;
     flex-wrap: wrap;
+    font-size: 30px;
     
 
 }

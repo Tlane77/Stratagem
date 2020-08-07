@@ -253,6 +253,26 @@
       "date": "2020-08-05",
       "user": "Tasha",
       "id": 37
+    },
+    {
+      "userId": 4,
+      "title": "How to Survive a Bootcamp",
+      "subjectId": "6",
+      "synopsis": "You can accomplish anything one step at a time.",
+      "url": "https://github.com/orgs/nss-day-cohort-41/people",
+      "date": "2020-08-03",
+      "user": "Faith",
+      "id": 38
+    },
+    {
+      "userId": 4,
+      "title": "REACT HOOKS LEARN",
+      "subjectId": "6",
+      "synopsis": "REACT HOOKS EXAMPLES",
+      "url": "https://github.com/Lemoncode/react-hooks-by-example/blob/master/Readme.md",
+      "date": "2020-08-05",
+      "user": "Faith",
+      "id": 39
     }
   ],
   "notes": [
