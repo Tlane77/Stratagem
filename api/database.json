@@ -118,7 +118,7 @@
       "id": 22,
       "title": "React Hooks Image Slider",
       "subjectId": 6,
-      "synopsis": "Today is the turning point",
+      "synopsis": "The Sky is the Limit",
       "url": "https://medium.com/better-programming/react-hooks-slider-how-to-build-an-image-slider-with-autoplay-part-2-c94deaf763c4",
       "date": "2020-08-04",
       "user": "Tasha",
@@ -128,7 +128,7 @@
       "id": 23,
       "title": "Capstone Details",
       "subjectId": 7,
-      "synopsis": "Brenda's how to on Capstones",
+      "synopsis": "Brenda's HOW TO on Capstones",
       "url": "https://github.com/nss-day-cohort-41/capstone-details",
       "date": "2020-08-04",
       "user": "Tasha",
@@ -145,14 +145,14 @@
       "userId": 3
     },
     {
-      "userId": 17,
-      "title": "Good Reads",
-      "subjectId": "2",
+      "id": 27,
+      "title": "Build/Style with React Hooks",
+      "subjectId": 6,
       "synopsis": "WebDesign for the pros",
-      "url": "https://javascript.edu",
+      "url": "https://medium.com/better-programming/easily-create-a-form-with-react-hooks-1cab17e2be0d",
       "date": "2020-08-06",
       "user": "Madison",
-      "id": 27
+      "userId": 17
     },
     {
       "id": 28,
@@ -183,6 +183,76 @@
       "date": "2020-08-05",
       "user": "Tasha",
       "userId": 3
+    },
+    {
+      "userId": 17,
+      "title": "Design A Javascript App",
+      "subjectId": "2",
+      "synopsis": "10 Great Projects",
+      "url": "https://skillcrush.com/blog/projects-you-can-do-with-javascript/",
+      "date": "2020-08-06",
+      "user": "Madison",
+      "id": 31
+    },
+    {
+      "userId": 8,
+      "title": "C# at its Finest",
+      "subjectId": "4",
+      "synopsis": "Let's Get this Baby!!",
+      "url": "https://oz-code.com/blog/net-c-tips/ultimate-2020-guide-learning-debugging-c-net",
+      "date": "2020-08-03",
+      "user": "Gavin",
+      "id": 32
+    },
+    {
+      "userId": 8,
+      "title": "C# Interview Questions 2020",
+      "subjectId": "4",
+      "synopsis": "Interview Questions",
+      "url": "https://www.fullstack.cafe/blog/c-sharp-interview-questions",
+      "date": "2020-08-06",
+      "user": "Gavin",
+      "id": 33
+    },
+    {
+      "userId": 8,
+      "title": "Ruby Interview Questions",
+      "subjectId": "5",
+      "synopsis": "Ruby on Rails interview questions",
+      "url": "https://medium.com/better-programming/53-ruby-on-rails-interview-questions-and-answers-eb99eed1aeb7",
+      "date": "2020-08-03",
+      "user": "Gavin",
+      "id": 34
+    },
+    {
+      "id": 35,
+      "title": "Java for Beginners",
+      "subjectId": 10,
+      "synopsis": "From Beginner to Expert",
+      "url": "https://www.youtube.com/watch?v=S0V20PHPR4M",
+      "date": "2020-08-03",
+      "user": "Gavin",
+      "userId": 8
+    },
+    {
+      "id": 36,
+      "title": "Cloudinary",
+      "subjectId": 2,
+      "synopsis": "Cloudinary and Javascript",
+      "url": "https://cloudinary.com/",
+      "date": "2020-07-30",
+      "user": "Patrick",
+      "userId": 6
+    },
+    {
+      "userId": 3,
+      "title": "SEXY REACT APP",
+      "subjectId": "6",
+      "synopsis": "THIS IS HOW WE DO IT!",
+      "url": "https://www.nationalgeographic.com/",
+      "date": "2020-08-05",
+      "user": "Tasha",
+      "id": 37
     }
   ],
   "notes": [
@@ -269,6 +339,48 @@
       "note": "Start with Baby Qubits and you will soon forget about byte size..",
       "date": "2020-08-05",
       "id": 17
+    },
+    {
+      "userId": 17,
+      "resourceId": 31,
+      "note": "This is a great javascript adventure",
+      "date": "2020-08-06",
+      "id": 18
+    },
+    {
+      "userId": 8,
+      "resourceId": 32,
+      "note": "Bieber Believe",
+      "date": "2020-08-03",
+      "id": 19
+    },
+    {
+      "userId": 8,
+      "resourceId": 33,
+      "note": "Interview Questions",
+      "date": "2020-08-03",
+      "id": 20
+    },
+    {
+      "userId": 8,
+      "resourceId": 34,
+      "note": "Ruby on Rails 53 Interview Questions",
+      "date": "2020-08-04",
+      "id": 21
+    },
+    {
+      "userId": 6,
+      "resourceId": 36,
+      "note": "cloudinary is huge",
+      "date": "2020-08-05",
+      "id": 22
+    },
+    {
+      "userId": 3,
+      "resourceId": 37,
+      "note": "Dark mode at it's finest",
+      "date": "2020-08-05",
+      "id": 23
     }
   ],
   "subjects": [

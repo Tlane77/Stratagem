@@ -53,7 +53,9 @@ const ResourceForm = (props) => {
     <>
       <NavBar {...props} clearUser={props.clearUser} />
       <div>
-        <h1 className="dashboard-title">Create Stratagem Developer Resources</h1>
+        <h1 className="dashboard-title">
+          Create Stratagem Developer Resources
+        </h1>
         <br></br>
         <img
           className="resourceEditFormLogo"
@@ -87,13 +89,16 @@ const ResourceForm = (props) => {
               id="subjectId"
               value={resource.subjectId}
             >
-              <option value="1">Java</option>
+              <option value="1">Choose</option>
               <option value="2">Javascript</option>
               <option value="3">PHP</option>
               <option value="4">C#</option>
               <option value="5">Ruby</option>
               <option value="6">REACT</option>
               <option value="7">CRUD</option>
+              <option value="8">Python</option>
+              <option value="9">Quantum</option>
+              <option value="10">Java</option>
             </select>
           </Form.Group>
         </Col>
