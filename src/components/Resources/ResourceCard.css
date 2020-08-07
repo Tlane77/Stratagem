@@ -1,7 +1,9 @@
-.resourceCardContainer.container {
+.container-cards {
     display: flex;
-    width:50%;
+    width:100%;
     justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
    
     
     

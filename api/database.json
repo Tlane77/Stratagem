@@ -178,21 +178,14 @@
       "id": 30,
       "title": "Quantum Circuits",
       "subjectId": 9,
-      "synopsis": "What are Qubits? How to build gates",
-      "url": "https://quantum-computing.ibm.com/docs/iqx/",
+      "synopsis": "What are Qubits? How to build quantum gates",
+      "url": "       https://quantum-computing.ibm.com/docs/iqx/",
       "date": "2020-08-05",
       "user": "Tasha",
       "userId": 3
     }
   ],
   "notes": [
-    {
-      "userId": 3,
-      "resourceId": 23,
-      "note": "The world is my canvas",
-      "date": "2020-08-05",
-      "id": 2
-    },
     {
       "userId": 3,
       "resourceId": 22,
@@ -217,13 +210,6 @@
     {
       "userId": 3,
       "resourceId": 22,
-      "note": "How to develop a react app with hooks",
-      "date": "2020-08-04",
-      "id": 8
-    },
-    {
-      "userId": 3,
-      "resourceId": 22,
       "note": "This image slider was an easy tutorial",
       "date": "2020-08-06",
       "id": 9
@@ -241,6 +227,48 @@
       "note": "This teaches you about the react router in 5 min. Great Tutorial",
       "date": "2020-08-06",
       "id": 11
+    },
+    {
+      "userId": 3,
+      "resourceId": 23,
+      "note": "This is the first day of the rest of your life! Build Something amazing!!",
+      "date": "2020-08-06",
+      "id": 12
+    },
+    {
+      "userId": 3,
+      "resourceId": 23,
+      "note": "Remember to install your dependencies!",
+      "date": "2020-08-01",
+      "id": 13
+    },
+    {
+      "userId": 3,
+      "resourceId": 26,
+      "note": "Getting the Routes Down is Half the Battle",
+      "date": "2020-08-03",
+      "id": 14
+    },
+    {
+      "userId": 3,
+      "resourceId": 26,
+      "note": "Check out all the apps to build from last week and use your new route knowledge!",
+      "date": "2020-08-06",
+      "id": 15
+    },
+    {
+      "userId": 3,
+      "resourceId": 29,
+      "note": "READme pages are important to be very detailed.. Remember to give step by step instructions for testing",
+      "date": "2020-08-02",
+      "id": 16
+    },
+    {
+      "userId": 3,
+      "resourceId": 30,
+      "note": "Start with Baby Qubits and you will soon forget about byte size..",
+      "date": "2020-08-05",
+      "id": 17
     }
   ],
   "subjects": [

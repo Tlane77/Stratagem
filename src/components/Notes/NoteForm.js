@@ -1,6 +1,7 @@
 import React, { useState, } from "react";
 import { Form, Button, Col, } from "react-bootstrap";
 import NoteManager from "../Modules/NoteManager";
+import NavBar from "../Navbar/Navbar"
 import "./NoteForm.css";
 
 const NoteForm = (props) => {
@@ -22,9 +23,23 @@ const constructNewNote = () => {
         }
 }
   return (
-    <div>
-      <h1 className="note-title">Stratagem Developer Notes</h1>
-      <br></br>
+    <>
+      <NavBar {...props} clearUser={props.clearUser} />
+      <div>
+        <h1 className="dashboard-title">Stratagem Developer Resource Notes</h1>
+        <br></br>
+        <img
+          className="resourceEditFormLogo"
+          src={require("../Images/stratagembanner.jpg")}
+          alt="imgLogo"
+        ></img>
+        <img
+          className="resourceEditFormLogo"
+          src={require("../Images/StratagemMockup.png")}
+          alt="imgLogo"
+        ></img>
+      </div>
+
       <Form className="newNoteForm">
         <Col className="NoteFormCol">
           <Form.Group className="newNoteGroup" controlId="note">
@@ -58,7 +73,7 @@ const constructNewNote = () => {
           </Button>
         </div>
       </Form>
-    </div>
+    </>
   );
 }
 

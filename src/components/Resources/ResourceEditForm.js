@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ResourceManager from "../Modules/ResourceManager";
 import "./ResourceEditForm.css";
-import { Form, Button ,Col} from "react-bootstrap";
+import { Form, Button, Col } from "react-bootstrap";
+import NavBar from "../Navbar/Navbar"
 
 
 
@@ -75,8 +76,9 @@ const ResourceEditForm = (props) => {
 
   return (
     <>
+      <NavBar {...props} clearUser={props.clearUser} />
       <div>
-        <h1 className="dashboard-title">Stratagem Developer Resources</h1>
+        <h1 className="dashboard-title">Edit Stratagem Developer Resources</h1>
         <br></br>
         <img
           className="resourceEditFormLogo"

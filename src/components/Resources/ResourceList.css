@@ -67,13 +67,12 @@
      box-shadow: lightslategrey;
   }
 
-  img.resourceListLogo{
+  .resourceListLogo{
   width: 100%;
   height: 0em;
    box-shadow: lightslategrey;
  
    
-  }
-  
+  } 
   
 }

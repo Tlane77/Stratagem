@@ -21,7 +21,7 @@ const handleOnClickEdit = event => {
 
   return (
     <div className="resourceCard2">
-    <Card className="card2-resourceContainer">
+    <div className="card2-resourceContainer">
 
       <Form className="card2-content">
         <h3>
@@ -81,7 +81,7 @@ const handleOnClickEdit = event => {
           </Link>
         </section>
       </Form>
-    </Card>
+    </div>
     </div>
   );
 };

@@ -60,7 +60,7 @@ const [filteredResources, setFilteredResources] = useState([]);
         <br></br>
          <img
           className="resourceListLogo"
-          src={require("../Images/resourceListBanner.png")}
+          src={require("../Images/stratagembanner.jpg")}
           alt="imgbanner"
         ></img>
          
