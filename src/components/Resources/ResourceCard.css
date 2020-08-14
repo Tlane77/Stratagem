@@ -5,10 +5,16 @@
     flex-wrap: wrap;
     justify-content: space-around;
    
-    
+ 
     
     
 }
+
+.card2-resourceContainer{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }   
 
 .resourceCard2 {
     flex-direction: row;
@@ -70,7 +76,7 @@
 }
 
   
-   .Button{
-       padding: 20px;
+   .btn-primary{
+       margin: 20px;
    }
   

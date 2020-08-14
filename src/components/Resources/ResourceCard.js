@@ -24,10 +24,10 @@ const handleOnClickEdit = event => {
     <div className="card2-resourceContainer">
 
       <Form className="card2-content">
-        <h3>
+        <h1>
           {" "}
           <span className="card-resourceName">{props.resource.title}</span>
-        </h3>
+        </h1>
         <p>
           Subject:{" "}
           <span className="card-resourceName">

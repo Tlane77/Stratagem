@@ -95,12 +95,6 @@
       "userName": "Madison",
       "password": "1234",
       "id": 17
-    },
-    {
-      "email": "friend@live.com",
-      "userName": "Friend",
-      "password": "1234",
-      "id": 18
     }
   ],
   "resources": [
@@ -273,6 +267,46 @@
       "date": "2020-08-05",
       "user": "Faith",
       "id": 39
+    },
+    {
+      "userId": 19,
+      "title": "Learn javascript",
+      "subjectId": "2",
+      "synopsis": "tutorial",
+      "url": "https://w3schools.com",
+      "date": "2020-08-05",
+      "user": "Don",
+      "id": 40
+    },
+    {
+      "userId": 1,
+      "title": "Beaujolais Wine Burgundy, France",
+      "subjectId": "4",
+      "synopsis": "Hold on to your flippers!",
+      "url": "https://www.totalwine.com/wine-guide/french-wine/burgundy/beaujolais",
+      "date": "2020-08-07",
+      "user": "Amanda",
+      "id": 41
+    },
+    {
+      "userId": 13,
+      "title": "Learning the basics",
+      "subjectId": "6",
+      "synopsis": "Cool Job!",
+      "url": "https://zoom.com",
+      "date": "2020-08-10",
+      "user": "katie",
+      "id": 42
+    },
+    {
+      "userId": 3,
+      "title": "How to Build a Modern Website",
+      "subjectId": "6",
+      "synopsis": "Hold on to your flippers!",
+      "url": "https://medium.com",
+      "date": "2020-08-13",
+      "user": "Tasha",
+      "id": 43
     }
   ],
   "notes": [
@@ -401,6 +435,20 @@
       "note": "Dark mode at it's finest",
       "date": "2020-08-05",
       "id": 23
+    },
+    {
+      "userId": 19,
+      "resourceId": 40,
+      "note": "this is a great resource",
+      "date": "2020-08-06",
+      "id": 24
+    },
+    {
+      "userId": 3,
+      "resourceId": 29,
+      "note": "this needs to be completed asap",
+      "date": "2020-08-06",
+      "id": 25
     }
   ],
   "subjects": [
