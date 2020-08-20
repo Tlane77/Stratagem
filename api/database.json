@@ -95,6 +95,24 @@
       "userName": "Madison",
       "password": "1234",
       "id": 17
+    },
+    {
+      "email": "jim@live.com",
+      "userName": "Jim",
+      "password": "1234",
+      "id": 18
+    },
+    {
+      "email": "cohort41@live.com",
+      "userName": "Cohort41",
+      "password": "1234",
+      "id": 19
+    },
+    {
+      "email": "May@live.com",
+      "userName": "May",
+      "password": "1234",
+      "id": 20
     }
   ],
   "resources": [
@@ -122,7 +140,7 @@
       "id": 23,
       "title": "Capstone Details",
       "subjectId": 7,
-      "synopsis": "Brenda's HOW TO on Capstones",
+      "synopsis": "HOW TO on Capstones",
       "url": "https://github.com/nss-day-cohort-41/capstone-details",
       "date": "2020-08-04",
       "user": "Tasha",
@@ -239,14 +257,14 @@
       "userId": 6
     },
     {
-      "userId": 3,
-      "title": "SEXY REACT APP",
-      "subjectId": "6",
+      "id": 37,
+      "title": "Javascript Example",
+      "subjectId": 6,
       "synopsis": "THIS IS HOW WE DO IT!",
       "url": "https://www.nationalgeographic.com/",
       "date": "2020-08-05",
       "user": "Tasha",
-      "id": 37
+      "userId": 3
     },
     {
       "userId": 4,
@@ -267,16 +285,6 @@
       "date": "2020-08-05",
       "user": "Faith",
       "id": 39
-    },
-    {
-      "userId": 19,
-      "title": "Learn javascript",
-      "subjectId": "2",
-      "synopsis": "tutorial",
-      "url": "https://w3schools.com",
-      "date": "2020-08-05",
-      "user": "Don",
-      "id": 40
     },
     {
       "userId": 1,
@@ -307,6 +315,66 @@
       "date": "2020-08-13",
       "user": "Tasha",
       "id": 43
+    },
+    {
+      "userId": 3,
+      "title": "C#.NET FRAMEWORK",
+      "subjectId": "4",
+      "synopsis": "Great for Getting Started",
+      "url": "https://w3schools.com",
+      "date": "2020-08-07",
+      "user": "Tasha",
+      "id": 44
+    },
+    {
+      "userId": 3,
+      "title": "How to Create IPhone Apps",
+      "subjectId": "2",
+      "synopsis": "10 Examples of Modern Apps",
+      "url": "https:// https://codewithchris.com/how-to-make-iphone-apps-with-no-programming-experience/",
+      "date": "2020-08-09",
+      "user": "Tasha",
+      "id": 45
+    },
+    {
+      "userId": 3,
+      "title": "SYMPTOM CHECKER API",
+      "subjectId": "6",
+      "synopsis": "Health API Open-Source",
+      "url": "https://apimedic.com/",
+      "date": "2020-08-10",
+      "user": "Tasha",
+      "id": 46
+    },
+    {
+      "userId": 3,
+      "title": "React Native Harvard",
+      "subjectId": "6",
+      "synopsis": "Tutorial Class",
+      "url": "https://www.youtube.com/playlist?list=PLhQjrBD2T382gdfveyad09Ierl_3Jh_wR",
+      "date": "2020-08-03",
+      "user": "Tasha",
+      "id": 47
+    },
+    {
+      "id": 48,
+      "title": "React How to Route",
+      "subjectId": 6,
+      "synopsis": "This is a 30 min tutorial",
+      "url": "https://react.org",
+      "date": "2020-08-16",
+      "user": "May",
+      "userId": 20
+    },
+    {
+      "id": 49,
+      "title": "React",
+      "subjectId": 6,
+      "synopsis": "Tutorial 20 min",
+      "url": "https://react.org",
+      "date": "2020-08-17",
+      "user": "Tasha",
+      "userId": 3
     }
   ],
   "notes": [
@@ -437,18 +505,25 @@
       "id": 23
     },
     {
-      "userId": 19,
-      "resourceId": 40,
-      "note": "this is a great resource",
-      "date": "2020-08-06",
-      "id": 24
-    },
-    {
       "userId": 3,
       "resourceId": 29,
       "note": "this needs to be completed asap",
       "date": "2020-08-06",
       "id": 25
+    },
+    {
+      "userId": 3,
+      "resourceId": 49,
+      "note": "This was a great source",
+      "date": "2020-08-17",
+      "id": 26
+    },
+    {
+      "userId": 3,
+      "resourceId": 49,
+      "note": "This has a great resource step at 4:34",
+      "date": "2020-08-17",
+      "id": 27
     }
   ],
   "subjects": [
