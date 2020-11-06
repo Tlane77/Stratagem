@@ -113,6 +113,18 @@
       "userName": "May",
       "password": "1234",
       "id": 20
+    },
+    {
+      "email": "Larry@live.com",
+      "userName": "Larry",
+      "password": "sports",
+      "id": 21
+    },
+    {
+      "email": "Tom@live.com",
+      "userName": "Tom",
+      "password": "1234",
+      "id": 22
     }
   ],
   "resources": [
@@ -375,6 +387,16 @@
       "date": "2020-08-17",
       "user": "Tasha",
       "userId": 3
+    },
+    {
+      "id": 50,
+      "title": "LinkedIn JavaScript",
+      "subjectId": 2,
+      "synopsis": "How to add functionality",
+      "url": "https://linkedIn.com",
+      "date": "2020-08-14",
+      "user": "Larry",
+      "userId": 21
     }
   ],
   "notes": [
