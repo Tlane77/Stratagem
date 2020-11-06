@@ -73,7 +73,7 @@
       "id": 13
     },
     {
-      "email": "baby@baby.live.com",
+      "email": "baby@live.com",
       "userName": "Baby",
       "password": "1234",
       "id": 14
@@ -89,6 +89,42 @@
       "userName": "Brenda",
       "password": "1234",
       "id": 16
+    },
+    {
+      "email": "mads@live.com",
+      "userName": "Madison",
+      "password": "1234",
+      "id": 17
+    },
+    {
+      "email": "jim@live.com",
+      "userName": "Jim",
+      "password": "1234",
+      "id": 18
+    },
+    {
+      "email": "cohort41@live.com",
+      "userName": "Cohort41",
+      "password": "1234",
+      "id": 19
+    },
+    {
+      "email": "May@live.com",
+      "userName": "May",
+      "password": "1234",
+      "id": 20
+    },
+    {
+      "email": "Larry@live.com",
+      "userName": "Larry",
+      "password": "sports",
+      "id": 21
+    },
+    {
+      "email": "Tom@live.com",
+      "userName": "Tom",
+      "password": "1234",
+      "id": 22
     }
   ],
   "resources": [
@@ -103,49 +139,419 @@
       "id": 15
     },
     {
-      "userId": 15,
+      "id": 22,
+      "title": "React Hooks Image Slider",
+      "subjectId": 6,
+      "synopsis": "The Sky is the Limit",
+      "url": "https://medium.com/better-programming/react-hooks-slider-how-to-build-an-image-slider-with-autoplay-part-2-c94deaf763c4",
+      "date": "2020-08-04",
+      "user": "Tasha",
+      "userId": 3
+    },
+    {
+      "id": 23,
+      "title": "Capstone Details",
+      "subjectId": 7,
+      "synopsis": "HOW TO on Capstones",
+      "url": "https://github.com/nss-day-cohort-41/capstone-details",
+      "date": "2020-08-04",
+      "user": "Tasha",
+      "userId": 3
+    },
+    {
+      "id": 26,
+      "title": "React How to Route",
+      "subjectId": 6,
+      "synopsis": "React-router",
+      "url": "https://www.freecodecamp.org/news/react-router-in-5-minutes/",
+      "date": "2020-08-02",
+      "user": "Tasha",
+      "userId": 3
+    },
+    {
+      "id": 27,
+      "title": "Build/Style with React Hooks",
+      "subjectId": 6,
+      "synopsis": "WebDesign for the pros",
+      "url": "https://medium.com/better-programming/easily-create-a-form-with-react-hooks-1cab17e2be0d",
+      "date": "2020-08-06",
+      "user": "Madison",
+      "userId": 17
+    },
+    {
+      "id": 28,
       "title": "RE: Portfolio Presentation",
-      "subjectId": "3",
-      "synopsis": "RE: Critique Me!",
-      "url": "https://github.com",
+      "subjectId": 7,
+      "synopsis": "hello world its Tuesday",
+      "url": "https://medium.com/better-programming/react-hooks-slider-how-to-build-an-image-slider-with-autoplay-part-2-c94deaf763c4",
+      "date": "2020-08-06",
+      "user": "Friend",
+      "userId": 18
+    },
+    {
+      "userId": 3,
+      "title": "Read Me Generator",
+      "subjectId": "2",
+      "synopsis": "Generate a Great Readme",
+      "url": "https://: https://www.npmjs.com/package/readme-md-generator",
+      "date": "2020-08-06",
+      "user": "Tasha",
+      "id": 29
+    },
+    {
+      "id": 30,
+      "title": "Quantum Circuits",
+      "subjectId": 9,
+      "synopsis": "What are Qubits? How to build quantum gates",
+      "url": "       https://quantum-computing.ibm.com/docs/iqx/",
+      "date": "2020-08-05",
+      "user": "Tasha",
+      "userId": 3
+    },
+    {
+      "userId": 17,
+      "title": "Design A Javascript App",
+      "subjectId": "2",
+      "synopsis": "10 Great Projects",
+      "url": "https://skillcrush.com/blog/projects-you-can-do-with-javascript/",
+      "date": "2020-08-06",
+      "user": "Madison",
+      "id": 31
+    },
+    {
+      "userId": 8,
+      "title": "C# at its Finest",
+      "subjectId": "4",
+      "synopsis": "Let's Get this Baby!!",
+      "url": "https://oz-code.com/blog/net-c-tips/ultimate-2020-guide-learning-debugging-c-net",
       "date": "2020-08-03",
-      "user": "Liam",
-      "id": 18
+      "user": "Gavin",
+      "id": 32
+    },
+    {
+      "userId": 8,
+      "title": "C# Interview Questions 2020",
+      "subjectId": "4",
+      "synopsis": "Interview Questions",
+      "url": "https://www.fullstack.cafe/blog/c-sharp-interview-questions",
+      "date": "2020-08-06",
+      "user": "Gavin",
+      "id": 33
+    },
+    {
+      "userId": 8,
+      "title": "Ruby Interview Questions",
+      "subjectId": "5",
+      "synopsis": "Ruby on Rails interview questions",
+      "url": "https://medium.com/better-programming/53-ruby-on-rails-interview-questions-and-answers-eb99eed1aeb7",
+      "date": "2020-08-03",
+      "user": "Gavin",
+      "id": 34
+    },
+    {
+      "id": 35,
+      "title": "Java for Beginners",
+      "subjectId": 10,
+      "synopsis": "From Beginner to Expert",
+      "url": "https://www.youtube.com/watch?v=S0V20PHPR4M",
+      "date": "2020-08-03",
+      "user": "Gavin",
+      "userId": 8
+    },
+    {
+      "id": 36,
+      "title": "Cloudinary",
+      "subjectId": 2,
+      "synopsis": "Cloudinary and Javascript",
+      "url": "https://cloudinary.com/",
+      "date": "2020-07-30",
+      "user": "Patrick",
+      "userId": 6
+    },
+    {
+      "id": 37,
+      "title": "Javascript Example",
+      "subjectId": 6,
+      "synopsis": "THIS IS HOW WE DO IT!",
+      "url": "https://www.nationalgeographic.com/",
+      "date": "2020-08-05",
+      "user": "Tasha",
+      "userId": 3
+    },
+    {
+      "userId": 4,
+      "title": "How to Survive a Bootcamp",
+      "subjectId": "6",
+      "synopsis": "You can accomplish anything one step at a time.",
+      "url": "https://github.com/orgs/nss-day-cohort-41/people",
+      "date": "2020-08-03",
+      "user": "Faith",
+      "id": 38
+    },
+    {
+      "userId": 4,
+      "title": "REACT HOOKS LEARN",
+      "subjectId": "6",
+      "synopsis": "REACT HOOKS EXAMPLES",
+      "url": "https://github.com/Lemoncode/react-hooks-by-example/blob/master/Readme.md",
+      "date": "2020-08-05",
+      "user": "Faith",
+      "id": 39
+    },
+    {
+      "userId": 1,
+      "title": "Beaujolais Wine Burgundy, France",
+      "subjectId": "4",
+      "synopsis": "Hold on to your flippers!",
+      "url": "https://www.totalwine.com/wine-guide/french-wine/burgundy/beaujolais",
+      "date": "2020-08-07",
+      "user": "Amanda",
+      "id": 41
+    },
+    {
+      "userId": 13,
+      "title": "Learning the basics",
+      "subjectId": "6",
+      "synopsis": "Cool Job!",
+      "url": "https://zoom.com",
+      "date": "2020-08-10",
+      "user": "katie",
+      "id": 42
     },
     {
       "userId": 3,
-      "title": "RE: Portfolio Presentation",
-      "subjectId": "2",
-      "synopsis": "hello",
-      "url": "https://google.com",
-      "date": "2020-08-04",
+      "title": "How to Build a Modern Website",
+      "subjectId": "6",
+      "synopsis": "Hold on to your flippers!",
+      "url": "https://medium.com",
+      "date": "2020-08-13",
       "user": "Tasha",
-      "id": 22
+      "id": 43
     },
     {
       "userId": 3,
-      "title": "RE: Portfolio Presentation",
-      "subjectId": "2",
-      "synopsis": "RE: Critique Me!",
-      "url": "https://github.com",
-      "date": "2020-08-04",
+      "title": "C#.NET FRAMEWORK",
+      "subjectId": "4",
+      "synopsis": "Great for Getting Started",
+      "url": "https://w3schools.com",
+      "date": "2020-08-07",
       "user": "Tasha",
-      "id": 23
+      "id": 44
+    },
+    {
+      "userId": 3,
+      "title": "How to Create IPhone Apps",
+      "subjectId": "2",
+      "synopsis": "10 Examples of Modern Apps",
+      "url": "https:// https://codewithchris.com/how-to-make-iphone-apps-with-no-programming-experience/",
+      "date": "2020-08-09",
+      "user": "Tasha",
+      "id": 45
+    },
+    {
+      "userId": 3,
+      "title": "SYMPTOM CHECKER API",
+      "subjectId": "6",
+      "synopsis": "Health API Open-Source",
+      "url": "https://apimedic.com/",
+      "date": "2020-08-10",
+      "user": "Tasha",
+      "id": 46
+    },
+    {
+      "userId": 3,
+      "title": "React Native Harvard",
+      "subjectId": "6",
+      "synopsis": "Tutorial Class",
+      "url": "https://www.youtube.com/playlist?list=PLhQjrBD2T382gdfveyad09Ierl_3Jh_wR",
+      "date": "2020-08-03",
+      "user": "Tasha",
+      "id": 47
+    },
+    {
+      "id": 48,
+      "title": "React How to Route",
+      "subjectId": 6,
+      "synopsis": "This is a 30 min tutorial",
+      "url": "https://react.org",
+      "date": "2020-08-16",
+      "user": "May",
+      "userId": 20
+    },
+    {
+      "id": 49,
+      "title": "React",
+      "subjectId": 6,
+      "synopsis": "Tutorial 20 min",
+      "url": "https://react.org",
+      "date": "2020-08-17",
+      "user": "Tasha",
+      "userId": 3
+    },
+    {
+      "id": 50,
+      "title": "LinkedIn JavaScript",
+      "subjectId": 2,
+      "synopsis": "How to add functionality",
+      "url": "https://linkedIn.com",
+      "date": "2020-08-14",
+      "user": "Larry",
+      "userId": 21
     }
   ],
   "notes": [
     {
       "userId": 3,
       "resourceId": 22,
-      "note": "Today is my Birthday",
+      "note": "Searching for React Hooks is the best way to avoid running into class outdated components that are a waste of time.",
+      "date": "2020-08-04",
+      "id": 5
+    },
+    {
+      "userId": 17,
+      "resourceId": 27,
+      "note": "I love designing",
       "date": "2020-08-06",
-      "id": 1
+      "id": 6
+    },
+    {
+      "userId": 18,
+      "resourceId": 28,
+      "note": "This is a Great Day!!",
+      "date": "2020-08-05",
+      "id": 7
+    },
+    {
+      "userId": 3,
+      "resourceId": 22,
+      "note": "This image slider was an easy tutorial",
+      "date": "2020-08-06",
+      "id": 9
+    },
+    {
+      "userId": 3,
+      "resourceId": 23,
+      "note": "This includes the google slides information",
+      "date": "2020-08-05",
+      "id": 10
+    },
+    {
+      "userId": 3,
+      "resourceId": 26,
+      "note": "This teaches you about the react router in 5 min. Great Tutorial",
+      "date": "2020-08-06",
+      "id": 11
+    },
+    {
+      "userId": 3,
+      "resourceId": 23,
+      "note": "This is the first day of the rest of your life! Build Something amazing!!",
+      "date": "2020-08-06",
+      "id": 12
+    },
+    {
+      "userId": 3,
+      "resourceId": 23,
+      "note": "Remember to install your dependencies!",
+      "date": "2020-08-01",
+      "id": 13
+    },
+    {
+      "userId": 3,
+      "resourceId": 26,
+      "note": "Getting the Routes Down is Half the Battle",
+      "date": "2020-08-03",
+      "id": 14
+    },
+    {
+      "userId": 3,
+      "resourceId": 26,
+      "note": "Check out all the apps to build from last week and use your new route knowledge!",
+      "date": "2020-08-06",
+      "id": 15
+    },
+    {
+      "userId": 3,
+      "resourceId": 29,
+      "note": "READme pages are important to be very detailed.. Remember to give step by step instructions for testing",
+      "date": "2020-08-02",
+      "id": 16
+    },
+    {
+      "userId": 3,
+      "resourceId": 30,
+      "note": "Start with Baby Qubits and you will soon forget about byte size..",
+      "date": "2020-08-05",
+      "id": 17
+    },
+    {
+      "userId": 17,
+      "resourceId": 31,
+      "note": "This is a great javascript adventure",
+      "date": "2020-08-06",
+      "id": 18
+    },
+    {
+      "userId": 8,
+      "resourceId": 32,
+      "note": "Bieber Believe",
+      "date": "2020-08-03",
+      "id": 19
+    },
+    {
+      "userId": 8,
+      "resourceId": 33,
+      "note": "Interview Questions",
+      "date": "2020-08-03",
+      "id": 20
+    },
+    {
+      "userId": 8,
+      "resourceId": 34,
+      "note": "Ruby on Rails 53 Interview Questions",
+      "date": "2020-08-04",
+      "id": 21
+    },
+    {
+      "userId": 6,
+      "resourceId": 36,
+      "note": "cloudinary is huge",
+      "date": "2020-08-05",
+      "id": 22
+    },
+    {
+      "userId": 3,
+      "resourceId": 37,
+      "note": "Dark mode at it's finest",
+      "date": "2020-08-05",
+      "id": 23
+    },
+    {
+      "userId": 3,
+      "resourceId": 29,
+      "note": "this needs to be completed asap",
+      "date": "2020-08-06",
+      "id": 25
+    },
+    {
+      "userId": 3,
+      "resourceId": 49,
+      "note": "This was a great source",
+      "date": "2020-08-17",
+      "id": 26
+    },
+    {
+      "userId": 3,
+      "resourceId": 49,
+      "note": "This has a great resource step at 4:34",
+      "date": "2020-08-17",
+      "id": 27
     }
   ],
   "subjects": [
     {
       "id": 1,
-      "subjectName": "Java"
+      "subjectName": "Choose"
     },
     {
       "id": 2,
@@ -162,6 +568,26 @@
     {
       "id": 5,
       "subjectName": "Ruby"
+    },
+    {
+      "id": 6,
+      "subjectName": "REACT"
+    },
+    {
+      "id": 7,
+      "subjectName": "CRUD"
+    },
+    {
+      "id": 8,
+      "subjectName": "Python"
+    },
+    {
+      "id": 9,
+      "subjectName": "Quantum"
+    },
+    {
+      "id": 10,
+      "subjectName": "Quantum"
     }
   ]
 }

@@ -1,25 +1,43 @@
-.resourceCardContainer.container {
+.container-cards {
     display: flex;
-    width:50%;
+    width:100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+ 
+    
+    
 }
 
-.resourceCard {
+.card2-resourceContainer{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }   
+
+.resourceCard2 {
     flex-direction: row;
     color: #D3D3D3;
-    width: 30rem;
+    width: 40rem;
     margin-bottom: 2rem;
     border: 2px solid #1f3d7a !important;
-    border-radius: 6px !important;
+    border-radius: 10px !important;
     background-color: #888888 !important;
-    
-    
     box-shadow: 0 4px 8px 0 #888888, 0 6px 20px 0 #888888;
     margin-top: 1rem;
+    flex-wrap: wrap;
+    font-size: 30px;
+    
+
 }
 
 .resourceCardBody {
     flex-direction: row;
-    color:#D3D3D3
+    color:#D3D3D3;
+   
+   
+    
     
 }
 
@@ -35,17 +53,30 @@
     background-color: #66b3ff;
     color: #D3D3D3;  
 }
-.card{
-    background-color: #888888
-    
-}
+/* .Card2-resourceContainer{
+    display:flex;
+    background-color: #888888;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+    align-items: flex;
+    padding: 80px;
+    border-radius: 20px;
+    border-style: double;
+    border-width: medium;
+    margin: 40px;
+} */
 
-.card-content{
-    color: #D3D3D3
+.card2-content{
+    color: #D3D3D3;
+     margin: 40px;
+    
+    
     
 }
 
   
-  .card-content.button{
-      background-color: #2196F3
-  }
+   .btn-primary{
+       margin: 20px;
+   }
+  

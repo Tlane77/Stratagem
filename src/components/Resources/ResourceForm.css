@@ -3,12 +3,15 @@
     color: #D3D3D3;
     font-size: larger;
     margin-bottom: 2rem;;
+    box-shadow: 30px;
+    
 }
 
 .ResourceFormButton.btn.btn-custom {
     background-color: #66b3ff;
     color: #D3D3D3; 
     font-size: larger; 
+    font-weight: bolder;
 }
 .ResourceFormButton{
     color: #2196F3
@@ -16,13 +19,30 @@
 .ResourceFormCol{
     display: flex;
     justify-content: center;
+    font-weight: bolder;
+    
+    
+   
 }
+
 .resourceSubmitButton{
     display: flex;
     justify-content: center;
+    
 }
 .ResourceFormLbl{
     color: #D3D3D3; 
     display: flex;
     justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.ResourceFormGrp{
+    padding: 20px;
+    justify-content: center;
+    font-weight: bolder;
+    
 }

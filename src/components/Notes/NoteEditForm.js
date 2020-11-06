@@ -8,7 +8,7 @@ const NoteEditForm = (props) => {
     resourceId: "",
     date: "",
   });
-  //   const [notes, setNote] = useState([]);
+  const [note, setNote] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFieldChange = (evt) => {
@@ -34,16 +34,16 @@ const NoteEditForm = (props) => {
     );
   };
 
-  //   useEffect(() => {
-  //     ResourceManager.get("resources", props.match.params.useResourceId).then((resource) => {
-  //       NoteManager.getAll().then((notes) => {
-  //         console.log("note response", notes);
-  //         setNote(note);
-  //         setResource(resource);
-  //         setIsLoading(false);
-  //       });
-  //     });
-  //   }, [props.match.params.useResourceId]);
+    // useEffect(() => {
+    //   ResourceManager.get("resources", props.match.params.useResourceId).then((resource) => {
+    //     NoteManager.getAll().then((notes) => {
+    //       console.log("note response", notes);
+    //       setNote(note);
+    //       setResource(resource);
+    //       setIsLoading(false);
+    //     });
+    //   });
+    // }, [props.match.params.useResourceId]);
 
   return (
     <>
@@ -72,9 +72,10 @@ const NoteEditForm = (props) => {
               <option value="3">PHP</option>
               <option value="4">C#</option>
               <option value="5">Ruby</option>
+              <option value="6">REACT</option>
+              <option value="7">CRUD</option>
             </select>
 
-           
             <label htmlFor="date">Date</label>
             <input
               type="date"
@@ -85,7 +86,7 @@ const NoteEditForm = (props) => {
               value={resource.date}
             />
             {/* //Does this div go here or below */}
-          </div> 
+          </div>
           <div className="alignRight">
             <button
               type="button"

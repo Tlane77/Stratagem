@@ -1,6 +1,7 @@
-import React, { useState }from "react";
+import React from "react";
 import "../Dashboard/dashboard.css";
 import NavBar from "../Navbar/Navbar"
+
 
 
 const Dashboard = (props) => {
@@ -9,23 +10,23 @@ const Dashboard = (props) => {
     localStorage.clear();
    
   };
-  // const [search, setSearch] = useState({field:""})
-
-  // const handleFieldChange = evt => {
-  //   const stateToChange = { ...search };
-
-  //   stateToChange[evt.target.id] = evt.target.value;
-  //   setSearch(stateToChange);
-
-  // };
+  
 
   return (
     <div>
       <NavBar {...props} clearUser={clearUser} />
-      <h1 className="dashboard-title">Stratagem Developer Resources</h1><br>
-      </br>
-      <img className="registrationLogo" src={require("../Images/logo.png")}
-      alt="imgLogo"></img>
+      <h1 className="dashboard-title">Stratagem Developer Resources</h1>
+      <br></br>
+      <img
+        className="resourceEditFormLogo"
+        src={require("../Images/stratagembanner.jpg")}
+        alt="imgLogo"
+      ></img>
+      <img
+        className="registrationLogo7"
+        src={require("../Images/multilogo7.png")}
+        alt="imgLogo"
+      ></img>
     </div>
   );
 };

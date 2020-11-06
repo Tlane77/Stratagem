@@ -54,6 +54,17 @@ const [filteredResources, setFilteredResources] = useState([]);
   return (
     <>
       <NavBar {...props} clearUser={props.clearUser} />
+      <div>
+        {" "}
+        <h1 className="dashboard-title">Stratagem Developer Resources</h1>
+        <br></br>
+         <img
+          className="resourceListLogo"
+          src={require("../Images/stratagembanner.jpg")}
+          alt="imgbanner"
+        ></img>
+         
+      </div>
       {/* //add this button above your display of Resource cards */}
       <section className="section-content">
         <Button
@@ -69,7 +80,7 @@ const [filteredResources, setFilteredResources] = useState([]);
       {/* <div className="searchSub">
         <input type="text" placeholder="Search.." value={search.field} id="field" onChange={handleFieldChange}></input>
       </div> */}
-      <Form className="dashForm resourceListSearch">
+      <Form className="dashForm.resourceListSearch">
         <FormControl
           className="dashControl"
           type="text"
